@@ -1,5 +1,5 @@
 function trocarCor() {
-    if (document.body.style.backgroundColor === "white") {
+    if (document.body.style.backgroundColor === "black") {
        
         document.body.style.backgroundColor = "white";
         document.body.style.color = "green";
