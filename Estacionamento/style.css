@@ -9,4 +9,215 @@
     /*Fonte da letra (Google fontes)*/
 }
 
+header {
+
+    padding: min(3vh, 2rem);
+     width: 100%; 
+    /*Colocando um tamanho (Preenchimento) no Header*/
+    /* width: 100%; */ 
+    background-color: rgba(231, 250, 231, 0.819);
+    /*Habilitando uma cor de fundo*/
+    display: flex;
+    /*Tornando nosso Header Flex - Deixando os itens lado a lado*/
+    justify-content: space-evenly;
+    /*Justificativa do conteúdo*/
+    align-items: center;
+    /*Alinhamento na vertical - Deixando habilitada ao centro*/
+     position: fixed;
+    z-index: 99; 
+    transition: top 0.6s ease-in-out;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0 0.21rem 0.5rem;
+}
+
+
+
+/*Chamamos nossa logo(img) para estilização*/
+header img {
+    width: 125px;
+    /*Largura da imagem*/
+    height: auto;
+    /*Altura da imagem ( automático) */
+}
+
+
+/*Chamamos nossa lista não ordenada para estilização*/
+header div nav ul {
+    display: flex;
+    /*Tornamos nossa lista não ordenada em (Flex), deixando os itens pertencentes a ela, lado a lado.*/
+    gap: 20px;
+    /*Espaçamento entre os elementos*/
+
+}
+
+/*Chamamos nossa âncora (a) para estilização*/
+header div nav ul li a {
+    font-family: Light 300;
+    /*Fonte da letra (Google fonts)*/
+    text-decoration: none;
+    /*Decoração do texto (sublinhado) desabilitado (none)*/
+    color: rgb(65, 83, 65); 
+    /*Cor da Letra*/
+    font-family: Light 300;
+    /*Fonte da letra (Google fonts)*/
+}
+
+.Btn-modoEscuro
+{
+    border-radius: 20px;
+    background-color: #113e4e;
+    align-items: end;
+
+}
+
+.section1
+{
+    padding: 4rem;
+    /* width: 100%; */
+    height: 100vh;
+    position: relative;
+    /* background-color: */
+    display: flex;
+    overflow: hidden;
+}
+
+.div-introducao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo para o texto */
+.text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.text h1 {
+    font-size: 2em;
+    color: #113e4e; /* Use uma das suas cores da paleta */
+}
+
+.text p {
+    font-size: 1.2em;
+    color: #748c94;
+}
+
+/* Estilo para a imagem */
+.image {
+    flex: 1;
+    max-width: 35%;
+    border-radius: 30px; /* Deixa as bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar a imagem */
+}
+
+/* --------------------------------- Estilização seção dois -------------------------------- */
+.section2
+{
+    /* width: 100%; */
+    padding: 6rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #748c94ad;
+}
+.container-estacionamento
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalho-estacionamento
+{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.8rem;
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-cabecalho-estacionamento h2
+{
+    font-family: var(--font-grande);
+    font-size: 3rem;
+}
+.text-cabecalho-estacionamento p
+{
+    font-size: 1.5rem;
+    color: var(--color-gray2);
+    font-weight: 500;
+    line-height: 1.4;
+    max-width: 900px;
+}
+
+.conteudo-estacionamento
+{
+    display: grid;
+    gap: 1rem;
+    width: 100%
+}
+
+.box-estacionamento
+{
+    border: 2px solid hsl(181, 58%, 58%);
+    border-radius: 20px;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 280px;
+    padding: 1.8rem;
+    gap: 1.5rem;
+}
+
+.box-estacionamento i 
+{
+    font-size: 2.8rem;
+    color: var(--color-white);
+}
+
+.box-estacionamento p 
+{   color: var(--color-gray2);
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.box-estacionamento h3
+{
+    font-size: 1.8rem;
+}
+
+@media (min-width: 600px) {
+    .conteudo-estacionamento {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .conteudo-estacionamento {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.img-div {  /* Aqui chamamos nossa Class para alteração*/ 
+    padding: 3%; /* Cuida do Preenchimento */ 
+    background-image: url(img/img\ transport.jpg.webp); /*Usada para inserir imagens de fundo*/
+    background-position: center; /* Aqui posicionamos nossa imagem para o centro */ 
+    background-size: auto; /* Background-Size: especifica o tamanho das imagens de fundo. Auto: Responsável por preencher totalmente a imagem. */
+    background-repeat: repeat-x;
+}
+/* ----------------------------Estilização Sessão três-----------------------------------------  */
+
+
 

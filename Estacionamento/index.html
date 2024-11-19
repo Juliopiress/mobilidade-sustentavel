@@ -1,97 +1,144 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>|Estacionamento|</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>|Estacionamento|</title>
 
-    <link rel="stylesheet" href="style.css"> <!-- -->
-
-</head>
-<body>
-
-<!-- Header criado para colocar a nossa logo e os links de outra pagina -->
-
-<header>
-    <img src="img/logo-transparente.png" alt="">
+        <link rel="stylesheet" href="style.css"> <!-- -->
  
+        <script src="https://kit.fontawesome.com/a3908b76ff.js" crossorigin="anonymous"></script>
+        
+        <script src="https://unpkg.com/scrollreveal"></script>
 
-      <h2>Estacionamento</h2>  <!-- Titulo dá pagina-->
-       
-    <div> <!-- Div para colocarmos nossas lista-->
-        <nav>
-            <ul>
-                <li><a href="">Página principal</a></li>
-                <li><a href="">Sobre-Nós</a></li>
-                <li><a href="">Contatos</a></li>
-                <li><a href="">Inscreva-se</a></li> <!-- Aqui vou fazer a parte do formulário de se escrever-->
-            </ul>
-        </nav>
-    </div>
+    </head>
+    <body>
 
-   <button type="button">Modo Escuro</button> <!--Botão do modo escuro-->
+        <!-- Header criado para colocar a nossa logo e os links de outra pagina -->
 
-</header> 
+        <header class="cabeçalho">
 
-   <main>
+            <img src="img/logo-transparente.png" alt="Logo tipo">
 
-       <section class="section1">
-           
-           <!-- Aqui vou colocar umas imagens do lado como fossem arredondadas (Crie a cor de fundo baseada nas paletas de cores ) -->
-           <div>
-               
-               <div>
-                   <img src="" alt="">
-                </div>
-                
-                <div>
-                    <img src="" alt="">
-                </div>
-                
+            <h2>Estacionamento</h2> <!-- Titulo dá pagina-->
+
+            <div> <!-- Div para colocarmos nossas lista-->
+                <nav>
+                    <ul>
+                        <li><a href>Página principal</a></li>
+                        <li><a href>Sobre-Nós</a></li>
+                        <li><a href>Contatos</a></li>
+                        <li><a href>Inscreva-se</a></li>
+                        <!-- Aqui vou fazer a parte do formulário de se escrever-->
+                    </ul>
+                </nav>
             </div>
+
+            <button type="button" class="Btn-modoEscuro">Modo Escuro</button>
+            <!--Botão do modo escuro-->
+
+        </header>
+
+        <main>
+
+            <section class="section1">
+
+                <!-- Aqui vou colocar umas imagens do lado como fossem arredondadas (Crie a cor de fundo baseada nas paletas de cores ) -->
+
+                <div class="div-introducao">
+                    <div class="text">
+                        <h1>Mobilidade Sustentável</h1>
+                        <!-- Aqui vai ser o texto dando uma pequena introdução sobre o estacionamento -->
+                        <p>Explore soluções inovadoras para um futuro mais verde
+                            e inteligente. Junte-se a nós nessa jornada sustentavél.
+                            <strong>Estacione e escolha seu novo meio de transporte sustentavél!</strong></p>
+                    </div>
+
+                    <div class="div-cliqueAqui">
+                        <button type="button" class="Btn-cliqueAqui">
+                            clique aqui
+                        </button>
+                    </div>
+                    <img src="img/app.jpg" alt="img estacionamento"
+                        class="image" loading="lazy">
+                </div>
+
+            </section>
+
+
+            <div class="img-div"></div>          
+ 
+            <section class="section2">
+
+                <div class="container-estacionamento" data-aos="fade-up"
+                    data-aos-duration="1000">
+                    <div class="cabecalho-estacionamento">
+
+                        <div class="text-cabecalho-estacionamento" data-aos="fade-up"
+                            data-aos-delay="200" data-aos-duration="1000">
+                            <h2>Oque oferecemos no nosso estacionamento</h2>
+                            <p>Você pode vir estacionar em nossos estacionamento e ter os seguintes beneficios.</p>
+                        </div>
+                    </div>
+
+                    <div class="conteudo-estacionamento">
+                        <div class="box-estacionamento" data-aos="fade-up"
+                            data-aos-delay="300" data-aos-duration="1000">
+
+                            <i class="fa-solid fa-repeat"></i>
+                            <h3>Troque seu veiculo</h3>
+                            <p>Estacionando seu veiculo você cosnegue trocar por E-bikes, 
+                            patinetes eletricos,  </p>
+                        </div>
+                        <div class="box-estacionamento" data-aos="fade-up"
+                            data-aos-delay="400" data-aos-duration="1000">
+
+                            <i class="fa-solid fa-wallet"></i>
+                            <h3>Tenha desconto</h3>
+                            <p>Voce tem desconto por estacionar seu veiculo e trocar por um sustentável</p>
+                        </div>
+
+                        <div class="box-estacionamento" data-aos="fade-up"
+                            data-aos-delay="500" data-aos-duration="1000">
+
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <h3>Segurança</h3>
+                            <p>Nosso estacionamento é vigiado 24h</p>
+                        </div>
+
+                        <div class="box-estacionamento" data-aos="fade-up"
+                            data-aos-delay="600" data-aos-duration="1000">
+
+                            <i class="fa-solid fa-lightbulb"></i>
+                            <h3>Economia e Mobilidade</h3>
+                            <p>Além de poder estacionar seu veiculo você pode 
+                            pegar outro totalmente sustentável
+                            </p>
+                        </div>
+                    </div>
+                </div>
             
-            <!-- Aqui vai ser o texto dando uma pequena introdução sobre o estacionamento -->
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus voluptate aspernatur qui magnam non eos, incidunt consequatur distinctio! Soluta eius recusandae aliquid, modi commodi facilis! Quidem dolores eos repellendus dignissimos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, voluptatum illum veniam laudantium quisquam ullam error. Voluptate fuga ut molestiae consequatur illum sint natus officiis? Iure molestias nisi voluptate enim.</p>
+              <!-- Aindo vou fazer a separação com uma imagem em cima e outra em baixo como se fossem margens com a propria imagem -->
+             </section>
             
-        </section>
-        
-        
-        <section class="section2">
-            
-            <img src="" alt="">  <!-- Aqui vou colocar uma imagem de fundo e criar uma listas com img com as div pois é algo que já sei, falando sobre os beneficios que oferecemos no estacionamento -->
-            
-        </section>
-        
-        <section class="section3">
-            <!-- Nesta ultima div vc pode colocar as localizações e os lugares que operamos -->
-            
-            <div>
+            <div class="img-div"></di>
                 
-            </div>
-            
-        </section>
-       
+
     </main>
-        
+
+
         <footer>
             <!-- Aqui vamos colcoar as informações redes de contato -->
             
-            
         </footer>
-        
-       
+        <script src="script.js" defer></script>
+    </body>
     
+    </html>
     
-    
-    
-    
-    
-</body>
-</html>
+    <!-- IDEIAS PARA FAZER -->
 
-<!-- IDEIAS PARA FAZER -->
-
- <!-- Use o font walsome -->
+<!-- Use o font walsome -->
 <!-- Use o pintereste pra adiquirir ideias -->
 <!-- Use a edição do canvas se presciso -->
 <!-- Useo repositório do professor para pegar ideias e codigos! -->
