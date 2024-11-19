@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-MOBIS | Produtos e Aluguel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+
+        <!-- Criamos uma Div para diferenciar a imagem do restante. -->
+       <div>
+        <img src="imagem/logo-transparente.png" alt="Logotipo da pagina">
+       </div>
+
+       
+
+         <!-- Criamos uma Div para diferenciar nossas listas do restante. -->
+       <div>
+
+           <nav>
+           <!-- Nav= Usada para informar o navegador que os itens dentro dela são navegáveis. -->
+           
+               <!-- Ul= Listas não ordenadas -->
+               <ul class="nav-links">
+
+                   <li>
+                       <!-- Âncora -->
+                       <a href="">QUEM SOMOS</a>
+                   </li>
+
+                   <li>
+                       <a href="">SERVIÇOS</a>
+                   </li>
+
+                   <li>
+                       <a href="">ESTACIONAMENTOS</a>
+                   </li>
+
+                   <li>
+                       <a href="">TELEFÉRICO</a>
+                   </li>
+
+                   <li>
+                    <a href="">FALE CONOSCO</a>
+                </li>
+
+               
+               </ul>
+           
+       </div>
+
+       <button id="button-header" onclick="trocarCor()">Modo Escuro</button>
+
+    </header>
+
+    <section class="product-intro">
+        <div class="container">
+            <h1 id="title">Explore nossos Produtos e Aluguel</h1>
+            <p>Descubra nossas ofertas de bicicletas elétricas, teleférico e veículos elétricos. Experimente a conveniência e a sustentabilidade com nossos serviços de alta qualidade, ideais para qualquer tipo de aventura ou necessidade de transporte urbano.</p>
+        </div>
+    </section>
+    
+    
+   
+    
+
+<!-- Seção 1: Bicicletas Elétricas -->
+<section id="bicicletas" class="section product-section">
+    <div class="container">
+        <h2>Bicicletas Elétricas</h2>
+        <p>Explore a cidade de forma sustentável e rápida. Nossas bicicletas elétricas são perfeitas para quem busca praticidade e conforto.</p>
+
+        <div class="product-list">
+            <div class="product-item">
+                <img src="imagem/bicicleta-eletrica.jpg" alt="Bicicleta Elétrica">
+                <h3>Bicicleta Elétrica</h3>
+                <p>Conforto e mobilidade com um toque de tecnologia. Ideal para explorar longas distâncias sem esforço.</p>
+                <p><strong>Preço:</strong> R$ 25,00 por hora</p>
+                <button>Alugar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="imagem/bicicleta-eletrica.jpg" alt="Bicicleta Elétrica">
+                <h3>Bicicleta Elétrica - Premium</h3>
+                <p>Para quem busca mais autonomia e conforto, nossa versão premium oferece recursos avançados.</p>
+                <p><strong>Preço:</strong> R$ 40,00 por hora</p>
+                <button>Alugar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="imagem/bicicleta-eletrica.jpg" alt="Bicicleta Elétrica">
+                <h3>Bicicleta Elétrica - Sport</h3>
+                <p>Perfeita para quem gosta de velocidade e desempenho em terrenos urbanos.</p>
+                <p><strong>Preço:</strong> R$ 35,00 por hora</p>
+                <button>Alugar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="imagem/bicicleta-eletrica.jpg" alt="Bicicleta Elétrica">
+                <h3>Bicicleta Elétrica - Compacta</h3>
+                <p>Compacta e prática, ideal para pequenas distâncias e fácil de transportar.</p>
+                <p><strong>Preço:</strong> R$ 20,00 por hora</p>
+                <button>Alugar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="imagem/bicicleta-eletrica.jpg" alt="Bicicleta Elétrica">
+                <h3>Bicicleta Elétrica - Customizada</h3>
+                <p>Personalize sua bicicleta com as cores e acessórios que mais combinam com você.</p>
+                <p><strong>Preço:</strong> R$ 45,00 por hora</p>
+                <button>Alugar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="imagem/bicicleta-eletrica.jpg" alt="Bicicleta Elétrica">
+                <h3>Bicicleta Elétrica - Família</h3>
+                <p>Ideal para passeios em família, com conforto e segurança para todos.</p>
+                <p><strong>Preço:</strong> R$ 50,00 por hora</p>
+                <button>Alugar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="imagem/bicicleta-eletrica.jpg" alt="Bicicleta Elétrica">
+                <h3>Bicicleta Elétrica - Jovem</h3>
+                <p>Design moderno e performance dinâmica, ideal para jovens aventureiros.</p>
+                <p><strong>Preço:</strong> R$ 30,00 por hora</p>
+                <button>Alugar Agora</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seção 2: Teleférico -->
+<section id="teleferico" class="section product-section">
+    <div class="container">
+        <h2>Teleférico</h2>
+        <p>Desfrute de uma vista panorâmica incrível da cidade com nosso teleférico. Uma experiência única para todas as idades!</p>
+
+        <div class="product-list">
+            <div class="product-item">
+                <img src="imagem/teleferico.jpg" alt="Teleférico">
+                <h3>Passeio de Teleférico</h3>
+                <p>Explore o horizonte da cidade enquanto se desloca de forma divertida e relaxante.</p>
+                <p><strong>Preço:</strong> R$ 50,00 por viagem</p>
+                <button>Alugar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="imagem/teleferico.jpg" alt="Teleférico">
+                <h3>Passeio VIP de Teleférico</h3>
+                <p>Experiência exclusiva com direito a um atendimento personalizado e vista privilegiada.</p>
+                <p><strong>Preço:</strong> R$ 80,00 por viagem</p>
+                <button>Alugar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="imagem/teleferico.jpg" alt="Teleférico">
+                <h3>Passeio Noturno de Teleférico</h3>
+                <p>Veja a cidade iluminada durante a noite em uma experiência inesquecível.</p>
+                <p><strong>Preço:</strong> R$ 70,00 por viagem</p>
+                <button>Alugar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="imagem/teleferico.jpg" alt="Teleférico">
+                <h3>Passeio de Teleférico - Família</h3>
+                <p>Uma opção para toda a família curtir a vista e relaxar juntos.</p>
+                <p><strong>Preço:</strong> R$ 150,00 por viagem</p>
+                <button>Alugar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="imagem/teleferico.jpg" alt="Teleférico">
+                <h3>Teleférico Panorâmico</h3>
+                <p>Uma nova forma de explorar a cidade de cima, com a maior cobertura da área.</p>
+                <p><strong>Preço:</strong> R$ 100,00 por viagem</p>
+                <button>Alugar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="imagem/teleferico.jpg" alt="Teleférico">
+                <h3>Passeio de Teleférico Privado</h3>
+                <p>Desfrute de uma experiência personalizada com exclusividade durante o passeio.</p>
+                <p><strong>Preço:</strong> R$ 200,00 por viagem</p>
+                <button>Alugar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="imagem/teleferico.jpg" alt="Teleférico">
+                <h3>Teleférico - Aventura Extrema</h3>
+                <p>Para os aventureiros, um passeio mais emocionante, com vistas desafiadoras.</p>
+                <p><strong>Preço:</strong> R$ 120,00 por viagem</p>
+                <button>Alugar Agora</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seção 3: Veículos Elétricos -->
+<section id="veiculos-eletricos" class="section product-section">
+    <div class="container">
+        <h2>Veículos Elétricos</h2>
+        <p>Para quem prefere um meio de transporte mais rápido e eficiente, oferecemos veículos elétricos com baixíssimo impacto ambiental.</p>
+
+        <div class="product-list">
+            <div class="product-item">
+                <img src="imagem/veiculo-eletrico.jpg" alt="Veículo Elétrico">
+                <h3>Veículo Elétrico Compacto</h3>
+                <p>Ideal para viagens curtas ou deslocamentos rápidos pela cidade, com zero emissão de poluentes.</p>
+                <p><strong>Preço:</strong> R$ 60,00 por hora</p>
+                <button>Alugar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="imagem/veiculo-eletrico.jpg" alt="Veículo Elétrico">
+                <h3>Veículo Elétrico Executivo</h3>
+                <p>Versão mais confortável e espaçosa, ideal para grupos ou viagens mais longas.</p>
+                <p><strong>Preço:</strong> R$ 100,00 por hora</p>
+                <button>Alugar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="imagem/veiculo-eletrico.jpg" alt="Veículo Elétrico">
+                <h3>Veículo Elétrico Familiar</h3>
+                <p>Conforto e espaço para viagens familiares sem impacto ambiental.</p>
+                <p><strong>Preço:</strong> R$ 90,00 por hora</p>
+                <button>Alugar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="imagem/veiculo-eletrico.jpg" alt="Veículo Elétrico">
+                <h3>Veículo Elétrico Sport</h3>
+                <p>Design arrojado e performance para quem gosta de acelerar.</p>
+                <p><strong>Preço:</strong> R$ 120,00 por hora</p>
+                <button>Alugar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="imagem/veiculo-eletrico.jpg" alt="Veículo Elétrico">
+                <h3>Veículo Elétrico - Luxo</h3>
+                <p>Comodidade e sofisticação em um único veículo elétrico de alto padrão.</p>
+                <p><strong>Preço:</strong> R$ 150,00 por hora</p>
+                <button>Alugar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="imagem/veiculo-eletrico.jpg" alt="Veículo Elétrico">
+                <h3>Veículo Elétrico Comercial</h3>
+                <p>Versão mais robusta e eficiente para uso empresarial e comercial.</p>
+                <p><strong>Preço:</strong> R$ 200,00 por hora</p>
+                <button>Alugar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="imagem/veiculo-eletrico.jpg" alt="Veículo Elétrico">
+                <h3>Veículo Elétrico Compacto - Jovem</h3>
+                <p>Uma versão mais descolada e moderna para os jovens que querem se locomover com estilo.</p>
+                <p><strong>Preço:</strong> R$ 70,00 por hora</p>
+                <button>Alugar Agora</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Seção 4: Serviços Extras -->
+    <section id="servicos-extras" class="section product-section">
+        <div class="container">
+            <h2>Serviços Extras</h2>
+            <p>Além de produtos para aluguel, oferecemos serviços extras para tornar a sua experiência ainda mais completa.</p>
+
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="imagem/carro.jpg" alt="Carro Elétrico">
+                    <h3>Aluguel de Carros Elétricos</h3>
+                    <p>Alugue um carro elétrico e aproveite para explorar a cidade com total liberdade e respeito ao meio ambiente.</p>
+                    <p><strong>Preço:</strong> R$ 120,00 por hora</p>
+                    <button>Alugar Agora</button>
+                </div>
+
+                <div class="product-item">
+                    <img src="imagem/pedestre.jpg" alt="Tour Guiado">
+                    <h3>Tour Guiado pela Cidade</h3>
+                    <p>Faça um tour pela cidade acompanhado de um guia local para conhecer todos os pontos turísticos e culturais.</p>
+                    <p><strong>Preço:</strong> R$ 90,00 por tour</p>
+                    <button>Agendar Agora</button>
+                </div>
+
+                <div class="product-item">
+                    <img src="imagem/pedestre.jpg" alt="Tour Guiado">
+                    <h3>Tour Guiado pela Cidade</h3>
+                    <p>Faça um tour pela cidade acompanhado de um guia local para conhecer todos os pontos turísticos e culturais.</p>
+                    <p><strong>Preço:</strong> R$ 90,00 por tour</p>
+                    <button>Agendar Agora</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+            <!--  Footer = Usada para abrir e habilitar rodapé para a página --> 
+            <footer>
+  
+                <!--  Criamos uma Div (caixa) para aguardar e diferenciar a logo (img) do restante do rodapé -->
+                 <div class="div-logo-footer">
+             
+                     <div>
+                         <img src="imagem/logo-transparente.png" alt="logo da pagina">
+                     </div>
+             
+                 </div>
+                        
+                 <!-- Criamos uma Div (caixa) para aguardar e diferenciar o Subtítulo e parágrafo -->
+                 <div>
+                     <!-- (h3) Subtítulo -->
+                    <h3>NOSSO ENDEREÇO</h3>
+                    <!-- (p) Parágrafo -->
+                    <p>Rua Garcia Lorca, 176 – Paulicéia <br>
+                        São Bernardo do Campo – SP <br>
+                        CEP: 09695-900</p>
+                 </div>
+             
+                 <!-- Criamos uma Div (caixa) para aguardar e diferenciar as listas não ordenadas do rodapé -->
+                 <div class="div-list-footer">
+                     <nav>
+                         <ul>
+                             <li>
+                                 <a href="">Cartões</a>
+                             </li>
+                          
+                             <li>
+                                 <a href="">Trabalhe Conosco</a>
+                             </li>
+             
+                             <li>
+                                 <a href="">Política de Privacidade</a>
+                             </li>
+                         </ul>
+                     </nav>
+                 </div>
+               
+                 <!-- Criamos uma Div (caixa) para aguardar e diferenciar os ícones -->
+                 <div class="div-sociais">
+             
+                     <i class="fa-brands fa-instagram"></i>
+                     <i class="fa-brands fa-whatsapp"></i>
+                     <i class="fa-brands fa-facebook-f"></i>
+             
+                 </div>
+             
+             </footer>
+
+</body>
+</html>
