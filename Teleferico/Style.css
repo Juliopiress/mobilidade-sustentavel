@@ -1,0 +1,380 @@
+/* Resetando margens, espaçamentos e bordas padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Inclui bordas e espaçamentos no tamanho total */
+}
+
+/* Estilização do cabeçalho */
+header {
+    padding: min(3vh, 2rem); /* Espaçamento interno flexível */
+    width: 100%; /* Ocupar a largura total da página */
+    background-color: rgb(231, 250, 231); /* Cor de fundo */
+    display: flex; /* Itens dispostos em linha */
+    justify-content: space-evenly; /* Espaçamento igual entre os itens */
+    align-items: center; /* Alinhar itens verticalmente ao centro */
+    position: sticky; /* Fixa o cabeçalho no topo ao rolar a página */
+    top: 0;
+    left: 0;
+    z-index: 999; /* Garantir que fique acima de outros elementos */
+    box-shadow: 0 0.21rem 0.5rem; /* Sombra do cabeçalho */
+}
+
+/* Estilização do logotipo no cabeçalho */
+header img {
+    width: 125px; /* Largura fixa da imagem */
+    height: auto; /* Altura proporcional */
+}
+
+/* Estilização da lista de navegação */
+nav ul {
+    list-style: none; /* Remove marcadores da lista */
+    display: flex; /* Itens em linha */
+    margin-left: auto; /* Empurra a lista para a direita */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+/* Estilização dos links de navegação */
+nav a {
+    color: black;/* Cor dos links */
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: bold; /* Negrito */
+}
+
+/* Efeito de hover nos links */
+nav a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Seção de destaque (Hero Section) */
+#hero {
+    background: url('hero-image.jpg') no-repeat center center/cover; /* Imagem de fundo centralizada e preenchida */
+    color: white; /* Texto branco */
+    text-align: center; /* Centralizar texto */
+    padding: 80px 20px; /* Espaçamento interno */
+}
+
+/* Título da seção de destaque */
+#hero h2 {
+    font-size: 36px;
+    margin-bottom: 15px; /* Espaçamento inferior */
+}
+
+/* Parágrafo da seção de destaque */
+#hero p {
+    font-size: 30px;
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Botão da seção de destaque */
+#hero .btn {
+    padding: 10px 20px; /* Espaçamento interno */
+    background: #ff6600; /* Cor de fundo laranja */
+    color: white; /* Texto branco */
+    text-decoration: none; /* Remove sublinhado */
+    border-radius: 5px; /* Arredonda bordas */
+    font-weight: bold; /* Negrito */
+}
+
+/* Efeito de hover no botão */
+#hero .btn:hover {
+    background: #cc5200; /* Tom mais escuro no hover */
+}
+
+/* Estilização geral para seções */
+section {
+    padding: 40px 0; /* Espaçamento interno vertical */
+    text-align: center; /* Centraliza texto */
+    background-color: #314c53;
+}
+
+/* Títulos das seções */
+h2 {
+    margin-bottom: 20px; /* Espaçamento inferior */
+    font-size: 28px;
+    color: #003366; /* Cor azul */
+}
+
+/* Grade de serviços */
+.servicos-grid {
+    display: flex; /* Layout flexível */
+    gap: 20px; /* Espaçamento entre itens */
+    justify-content: space-around; /* Itens distribuídos horizontalmente */
+    flex-wrap: wrap; /* Permite quebra de linha */
+}
+
+/* Estilo adicional para a seção "Sobre" */
+#sobre {
+    font-size: large; /* Fonte maior */
+}
+
+/* Itens individuais de serviços */
+.servico-item {
+    flex: 1; /* Cada item ocupa o mesmo espaço */
+    max-width: 300px; /* Largura máxima */
+    background: #fff; /* Fundo branco */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Títulos dos serviços */
+.servico-item h3 {
+    color: #ff6600; /* Cor laranja */
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+/* Seção específica com fundo azul */
+.section-atual {
+    background-color: blue; /* Cor de fundo azul */
+    padding: 50px; /* Espaçamento interno */
+}
+
+/* Div pai contendo 3 caixas */
+.div-pai {
+    display: flex; /* Itens em linha */
+    justify-content: center; /* Centraliza os itens */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilização das caixas (filhas) */
+.div-pai div {
+    width: 200px; /* Largura fixa */
+    height: 280px; /* Altura fixa */
+    background-color: deeppink; /* Fundo rosa forte */
+    margin-right: 20px; /* Espaçamento entre as caixas */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Segunda div pai semelhante à primeira */
+.div-pai2 {
+    display: flex;
+    justify-content: center;
+}
+
+.div-pai2 div {
+    width: 200px;
+    height: 280px;
+    background-color: deeppink;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+/* Estilização das caixas específicas com imagens de fundo */
+.div-filho1 {
+    background-image: url(IMG/img1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Ajusta imagem ao tamanho da caixa */
+}
+
+/* Efeito de hover nas caixas */
+.div-filho1:hover {
+    width: 210px; /* Expande largura */
+    height: 290px; /* Expande altura */
+    transition: 0.8s; /* Animação suave */
+    border-radius: 10px; /* Mantém bordas arredondadas */
+}
+
+/* Repetição de estilos para outras caixas com imagens */
+.div-filho2 {
+    background-image: url(IMG/img2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+.div-filho2:hover {
+    width: 210px;
+    height: 290px;
+    transition: 0.8s;
+    border-radius: 10px;
+}
+
+.div-filho3 {
+    background-image: url(IMG/img3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.div-filho3:hover {
+    width: 210px;
+    height: 290px;
+    transition: 0.8s;
+    border-radius: 10px;
+}
+
+.div-filho4 {
+    background-image: url(IMG/img4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.div-filho4:hover {
+    width: 210px;
+    height: 290px;
+    transition: 0.8s;
+    border-radius: 10px;
+}
+
+.div-filho5 {
+    background-image: url(IMG/img5.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.div-filho5:hover {
+    width: 210px;
+    height: 290px;
+    transition: 0.8s;
+    border-radius: 10px;
+}
+
+.div-filho6 {
+    background-image: url(IMG/img6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.div-filho6:hover {
+    width: 210px;
+    height: 290px;
+    transition: 0.8s;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    padding: min(3vh, 4rem);
+    background-color: rgb(231, 250, 231);
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    box-shadow: 0 0.21rem 0.5rem;
+}
+
+/* Logo do Footer */
+footer .div-logo-footer img {
+    width: 125px;
+    height: auto;
+}
+
+/* Subtítulo do Footer */
+footer div h3 {
+    color: rgb(65, 83, 65);
+    font-size: 25px;
+    font-family: Light 300;
+    font-weight: 300;
+}
+
+/* Parágrafo do Footer */
+footer div p {
+    color: rgb(65, 83, 65);
+    font-size: 18px;
+    font-family: Light 300;
+    font-weight: 200;
+}
+
+/* Ícones do Footer */
+.div-sociais i {
+    padding: 10px;
+    font-size: 20px;
+    background-color: white;
+}
+
+.div-sociais i:hover {
+    background-color: #7e9991;
+    transition: 0.5s;
+}
+
+.div-list-footer a {
+    text-decoration: none;
+    color: rgb(65, 83, 65);
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column; /* Alinha os itens do cabeçalho verticalmente em telas menores */
+        padding: 2rem 1rem;
+    }
+
+    nav ul {
+        gap: 15px; /* Menor espaçamento entre os links */
+    }
+
+    .servicos-grid {
+        flex-direction: column; /* Empilha os itens da grade de serviços em telas pequenas */
+        align-items: center;
+    }
+
+    .div-pai div, .div-pai2 div {
+        width: 180px; /* Reduz a largura das caixas */
+        height: 260px; /* Ajusta a altura das caixas */
+    }
+
+    footer {
+        flex-direction: column; /* Alinha os itens do footer em uma coluna */
+        gap: 30px;
+    }
+
+    footer .div-logo-footer img {
+        width: 100px; /* Reduz o tamanho da logo */
+    }
+}
+
+@media (max-width: 768px) {
+    #hero h2 {
+        font-size: 28px; /* Tamanho de fonte menor para telas pequenas */
+    }
+
+    #hero p {
+        font-size: 22px; /* Tamanho de fonte menor para telas pequenas */
+    }
+
+    .servicos-grid {
+        gap: 15px;
+        flex-direction: column; /* Empilha os itens */
+    }
+
+    .div-pai div, .div-pai2 div {
+        width: 160px; /* Ajusta a largura */
+        height: 240px; /* Ajusta a altura */
+    }
+
+    footer div h3 {
+        font-size: 20px; /* Tamanho de fonte ajustado */
+    }
+
+    footer div p {
+        font-size: 16px; /* Tamanho de fonte ajustado */
+    }
+}
+
+@media (max-width: 480px) {
+    #hero h2 {
+        font-size: 24px; /* Reduz ainda mais o título */
+    }
+
+    #hero p {
+        font-size: 18px; /* Reduz o parágrafo */
+    }
+
+    .servicos-grid {
+        gap: 10px; /* Reduz o espaçamento */
+    }
+
+    .div-pai div, .div-pai2 div {
+        width: 140px; /* Ajusta mais a largura */
+        height: 220px; /* Ajusta mais a altura */
+    }
+
+    footer {
+        padding: 2rem 1rem; /* Ajusta o padding do footer */
+    }
+}
