@@ -3,100 +3,310 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>T-MOBIS | Tecnologia e Mobilidade</title>
+    <title>T-MOBIS | Produtos e Aluguel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <!-- Cabeçalho -->
     <header>
-        <div>
-            <img src="imagem/logo-transparente.png" alt="Logotipo T-MOBIS">
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#quem-somos">Quem Somos</a></li>
-                <li><a href="#nossos-servicos">Serviços</a></li>
-                <li><a href="#sobre-tecnologia">Tecnologia</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+
+        <!-- Criamos uma Div para diferenciar a imagem do restante. -->
+       <div>
+        <img src="imagem/logo-transparente.png" alt="Logotipo da pagina">
+       </div>
+
+       
+
+         <!-- Criamos uma Div para diferenciar nossas listas do restante. -->
+       <div>
+
+           <nav>
+           <!-- Nav= Usada para informar o navegador que os itens dentro dela são navegáveis. -->
+           
+               <!-- Ul= Listas não ordenadas -->
+               <ul class="nav-links">
+
+                   <li>
+                       <!-- Âncora -->
+                       <a href="">QUEM SOMOS</a>
+                   </li>
+
+                   <li>
+                       <a href="">SERVIÇOS</a>
+                   </li>
+
+                   <li>
+                       <a href="">ESTACIONAMENTOS</a>
+                   </li>
+
+                   <li>
+                       <a href="">TELEFÉRICO</a>
+                   </li>
+
+                   <li>
+                    <a href="">FALE CONOSCO</a>
+                </li>
+
+               
+               </ul>
+           
+       </div>
+
+       <button id="button-header" onclick="trocarCor()">Modo Escuro</button>
+
     </header>
 
-    <!-- Seção Quem Somos -->
-    <section id="quem-somos" class="quem-somos">
+    <section class="product-intro">
         <div class="container">
-            <h1>Quem Somos</h1>
-            <p>A T-MOBIS é uma empresa privada sem fins lucrativos que tem como missão desenvolver soluções de mobilidade urbana que melhorem a qualidade de vida e promovam um ambiente mais sustentável e acessível para todos.</p>
-            <p>Com inovação e compromisso, trabalhamos para construir cidades mais limpas, com menos poluição, e com soluções tecnológicas que integrem a sustentabilidade e a acessibilidade para todos.</p>
+            <h1 id="title">Explore nossos Produtos e Aluguel</h1>
+            <p>Descubra nossas ofertas de bicicletas elétricas, teleférico e veículos elétricos. Experimente a conveniência e a sustentabilidade com nossos serviços de alta qualidade, ideais para qualquer tipo de aventura ou necessidade de transporte urbano.</p>
         </div>
     </section>
+    
+    
+   
+    
 
-    <!-- Seção Nossos Serviços -->
-    <section id="nossos-servicos" class="nossos-servicos">
-        <div class="container">
-            <h2>Nosso Portfólio de Serviços</h2>
-            <div class="servicos-list">
-                <div class="servico-item">
-                    <h3>Transporte Sustentável</h3>
-                    <p>Desenvolvimento e implementação de soluções de transporte ecológicas, com foco na redução de emissões e melhoria da qualidade do ar nas cidades.</p>
-                </div>
-                <div class="servico-item">
-                    <h3>Planejamento de Mobilidade</h3>
-                    <p>Estratégias de mobilidade urbana integrada, promovendo eficiência no uso do transporte e na gestão do tráfego para uma cidade mais fluida e sustentável.</p>
-                </div>
-                <div class="servico-item">
-                    <h3>Acessibilidade para Todos</h3>
-                    <p>Adotamos soluções inclusivas, garantindo que a mobilidade urbana seja acessível a todas as pessoas, independentemente de suas condições físicas.</p>
-                </div>
-                <div class="servico-item">
-                    <h3>Consultoria e Implementação</h3>
-                    <p>Oferecemos serviços de consultoria para a implementação de tecnologias sustentáveis e acessíveis, com foco na otimização de recursos e melhoria da infraestrutura urbana.</p>
-                </div>
+<!-- Seção 1: Bicicletas Elétricas -->
+<section id="bicicletas" class="section product-section">
+    <div class="container">
+        <h2>Bicicletas Elétricas</h2>
+        <p>Explore a cidade de forma sustentável e rápida. Nossas bicicletas elétricas são perfeitas para quem busca praticidade e conforto.</p>
+
+        <div class="product-list">
+            <div class="product-item">
+                <img src="imagem/bicicleta-eletrica.jpg" alt="Bicicleta Elétrica">
+                <h3>Bicicleta Elétrica</h3>
+                <p>Conforto e mobilidade com um toque de tecnologia. Ideal para explorar longas distâncias sem esforço.</p>
+                <p><strong>Preço:</strong> R$ 25,00 por hora</p>
+                <button>Alugar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="imagem/bicicleta-eletrica.jpg" alt="Bicicleta Elétrica">
+                <h3>Bicicleta Elétrica - Premium</h3>
+                <p>Para quem busca mais autonomia e conforto, nossa versão premium oferece recursos avançados.</p>
+                <p><strong>Preço:</strong> R$ 40,00 por hora</p>
+                <button>Alugar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="imagem/bicicleta-eletrica.jpg" alt="Bicicleta Elétrica">
+                <h3>Bicicleta Elétrica - Sport</h3>
+                <p>Perfeita para quem gosta de velocidade e desempenho em terrenos urbanos.</p>
+                <p><strong>Preço:</strong> R$ 35,00 por hora</p>
+                <button>Alugar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="imagem/bicicleta-eletrica.jpg" alt="Bicicleta Elétrica">
+                <h3>Bicicleta Elétrica - Compacta</h3>
+                <p>Compacta e prática, ideal para pequenas distâncias e fácil de transportar.</p>
+                <p><strong>Preço:</strong> R$ 20,00 por hora</p>
+                <button>Alugar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="imagem/bicicleta-eletrica.jpg" alt="Bicicleta Elétrica">
+                <h3>Bicicleta Elétrica - Customizada</h3>
+                <p>Personalize sua bicicleta com as cores e acessórios que mais combinam com você.</p>
+                <p><strong>Preço:</strong> R$ 45,00 por hora</p>
+                <button>Alugar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="imagem/bicicleta-eletrica.jpg" alt="Bicicleta Elétrica">
+                <h3>Bicicleta Elétrica - Família</h3>
+                <p>Ideal para passeios em família, com conforto e segurança para todos.</p>
+                <p><strong>Preço:</strong> R$ 50,00 por hora</p>
+                <button>Alugar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="imagem/bicicleta-eletrica.jpg" alt="Bicicleta Elétrica">
+                <h3>Bicicleta Elétrica - Jovem</h3>
+                <p>Design moderno e performance dinâmica, ideal para jovens aventureiros.</p>
+                <p><strong>Preço:</strong> R$ 30,00 por hora</p>
+                <button>Alugar Agora</button>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Seção Tecnologia -->
-    <section id="sobre-tecnologia" class="sobre-tecnologia">
-        <div class="container">
-            <h2>Inovação em Tecnologia</h2>
-            <p>Na T-MOBIS, acreditamos que a tecnologia é a chave para uma mobilidade eficiente e sustentável. Utilizamos as mais recentes inovações para transformar o transporte urbano, garantindo que nossas soluções atendam às necessidades de uma cidade moderna e acessível.</p>
-            <p>Desde a integração de sistemas de transporte até o uso de veículos elétricos e autônomos, estamos sempre na vanguarda da tecnologia para oferecer as melhores soluções para as cidades do futuro.</p>
+<!-- Seção 2: Teleférico -->
+<section id="teleferico" class="section product-section">
+    <div class="container">
+        <h2>Teleférico</h2>
+        <p>Desfrute de uma vista panorâmica incrível da cidade com nosso teleférico. Uma experiência única para todas as idades!</p>
+
+        <div class="product-list">
+            <div class="product-item">
+                <img src="imagem/teleferico.jpg" alt="Teleférico">
+                <h3>Passeio de Teleférico</h3>
+                <p>Explore o horizonte da cidade enquanto se desloca de forma divertida e relaxante.</p>
+                <p><strong>Preço:</strong> R$ 50,00 por viagem</p>
+                <button>Alugar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="imagem/teleferico.jpg" alt="Teleférico">
+                <h3>Passeio VIP de Teleférico</h3>
+                <p>Experiência exclusiva com direito a um atendimento personalizado e vista privilegiada.</p>
+                <p><strong>Preço:</strong> R$ 80,00 por viagem</p>
+                <button>Alugar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="imagem/teleferico.jpg" alt="Teleférico">
+                <h3>Passeio Noturno de Teleférico</h3>
+                <p>Veja a cidade iluminada durante a noite em uma experiência inesquecível.</p>
+                <p><strong>Preço:</strong> R$ 70,00 por viagem</p>
+                <button>Alugar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="imagem/teleferico.jpg" alt="Teleférico">
+                <h3>Passeio de Teleférico - Família</h3>
+                <p>Uma opção para toda a família curtir a vista e relaxar juntos.</p>
+                <p><strong>Preço:</strong> R$ 150,00 por viagem</p>
+                <button>Alugar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="imagem/teleferico.jpg" alt="Teleférico">
+                <h3>Teleférico Panorâmico</h3>
+                <p>Uma nova forma de explorar a cidade de cima, com a maior cobertura da área.</p>
+                <p><strong>Preço:</strong> R$ 100,00 por viagem</p>
+                <button>Alugar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="imagem/teleferico.jpg" alt="Teleférico">
+                <h3>Passeio de Teleférico Privado</h3>
+                <p>Desfrute de uma experiência personalizada com exclusividade durante o passeio.</p>
+                <p><strong>Preço:</strong> R$ 200,00 por viagem</p>
+                <button>Alugar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="imagem/teleferico.jpg" alt="Teleférico">
+                <h3>Teleférico - Aventura Extrema</h3>
+                <p>Para os aventureiros, um passeio mais emocionante, com vistas desafiadoras.</p>
+                <p><strong>Preço:</strong> R$ 120,00 por viagem</p>
+                <button>Alugar Agora</button>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Seção Contato -->
-    <section id="contato" class="contato">
+<!-- Seção 3: Veículos Elétricos -->
+<section id="veiculos-eletricos" class="section product-section">
+    <div class="container">
+        <h2>Veículos Elétricos</h2>
+        <p>Para quem prefere um meio de transporte mais rápido e eficiente, oferecemos veículos elétricos com baixíssimo impacto ambiental.</p>
+
+        <div class="product-list">
+            <div class="product-item">
+                <img src="imagem/veiculo-eletrico.jpg" alt="Veículo Elétrico">
+                <h3>Veículo Elétrico Compacto</h3>
+                <p>Ideal para viagens curtas ou deslocamentos rápidos pela cidade, com zero emissão de poluentes.</p>
+                <p><strong>Preço:</strong> R$ 60,00 por hora</p>
+                <button>Alugar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="imagem/veiculo-eletrico.jpg" alt="Veículo Elétrico">
+                <h3>Veículo Elétrico Executivo</h3>
+                <p>Versão mais confortável e espaçosa, ideal para grupos ou viagens mais longas.</p>
+                <p><strong>Preço:</strong> R$ 100,00 por hora</p>
+                <button>Alugar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="imagem/veiculo-eletrico.jpg" alt="Veículo Elétrico">
+                <h3>Veículo Elétrico Familiar</h3>
+                <p>Conforto e espaço para viagens familiares sem impacto ambiental.</p>
+                <p><strong>Preço:</strong> R$ 90,00 por hora</p>
+                <button>Alugar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="imagem/veiculo-eletrico.jpg" alt="Veículo Elétrico">
+                <h3>Veículo Elétrico Sport</h3>
+                <p>Design arrojado e performance para quem gosta de acelerar.</p>
+                <p><strong>Preço:</strong> R$ 120,00 por hora</p>
+                <button>Alugar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="imagem/veiculo-eletrico.jpg" alt="Veículo Elétrico">
+                <h3>Veículo Elétrico - Luxo</h3>
+                <p>Comodidade e sofisticação em um único veículo elétrico de alto padrão.</p>
+                <p><strong>Preço:</strong> R$ 150,00 por hora</p>
+                <button>Alugar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="imagem/veiculo-eletrico.jpg" alt="Veículo Elétrico">
+                <h3>Veículo Elétrico Comercial</h3>
+                <p>Versão mais robusta e eficiente para uso empresarial e comercial.</p>
+                <p><strong>Preço:</strong> R$ 200,00 por hora</p>
+                <button>Alugar Agora</button>
+            </div>
+
+            <div class="product-item">
+                <img src="imagem/veiculo-eletrico.jpg" alt="Veículo Elétrico">
+                <h3>Veículo Elétrico Compacto - Jovem</h3>
+                <p>Uma versão mais descolada e moderna para os jovens que querem se locomover com estilo.</p>
+                <p><strong>Preço:</strong> R$ 70,00 por hora</p>
+                <button>Alugar Agora</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Seção 4: Serviços Extras -->
+    <section id="servicos-extras" class="section product-section">
         <div class="container">
-            <h2>Fale Conosco</h2>
-            <p>Entre em contato para saber mais sobre como podemos ajudar sua cidade a se tornar mais sustentável, eficiente e acessível. Estamos à disposição para responder suas dúvidas e fornecer informações sobre nossos projetos.</p>
-            <form action="#" method="post">
-                <input type="text" name="nome" placeholder="Seu nome" required>
-                <input type="email" name="email" placeholder="Seu e-mail" required>
-                <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
+            <h2>Serviços Extras</h2>
+            <p>Além de produtos para aluguel, oferecemos serviços extras para tornar a sua experiência ainda mais completa.</p>
+
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="imagem/carro.jpg" alt="Carro Elétrico">
+                    <h3>Aluguel de Carros Elétricos</h3>
+                    <p>Alugue um carro elétrico e aproveite para explorar a cidade com total liberdade e respeito ao meio ambiente.</p>
+                    <p><strong>Preço:</strong> R$ 120,00 por hora</p>
+                    <button>Alugar Agora</button>
+                </div>
+
+                <div class="product-item">
+                    <img src="imagem/pedestre.jpg" alt="Tour Guiado">
+                    <h3>Tour Guiado pela Cidade</h3>
+                    <p>Faça um tour pela cidade acompanhado de um guia local para conhecer todos os pontos turísticos e culturais.</p>
+                    <p><strong>Preço:</strong> R$ 90,00 por tour</p>
+                    <button>Agendar Agora</button>
+                </div>
+
+                <div class="product-item">
+                    <img src="imagem/pedestre.jpg" alt="Tour Guiado">
+                    <h3>Tour Guiado pela Cidade</h3>
+                    <p>Faça um tour pela cidade acompanhado de um guia local para conhecer todos os pontos turísticos e culturais.</p>
+                    <p><strong>Preço:</strong> R$ 90,00 por tour</p>
+                    <button>Agendar Agora</button>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Rodapé -->
     <footer>
-        <div class="footer-container">
-            <div class="footer-logo">
-                <img src="imagem/logo-transparente.png" alt="Logotipo T-MOBIS">
-            </div>
-            <div class="footer-info">
-                <p>Endereço: Rua Garcia Lorca, 176 – Paulicéia, São Bernardo do Campo – SP</p>
-                <p>CEP: 09695-900</p>
-            </div>
-            <div class="footer-social">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-            </div>
+        <div class="container">
+            <p>&copy; 2024 T-MOBIS | Todos os direitos reservados</p>
         </div>
     </footer>
-
-    <script src="https://kit.fontawesome.com/fdd516a2fb.js" crossorigin="anonymous"></script>
 </body>
 </html>

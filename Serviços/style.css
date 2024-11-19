@@ -1,0 +1,245 @@
+/* Reset de Estilos Padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/*Início da estilização do Header*/
+header {
+    padding: min(3vh, 2rem);
+    /*Colocando um tamanho (Preenchimento) no Header*/
+    width: 100%;
+    background-color: rgb(231, 250, 231);
+    /*Habilitando uma cor de fundo*/
+    display: flex;
+    /*Tornando nosso Header Flex - Deixando os itens lado a lado*/
+    justify-content: space-evenly;
+    /*Justificativa do conteúdo*/
+    align-items: center;
+    /*Alinhamento na vertical - Deixando habilitada ao centro*/
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0 0.21rem 0.5rem;
+
+
+}
+
+
+
+/*Chamamos nossa logo(img) para estilização*/
+header img {
+    width: 125px;
+    /*Largura da imagem*/
+    height: auto;
+    /*Altura da imagem ( automático) */
+}
+
+
+/*Chamamos nossa lista não ordenada para estilização*/
+header div nav ul {
+    display: flex;
+    /*Tornamos nossa lista não ordenada em (Flex), deixando os itens pertencentes a ela, lado a lado.*/
+    gap: 20px;
+    /*Espaçamento entre os elementos*/
+
+}
+
+/*Chamamos nossa âncora (a) para estilização*/
+header div nav ul li a {
+    font-family: Light 300;
+    /*Fonte da letra (Google fonts)*/
+    text-decoration: none;
+    /*Decoração do texto (sublinhado) desabilitado (none)*/
+    color: rgb(65, 83, 65); 
+    /*Cor da Letra*/
+    font-family: Light 300;
+    /*Fonte da letra (Google fonts)*/
+}
+
+header button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+header button:hover {
+    background-color: #2980b9;
+}
+
+.product-intro {
+    background-color: #f4f4f4;
+    padding: 150px 0;
+    text-align: center;
+}
+
+.product-intro .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+
+.product-intro p {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+.product-intro h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    opacity: 0; /* Começa invisível */
+    transform: translateY(20px); /* Começa ligeiramente abaixo */
+    animation: fadeInUp 2s forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+/* Seções de Produtos */
+.section {
+    padding: 60px 20px;
+}
+
+.product-section {
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.product-section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.product-section p {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.product-item {
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.product-item h3 {
+    font-size: 22px;
+    margin: 10px 0;
+    color: #2c3e50;
+}
+
+.product-item p {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+}
+
+.product-item button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-item button:hover {
+    background-color: #2980b9;
+}
+
+.product-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Rodapé */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a {
+    color: #3498db;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .product-list {
+        grid-template-columns: 1fr;
+    }
+
+    .product-item {
+        padding: 15px;
+    }
+}
