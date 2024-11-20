@@ -7,6 +7,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
 </head>
 <body>
     <!-- Cabeçalho -->
@@ -72,7 +75,7 @@
 <!-- Seção 1: Bicicletas Elétricas -->
 <section id="bicicletas" class="section product-section">
     <div class="container">
-        <h2>Bicicletas Elétricas</h2>
+        <h2>Bicicletas </h2>
         <p>Explore a cidade de forma sustentável e rápida. Nossas bicicletas elétricas são perfeitas para quem busca praticidade e conforto.</p>
 
         <div class="product-list">
@@ -209,7 +212,7 @@
 
         <div class="product-list">
             <div class="product-item">
-                <img src="imagem/veiculo-eletrico.jpg" alt="Veículo Elétrico">
+                <img src="imagem/Patinete 1.png" alt="Veículo Elétrico">
                 <h3>Veículo Elétrico Compacto</h3>
                 <p>Ideal para viagens curtas ou deslocamentos rápidos pela cidade, com zero emissão de poluentes.</p>
                 <p><strong>Preço:</strong> R$ 60,00 por hora</p>
@@ -217,7 +220,7 @@
             </div>
 
             <div class="product-item">
-                <img src="imagem/veiculo-eletrico.jpg" alt="Veículo Elétrico">
+                <img src="imagem/Trem 1.png" alt="Veículo Elétrico">
                 <h3>Veículo Elétrico Executivo</h3>
                 <p>Versão mais confortável e espaçosa, ideal para grupos ou viagens mais longas.</p>
                 <p><strong>Preço:</strong> R$ 100,00 por hora</p>
@@ -225,7 +228,7 @@
             </div>
 
             <div class="product-item">
-                <img src="imagem/veiculo-eletrico.jpg" alt="Veículo Elétrico">
+                <img src="imagem/Patinete 2.png" alt="Veículo Elétrico">
                 <h3>Veículo Elétrico Familiar</h3>
                 <p>Conforto e espaço para viagens familiares sem impacto ambiental.</p>
                 <p><strong>Preço:</strong> R$ 90,00 por hora</p>
@@ -233,7 +236,7 @@
             </div>
 
             <div class="product-item">
-                <img src="imagem/veiculo-eletrico.jpg" alt="Veículo Elétrico">
+                <img src="imagem/Trem 2.png" alt="Veículo Elétrico">
                 <h3>Veículo Elétrico Sport</h3>
                 <p>Design arrojado e performance para quem gosta de acelerar.</p>
                 <p><strong>Preço:</strong> R$ 120,00 por hora</p>
@@ -241,7 +244,7 @@
             </div>
 
             <div class="product-item">
-                <img src="imagem/veiculo-eletrico.jpg" alt="Veículo Elétrico">
+                <img src="imagem/Patinete 3.png" alt="Veículo Elétrico">
                 <h3>Veículo Elétrico - Luxo</h3>
                 <p>Comodidade e sofisticação em um único veículo elétrico de alto padrão.</p>
                 <p><strong>Preço:</strong> R$ 150,00 por hora</p>
@@ -249,20 +252,13 @@
             </div>
 
             <div class="product-item">
-                <img src="imagem/veiculo-eletrico.jpg" alt="Veículo Elétrico">
+                <img src="imagem/Trem 3.png" alt="Veículo Elétrico">
                 <h3>Veículo Elétrico Comercial</h3>
                 <p>Versão mais robusta e eficiente para uso empresarial e comercial.</p>
                 <p><strong>Preço:</strong> R$ 200,00 por hora</p>
                 <button>Alugar Agora</button>
             </div>
 
-            <div class="product-item">
-                <img src="imagem/veiculo-eletrico.jpg" alt="Veículo Elétrico">
-                <h3>Veículo Elétrico Compacto - Jovem</h3>
-                <p>Uma versão mais descolada e moderna para os jovens que querem se locomover com estilo.</p>
-                <p><strong>Preço:</strong> R$ 70,00 por hora</p>
-                <button>Alugar Agora</button>
-            </div>
         </div>
     </div>
 </section>
@@ -271,8 +267,8 @@
     <!-- Seção 4: Serviços Extras -->
     <section id="servicos-extras" class="section product-section">
         <div class="container">
-            <h2>Serviços Extras</h2>
-            <p>Além de produtos para aluguel, oferecemos serviços extras para tornar a sua experiência ainda mais completa.</p>
+            <h2> Estacionamentos </h2>
+            <p>Além de oferecer opções de aluguel, nossos estacionamentos garantem a segurança e praticidade para guardar seu veículo com confiança!</p>
 
             <div class="product-list">
                 <div class="product-item">
@@ -351,7 +347,15 @@
                      <i class="fa-brands fa-facebook-f"></i>
              
                  </div>
-             
+              <!--Inclui jQuery (biblioteca de javascript que simplifica o codigo)-->
+    <!--jQuery é necessário para o slick carousel funcionar, por isso deve ser adicionado antes-->
+    <!--Aqui, usamos o link CDN para obter o jQuery diretamente da web-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Incluir o javascript do slick carousel, que controla a funcionalidade do carrossel-->
+    <!--Link CDN do javaScript do slick, essencial para inicializar e consigurar o carrossel-->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
+
              </footer>
 
 </body>
