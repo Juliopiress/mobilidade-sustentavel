@@ -67,20 +67,24 @@ header div nav ul li a {
 .Btn-modoEscuro
 {
     border-radius: 20px;
-    background-color: #113e4e;
+    background-color: #ddc18b;
     align-items: end;
-
 }
+
+header div nav ul li a:hover
+{
+    color: #d9881e;
+    transition: 0.5s;
+}
+/* ----------------------------------Estilização da sessão1---------------------------------------------- */
 
 .section1
 {
     padding: 4rem;
     /* width: 100%; */
+    background: linear-gradient(180deg,  #b4cec4 8.33%, rgba(244, 200, 175, 0) 100%);
     height: 100vh;
     position: relative;
-   background-image: url(img/ceu.jpg);
-    background-repeat: no-repeat; 
-    background-position: center;
     display: flex;
     overflow: hidden;
 }
@@ -101,12 +105,12 @@ header div nav ul li a {
 }
 
 .text h1 {
-    font-size: 2em;
+    font-size: 2.3em;
     color: #113e4e; /* Use uma das suas cores da paleta */
 }
 
 .text p {
-    font-size: 1.2em;
+    font-size: 1.7em;
     color: #748c94;
 }
 
@@ -114,7 +118,7 @@ header div nav ul li a {
 .image {
     flex: 1;
     max-width: 35%;
-    border-radius: 30px; /* Deixa as bordas arredondadas */
+    border-radius: 32px; /* Deixa as bordas arredondadas */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar a imagem */
 }
 
@@ -126,7 +130,14 @@ header div nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #748c94ad;
+    /*background-color: rgba(244, 200, 175, 0);*/
+
+    background: 
+    linear-gradient(to bottom,rgba(211, 215, 216, 0.833), rgba(35, 42, 39, 0.948)), /* Degradê */
+    url('img/img\ estacionamneto.webp'); /* Imagem de fundo */
+background-size: cover; /* Ajusta a imagem para cobrir o contêiner */
+background-position: center; /* Centraliza a imagem */
+background-repeat: no-repeat; /* Não repete a imagem */
 }
 .container-estacionamento
 {
@@ -212,14 +223,175 @@ header div nav ul li a {
     }
 }
 
-.img-div {  /* Aqui chamamos nossa Class para alteração*/ 
-    padding: 3%; /* Cuida do Preenchimento */ 
-    background-image: url(img/img\ transport.jpg.webp); /*Usada para inserir imagens de fundo*/
-    background-position: center; /* Aqui posicionamos nossa imagem para o centro */ 
-    background-size: auto; /* Background-Size: especifica o tamanho das imagens de fundo. Auto: Responsável por preencher totalmente a imagem. */
-    background-repeat: repeat-x;
-}
 /* ----------------------------Estilização Sessão três-----------------------------------------  */
 
 
+.section3
+{
+    padding: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#b4cec4 ;    
+}
+.container-problemas
+{
+    display: flex;
+    gap: 1rem;
+    width: 100%
+}
 
+ .cabeçalho-problemas p
+{
+    font-size: 1.5rem;
+    color: var(--color-gray2);
+    font-weight: 500;
+    line-height: 1.4;
+    max-width: 900px;
+}
+
+.cabeçalho-problemas h2
+{
+    text-align: center;
+    font-family: var(--font-grande);
+    font-size: 2rem;
+    
+}
+
+.box-problemas
+{
+    border-radius: 20px;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    padding: 1rem;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #113e4e05;
+}
+
+.box-problemas:hover
+{
+    background: linear-gradient( rgba(12, 12, 12, 0.234), rgba(255, 254, 254, 0.338));
+    transition: 3s 0.8ms;
+}
+
+.box-problemas p
+{
+    font-weight: 300;
+    font-size: 1.2em;
+    color: #113e4e;
+    text-align: justify;
+}
+
+
+.box-problemas h2
+{
+    color:#d9881e ;
+}
+
+.linha-separaçao
+{
+    justify-content: space-around;
+    background-color: black;
+    padding: 1.8px;   
+}
+/*--------------------------------------segunda parte da sessão dois------------------------------- */
+.complemento-soluçao
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.text-soluçao
+ {
+    flex: 1;
+    margin-right: 38px;
+}
+
+.text-soluçao h1 
+{
+    font-size: 2.3em;
+    color: #113e4e; /* Use uma das suas cores da paleta */
+}
+
+.text-soluçao p 
+{
+    font-size: 1.7em;
+    color: #748c94;
+}
+
+.introdução-soluçao
+{
+    text-align: center;
+    font-family: var(--font-grande);
+    font-size: 2rem;
+    color:#113e4e;
+    border-color: #113e4e;
+}
+
+.image-soluçao
+{
+    flex: 1;
+    max-width: 35%;
+    border-radius: 40px; /* Deixa as bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar a imagem */
+}
+
+
+/* --------------------------------Estilização sessão quatro---------------------------------------- */
+
+/* .section4
+{
+    padding: 6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#b4cec4 ; 
+}
+
+.card {
+    background-color: rgba(255, 255, 0, 0.274);
+    border: solid white;
+    padding: 20px;
+    width: 50;
+    height: 100px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px;
+    box-shadow: 0 4px 8px (0, 0, 0, 0.1);
+ 
+}
+
+.card p {
+    font-size: 7px;
+    color: #ffffff;
+}
+
+.card h3 {
+    color: white;
+} */
+
+
+/* Laranja (color1: #d9881e):
+
+RGBA: rgba(217, 136, 30, 1)
+Bege (color2: #ddc18b):
+
+RGBA: rgba(221, 193, 139, 1)
+Azul Escuro (color3: #113e4e):
+
+RGBA: rgba(17, 62, 78, 1)
+Cinza (color4: #748c94):
+
+RGBA: rgba(116, 140, 148, 1)
+Azul Claro (color5: #b4cec4):
+
+RGBA: rgba(180, 206, 196, 1) */
