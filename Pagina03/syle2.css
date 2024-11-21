@@ -20,7 +20,6 @@ body {
     color: rgb(4, 54, 4);
 }
 
-
 /*Início da estilização do Header*/
 header {
     padding: min(3vh, 2rem);
@@ -43,16 +42,13 @@ header {
 
 }
 
-
-
 /*Chamamos nossa logo(img) para estilização*/
 header img {
-    width: 100px;
+    width: 125px;
     /*Largura da imagem*/
     height: auto;
     /*Altura da imagem ( automático) */
 }
-
 
 /*Chamamos nossa lista não ordenada para estilização*/
 header div nav ul {
@@ -83,61 +79,82 @@ header>button {
    
 }
 
-
-header>button>a {
-   
+/*Início da estilização do Footer/Rodapé da pagina*/
+footer {
+    padding: min(3vh, 4rem);
+    /*Tamanho/preenchimento do Footer*/
+    background-color: rgb(231, 250, 231);
+    /*Cor de fundo*/
     display: flex;
-    align-items: center;
-    gap: 5px;
-    color: white;
+    /*Tornando o Footer Flex - Deixando os itens lado a lado*/
+    justify-content: space-evenly;
+    /*Justificativa do conteúdo*/
+    gap: 15px;
+    /*Espaçamento entre os elementos*/
+    box-shadow: 0 0.21rem 0.5rem;
+}
+
+/*Estilizando a logo do Footer*/
+footer .div-logo-footer img {
+    width: 125px;
+    /*Largura da imagem*/
+    height: auto;
+    /*Altura da imagem */
+
+
+}
+
+/*Estilizando o subtítulo do Footer*/
+footer div h3 {
+    color: rgb(65, 83, 65);
+    /*Cor da letra*/
+    font-size: 25px;
+    /*Tamanho da letra*/
+    font-family: Light 300;
+    /*Fonte da letra (Google fonts)*/
+    font-weight: 300;
+    /*Peso/Espressura da letra*/
+
+}
+
+/*Estilizando o parágrafo do Footer*/
+footer div p {
+    color: rgb(65, 83, 65);
+    /*Cor da letra*/
+    font-size: 18px;
+    /*Tamanho da letra*/
+    font-family: Light 300;
+    /*Fonte da letra (Google fonts)*/
+    font-weight: 200;
+    /*Peso/Espressura da letra*/
+}
+
+/*Estilizando os ícones do Footer*/
+.div-sociais i {
+    padding: 10px;
+    /*Aplicando um respiro (padding) dentro dos ícones*/
+    font-size: 20px;
+    /*Tamanhos dos ícones*/
+    background-color: white;
+    /*Cor de fundo*/
+
+}
+
+
+/*Aplicando o hover nos ícones*/
+.div-sociais i:hover {
+    background-color: #7e9991;
+    /*Cor de fundo*/
+    transition: 0.5s;
+    /*Tempo de transição*/
+}
+
+/*Chamamos nossa âncora (a) para estilização*/
+.div-list-footer a {
     text-decoration: none;
-    font-weight: 400;
+    /*Decoração do texto (sublinhado) desabilitado (none)*/
+    color: rgb(65, 83, 65); 
+    /*Cor da Letra*/
 }
 
-
-
-
-
-
-.section01{
-    display: flex;
-    justify-items: auto;
-}
-.divpai01 { 
-    width: 100%;
-
-    background-position: bottom;
-    display: block;
-    justify-items: center;
-    align-items: safe;
-    padding: 50px;
-}
-
-div img {
-    width: 510px;
-    
-}
-
-.section02 {
-    display: flex;
-    justify-content: space-evenlyn;
-}
-
-.divsec2 {
-    width: 100%;
-   
-    background-position: bottom;
-    display: block;
-    justify-items: center;
-    align-items: safe;
-    padding: 50px;
-
-}
-
-#trocarCor {
-    width: 100%;
-}
-
-
-
-
+/*Fim da estilização do Footer*/
