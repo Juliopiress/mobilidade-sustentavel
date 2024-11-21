@@ -3,13 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>|Estacionamento|</title>
+        <title>T-mobis|Estacionamento</title>
 
         <link rel="stylesheet" href="style.css"> <!-- -->
  
         <script src="https://kit.fontawesome.com/a3908b76ff.js" crossorigin="anonymous"></script>
         
         <script src="https://unpkg.com/scrollreveal"></script>
+
+   <link rel="stylesheet" href="modoDarck.css">
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
@@ -23,7 +25,7 @@
 
             <img src="img/logo-transparente.png" alt="Logo tipo">
 
-            <h1>Estacionamento</h1> <!-- Titulo dá pagina-->
+            <h1>Estacionamento T-mobis</h1> <!-- Titulo dá pagina-->
 
             <div> <!-- Div para colocarmos nossas lista-->
                 <nav>
@@ -37,7 +39,7 @@
                 </nav>
             </div>
 
-            <button type="button" class="Btn-modoEscuro">Modo Escuro</button>
+            <button type="button" id="Btn-modoEscuro" onclick="">Modo Escuro</button>
             <!--Botão do modo escuro-->
 
         </header>
@@ -49,10 +51,10 @@
 
                 <div class="div-introducao">
                     <div class="text">
-                        <h1>Mobilidade Sustentável</h1>
+                        <h1 id="txt-header"></h1>
                         <!-- Aqui vai ser o texto dando uma pequena introdução sobre o estacionamento -->
                         <p>Explore soluções inovadoras para um futuro mais verde
-                            e inteligente. Junte-se a nós nessa jornada sustentavél.
+                            e inteligente. Junte-se a nós nessa jornada sustentavél!
                             <strong>Estacione e escolha seu novo meio de transporte sustentavél!</strong></p>
                     </div>
 
@@ -170,7 +172,7 @@
 
                 <div class="complemento-soluçao"> <!--div-introduçaõ-->
                     <div class="text-soluçao"> <!--text-->
-                        <h1>Estamos movendo o Futuro com Sustentabilidade!</h1>
+                        <h3>Estamos movendo o Futuro com Sustentabilidade!</h>
 
                         <!-- Aqui vai ser o texto dando uma pequena introdução sobre o estacionamento -->
                         <p>Com a T-mobis descubra uma nova forma de estacionar e contribuir com o meio ambiente. </p>
@@ -185,40 +187,117 @@
 
        <section class="section4">
 
+           <div class="txt-cards">
+             <h2>Venha conferir onde estacionar seu carro!</h2>
+            <p>Temos estacionamento espalhados por toda a cidade de São Paulo </p>
+           </div>
+            <br><br><br>
         <div class="carousel">
+
                 <div class="card">
-                    <h3>Card 1</h3>
-                    <p>Descrição do card 1.</p>
+                    <h3>São Paulo centro</h3>
+                    <img src="img/img-centroSp.png" alt="img São Paulo centro" class="img-cidades" loading="lazy">
+                    <p></p>
                 </div>
+
                 <div class="card">
-                    <h3>Card 2</h3>
-                    <p>Descrição do card 2.</p>
+                    <h3>Zona sul</h3>
+                    <img src="img/img-zona sul.jpg" alt="img São Paulo Zs " class="img-cidades" loading="lazy">
+                    <p></p>
                 </div>
+
                 <div class="card">
-                    <h3>Card 3</h3>
-                    <p>Descrição do card 3.</p>
+                    <h3>Zona norte</h3>
+                    <img src="img/img-zona norte.jpg" alt="img São Paulo Zn" class="img-cidades" loading="lazy">
+                    <p>.</p>
                 </div>
+
                 <div class="card">
-                    <h3>Card 4</h3>
-                    <p>Descrição do card 4.</p>
+                    <h3>Zona leste</h3>
+                    <img src="img/img-zona leste.jpg" alt="img São Paulo Zl" class="img-cidades" loading="lazy">
+                    <p></p>
                 </div>
+                
                 <div class="card">
-                    <h3>Card 4</h3>
-                    <p>Descrição do card 5.</p>
+                    <h3>Litoral Paulista</h3>
+                    <img src="img/img-litoral Sp.jpg" alt="img litoral" class="img-cidades" 
+                    loading="lazy">
+                    <p></p>
                 </div>
-            </div>
+            </div>            
        </section>
 
+
+       <section class="section5">
+        <div class="txt-section5">
+            <h3>Estamos em constante evolução!!!</h3>
+            <p>Para saber mais dos nossos serviços e projetos siga nossas redes div-sociais</p>
+        </div>
+
+       </section>
     </main> 
 
+
         <footer>
-            <!-- Aqui vamos colcoar as informações redes de contato -->
+    <!--  Criamos uma Div (caixa) para aguardar e diferenciar a logo (img) do restante do rodapé-->
+
+     <div class="div-logo-footer">
+ 
+        <div>
+            <img src="img/logo-transparente.png" alt="logo da pagina">
+        </div>
+
+    </div>
+           
+    <!-- Criamos uma Div (caixa) para aguardar e diferenciar o Subtítulo e parágrafo -->
+    <div>
+        <!-- (h3) Subtítulo -->
+       <h3>NOSSO ENDEREÇO</h3>
+       <!-- (p) Parágrafo -->
+       <p>Rua Garcia Lorca, 176 – Paulicéia <br>
+           São Bernardo do Campo – SP <br>
+           CEP: 09695-900</p>
+    </div>
+
+    <!-- Criamos uma Div (caixa) para aguardar e diferenciar as listas não ordenadas do rodapé -->
+    <div class="div-list-footer">
+        <nav>
+            <ul>
+                <li>
+                    <a href="">Cartões</a>
+                </li>
+             
+                <li>
+                    <a href="">Trabalhe Conosco</a>
+                </li>
+
+                <li>
+                    <a href="">Política de Privacidade</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+  
+    <!-- Criamos uma Div (caixa) para aguardar e diferenciar os ícones -->
+    <div class="div-sociais">
+
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+
+    </div>
+
             
         </footer>
         <script src="script.js" defer></script>
 
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Inclui o javasScript do slick carousel, que controla a funcionalidade do carousel, que controla a duncionalidade do carrossel -->
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <!-- link cdn do java script do slick, essencial para incializar e consigurar o carrossel -->
+      
     </body>
     
     </html>

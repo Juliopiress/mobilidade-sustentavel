@@ -1,0 +1,133 @@
+body.dark-mode {
+    --color-primary: #1b1b1b; /* Fundo principal */
+    --color-secondary: #333; /* Fundo secundário */
+    --color-text: #e0e0e0; /* Texto */
+    --color-highlight: #ff9800; /* Cor de destaque (laranja) */
+    --color-gray: #b4cec4; /* Cinza intermediário */
+}
+
+/* Color1 (laranja - destaque): #d9881e 
+Color2 (bege):  #a07b53 (bege escuro).
+Color3  #0b2a36 (azul escuro intensificado).
+Color4  #4a5a60 (cinza mais escuro).
+Color5 (azul claro): #b4cec4  */
+
+body.dark-mode header {
+    background-color: #07171e;
+    box-shadow: 0 0.21rem 0.5rem rgba(0, 0, 0, 0.8);
+    transition: 0.5s;
+}
+
+body.dark-mode header div nav ul li a {
+    color: var(--color-text);
+    transition: 0.5s;
+}
+
+body.dark-mode header div nav ul li a:hover {
+    color: var(--color-highlight);
+    transition: 0.5s;
+}
+
+body.dark-mode #Btn-modoEscuro {
+    background-color: var(--color-highlight);
+    color: var(--color-secondary);
+    transition: 0.5s;
+}
+
+body.dark-mode .section1 
+{
+    background: linear-gradient(to bottom, #0b2a36, var(--color-primary));
+    transition: 0.5s;
+}
+
+body.dark-mode .text h1, body.dark-mode .text p 
+{
+    color: var(--color-text);
+    transition: 0.5s;
+    color: #b4cec4 ;
+}
+
+body.dark-mode .image 
+{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+body.darck-mode .section2 .text-cabecalho-estacionamneto 
+{
+    color:#b4cec4 ;   
+}
+
+body.dark-mode .section2 
+{
+    /* background: linear-gradient(to bottom, #0b2a36, var(--color-primary)); */
+    transition: 0.5s;
+    background: linear-gradient(to bottom,    #1b1b1bea, #0b2a36e6), /* Degradê */
+    url('img/img\ estacionamneto.webp'); /* Imagem de fundo */
+background-size: cover; /* Ajusta a imagem para cobrir o contêiner */
+background-position: center; /* Centraliza a imagem */
+background-repeat: no-repeat; /* Não repete a imagem */
+}
+
+body.dark-mode .section3 {
+    background-color:  #07171e ;
+    transition: 0.5s;
+}
+
+body.dark-mode .section3 p
+{
+    color:#b4cec4;
+}
+
+body.darkmode .section3 h2
+{
+    color:#a07b53;
+}
+
+body.dark-mode .section3 .cabeçalho--problemas h2
+{
+ color: #a07b53;;   
+}
+
+body.dark-mode .section3 h3
+{
+    color:#ff9800;
+}
+
+body.dark-mode .section3 .container-problemas h2
+{
+    color: #a07b53;
+}
+
+body.dark-mode .section3 .container-problemas p
+{
+    color:#ffffff;
+}
+
+body.dark-mode .section4
+{
+    background-color: #0b2a36;
+    transition: 0.5s;
+}
+
+body.dark-mode .section4 .card 
+{
+    transition: 0.5s;
+    background-color: var(--color-secondary);
+    border-color: #b4cec4;
+    color: var(--color-text);
+    transition: 0.5s;
+}
+
+body.dark-mode footer 
+{
+    background-color: #07171e;
+    transition: 0.5s;
+}
+
+body.dark-mode footer div h3,
+body.dark-mode footer div p,
+body.dark-mode .div-list-footer a {
+    color: var(--color-text);
+    
+}

@@ -15,7 +15,7 @@ header {
      width: 100%; 
     /*Colocando um tamanho (Preenchimento) no Header*/
     /* width: 100%; */ 
-    background-color: #8b9da3 ;
+    background-color:#b4cec4;
     /*Habilitando uma cor de fundo*/
     display: flex;
     /*Tornando nosso Header Flex - Deixando os itens lado a lado*/
@@ -64,11 +64,12 @@ header div nav ul li a {
     /*Fonte da letra (Google fonts)*/
 }
 
-.Btn-modoEscuro
+#Btn-modoEscuro
 {
-    border-radius: 20px;
-    background-color: #ddc18b;
+    border-radius: 15px;
+    background-color:#7e9991;
     align-items: end;
+    border:black;
 }
 
 header div nav ul li a:hover
@@ -316,15 +317,15 @@ background-repeat: no-repeat; /* Não repete a imagem */
     margin-right: 38px;
 }
 
-.text-soluçao h1 
+.text-soluçao h3
 {
-    font-size: 2.3em;
+    font-size: 2.2em;
     color: #113e4e; /* Use uma das suas cores da paleta */
 }
 
 .text-soluçao p 
 {
-    font-size: 1.7em;
+    font-size: 1em;
     color: #748c94;
 }
 
@@ -348,25 +349,34 @@ background-repeat: no-repeat; /* Não repete a imagem */
 
 /* --------------------------------Estilização sessão quatro---------------------------------------- */
 
-/* .section4
+.section4
 {
-    padding: 6em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color:#b4cec4 ; 
+    padding: 10rem;
+    justify-content: space-around;
+    background-size: cover;
+    background-position: center;
+    background-color: #748c94;
+   
 }
 
 .card {
-    background-color: rgba(255, 255, 0, 0.274);
-    border: solid white;
+    background-color: rgba(255, 255, 0, 0);
+    border: solid rgb(7, 7, 7);
     padding: 20px;
-    width: 50;
-    height: 100px;
+    width: 350;
+    height: 200px;
     text-align: center;
     border-radius: 8px;
     margin: 20px;
-    box-shadow: 0 4px 8px (0, 0, 0, 0.1);
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 0 4px 8px rgba (0, 0, 0, 0.5);
+
+    /* background-color: #ecf0f1;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out; */
  
 }
 
@@ -377,7 +387,141 @@ background-repeat: no-repeat; /* Não repete a imagem */
 
 .card h3 {
     color: white;
-} */
+}
+
+.carousel
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 60px;
+}
+
+.img-cidades
+{
+    max-width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+   
+}
+
+
+.txt-cards
+{
+text-align: center;
+margin-top: 2.2rem;
+font-size: 2rem;
+}
+
+/* -------------------------------Estilização da section5---------------------------------------------- */
+
+.section5
+{
+    background-image: url(img/img-ceuSutentavel.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 16rem;
+    background-size: cover;
+
+}
+
+.txt-section5
+{
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.455);
+}
+
+.txt-section5 p
+{
+color: #7e9991;
+font-size: 1.5;
+
+}
+
+.txt-section5
+{
+    color:#7e9991;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* ------------------------------------Estilização do footer--------------------------------------- */
+
+footer {
+    padding: min(3vh, 4rem);
+    /*Tamanho/preenchimento do Footer*/
+    background-color: rgb(231, 250, 231);
+    /*Cor de fundo*/
+    display: flex;
+    /*Tornando o Footer Flex - Deixando os itens lado a lado*/
+    justify-content: space-evenly;
+    /*Justificativa do conteúdo*/
+    gap: 15px;
+    /*Espaçamento entre os elementos*/
+    box-shadow: 0 0.21rem 0.5rem;
+}
+
+/*Estilizando a logo do Footer*/
+footer .div-logo-footer img {
+    width: 125px;
+    /*Largura da imagem*/
+    height: auto;
+    /*Altura da imagem */
+}
+
+/*Estilizando o subtítulo do Footer*/
+footer div h3 {
+    color: rgb(65, 83, 65);
+    /*Cor da letra*/
+    font-size: 25px;
+    /*Tamanho da letra*/
+    font-family: Light 300;
+    /*Fonte da letra (Google fonts)*/
+    font-weight: 300;
+    /*Peso/Espressura da letra*/
+
+}
+
+/*Estilizando o parágrafo do Footer*/
+footer div p {
+    color: rgb(65, 83, 65);
+    /*Cor da letra*/
+    font-size: 18px;
+    /*Tamanho da letra*/
+    font-family: Light 300;
+    /*Fonte da letra (Google fonts)*/
+    font-weight: 200;
+    /*Peso/Espressura da letra*/
+}
+
+/*Estilizando os ícones do Footer*/
+.div-sociais i {
+    padding: 10px;
+    /*Aplicando um respiro (padding) dentro dos ícones*/
+    font-size: 20px;
+    /*Tamanhos dos ícones*/
+    background-color: white;
+    /*Cor de fundo*/
+
+}
+
+
+/*Aplicando o hover nos ícones*/
+.div-sociais i:hover {
+    background-color: #7e9991;
+    /*Cor de fundo*/
+    transition: 0.5s;
+    /*Tempo de transição*/
+}
+
+/*Chamamos nossa âncora (a) para estilização*/
+.div-list-footer a {
+    text-decoration: none;
+    /*Decoração do texto (sublinhado) desabilitado (none)*/
+    color: rgb(65, 83, 65); 
+    /*Cor da Letra*/
+}
 
 
 /* Laranja (color1: #d9881e):

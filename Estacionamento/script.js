@@ -1,5 +1,5 @@
 
-// ------------------------Delay no Site----------------------
+// ----------------------------------------Delay no Site----------------------
 
 window.revelar = ScrollReveal({reset:true});
 
@@ -32,6 +32,17 @@ revelar.reveal('.conteudo-estacionamento',{
     origin: 'rigth'
 })
 
+revelar.reveal('.section4',{
+    duration: 2000,
+    distance : '120px',
+})
+
+revelar.reveal('.carousel',{
+    duration: 1800,
+    distance : '215px',
+    origin: 'rigth'
+})
+
 
 //-----------------------------------------Codigo carrousel-----------------------------------------------
 
@@ -51,10 +62,40 @@ $(document).ready(function() {
         dots: true,
 
         //arrows: exibe setas de navegação nas laterais do carrosel
-        arrows: true,
+        arrows: false,
         //ativa a ssetas para navegar entre os cards
 
 
     })
 })
-// ---------------------------------------------------------------------------------------------------------
+// -------------------------------Escrevendo sozin header-------------------------------------------------
+
+const typed = new Typed('#txt-header',
+    {
+    strings: ["Movendo o Futuro com Sustentabilidade!"],
+    typedSpeed: 100, //Velocidade que será digitado nosso text
+    
+    backSpeed:25,// Velocidade de retorno do text
+    loop: true,
+    showCursor: false,
+    fadeOut:false,
+    });
+
+    //---------------------------------------Tema Escuro---------------------------------------------
+
+    const btnModoEscuro = document.querySelector('#Btn-modoEscuro');
+    const body = document.body;
+    
+    // Adiciona evento de clique
+    btnModoEscuro.addEventListener('click', () => {body.classList.toggle('dark-mode');
+        
+        // Altera o texto do botão conforme o tema
+        if (body.classList.contains('dark-mode')) 
+        {
+            btnModoEscuro.textContent = 'Modo Claro';
+        } 
+        else 
+        {
+            btnModoEscuro.textContent = 'Modo Escuro';
+        }
+    });
