@@ -1,0 +1,421 @@
+@import url('https://fonts.google.com/noto/specimen/Noto+Serif');
+/*Fonte da letra (Google fontes)*/
+
+* {
+    padding: 0;
+    /*Zerando o preenchimento*/
+    margin: 0;
+    /*Zerando a margin(top, bottom, right, left*/
+    list-style: none;
+    /*remover os marcadores de listas da <ul> */
+    font-family: "Noto Serif", serif;
+    /*Fonte da letra (Google fontes)*/
+}
+
+body {
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    transition: background-color 0.5s, color 0.5s; 
+    color: rgb(3, 70, 3);
+    
+}
+
+/*Início da estilização do Header*/
+header {
+    padding: min(3vh, 2rem);
+    /*Colocando um tamanho (Preenchimento) no Header*/
+    width: 100%;
+    background-color: rgb(231, 250, 231);
+    /*Habilitando uma cor de fundo*/
+    display: flex;
+    /*Tornando nosso Header Flex - Deixando os itens lado a lado*/
+    justify-content: space-evenly;
+    /*Justificativa do conteúdo*/
+    align-items: center;
+    /*Alinhamento na vertical - Deixando habilitada ao centro*/
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0 0.21rem 0.5rem;
+
+
+}
+
+
+
+/*Chamamos nossa logo(img) para estilização*/
+header img {
+    width: 125px;
+    /*Largura da imagem*/
+    height: auto;
+    /*Altura da imagem ( automático) */
+}
+
+
+/*Chamamos nossa lista não ordenada para estilização*/
+header div nav ul {
+    display: flex;
+    /*Tornamos nossa lista não ordenada em (Flex), deixando os itens pertencentes a ela, lado a lado.*/
+    gap: 20px;
+    /*Espaçamento entre os elementos*/
+
+}
+
+/*Chamamos nossa âncora (a) para estilização*/
+header div nav ul li a {
+    font-family: Light 300;
+    /*Fonte da letra (Google fonts)*/
+    text-decoration: none;
+    /*Decoração do texto (sublinhado) desabilitado (none)*/
+    color: rgb(65, 83, 65); 
+    /*Cor da Letra*/
+    font-family: Light 300;
+    /*Fonte da letra (Google fonts)*/
+}
+
+header>button {
+    
+    padding: 8px;
+    background-color:  #8faca1;
+    border: none;
+   
+}
+
+
+header>button>a {
+   
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+
+
+.section-1 {
+    padding: 5rem;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: transparent;
+    display: flex;
+    overflow: hidden;
+    
+}
+
+.section-1 h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #186350;
+    margin: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, .9);
+    border-radius: 5px; 
+    z-index: 1;
+    background-color: aliceblue;
+    opacity: 0.8; 
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    
+  
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+
+.section-2 {
+    padding: 9rem;
+    width: 90%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: -130px;
+}
+
+
+.service {
+    text-align: right;
+    margin: 30px;
+}
+
+.service img {
+    width: 200%;
+    height: auto;
+}
+
+.div-titulo h2 {
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: "Noto+Serif";
+    text-align: center;
+    color: rgb(65, 83, 65);
+    margin: 15px;
+}
+
+.div-titulo p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-style: "Thin 100";
+    margin: 15px;
+}
+
+.section-3 {
+    padding: 9rem;
+    background: linear-gradient(180deg, #c3f5e264 8.33%, rgba(150, 248, 199, 0.745) 100%), url(imagem/estacionamento.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.estacione {
+    text-align: center;
+}
+
+.section-3 h2 {
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: "Noto+Serif";
+    text-align: center;
+    flex-direction: column;
+    color: rgb(65, 83, 65);
+    margin: 15px;
+}
+
+.estacione p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: "Thin 100";
+    color: rgb(44, 56, 44);
+    text-align: left;
+
+}
+
+
+/*Chamamos nosso Button que está dentro da terceira sessão*/
+.section-3 .botao1 {
+    display: block;
+    flex-direction: column;
+    
+    /*Usada para centralizar o botão*/
+}
+
+/*Estilização do botão da section 3*/
+.section-3 button {
+    padding: 10px;
+    /*Tamanho do preenchimento interno do botão*/
+    border-radius: 10px;
+    /*Borda arredondada do botão*/
+    width: 200px;
+    /*Tamanho lateral do botão (largura)*/
+    border-color: rgb(25, 99, 64);
+    /*Cor da borda*/
+    margin: 30px;
+    /*Margem em volta do Button*/
+    cursor: pointer;
+    /* Habilitado o cursor do mouse, mostrado quando o ponteiro do mouse está sobre um elemento.*/
+
+
+}
+
+/*Estilização a Âncora do botão da section 01*/
+.section-3 a button {
+    color: rgb(9, 173, 138);
+    /*Cor da letra*/
+
+}
+
+.estione-img {
+    text-align: right;
+    margin-right: 250px;
+}
+
+.estione-img img {
+    width: 180%;
+    height: auto;
+}
+
+.section-4 {
+    padding: 9rem;
+    width: 100%;
+    background-color: transparent;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.section-4 h3 {
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: "Noto+Serif";
+    text-align: center;
+    flex-direction: column;
+    color: rgb(65, 83, 65);
+    margin: 15px;
+}
+
+.section-4 p {
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-style: "Thin 100";
+    color: rgb(65, 83, 65);
+    text-align: center;
+}
+
+/*Estilização do container do carrossel*/
+.carousel-container {
+    overflow: hidden; /*Esconde partes das imagens que saem do container */
+    width: 50%; /*O container ocupa toda a largura da página */
+    max-width: 800px; /*largura máxima para limitar em telas maiores */
+    margin: auto; /*centraliza o container*/
+}
+
+/*Estilo da faixa de imagens*/
+.carousel-track {
+    display: flex; /*Coloca as imagens lado a lado em linha*/
+    transition: transform 0.5s ease; /*Animação suave para a transição*/
+}
+
+/* Cada item do carrossel*/
+.carousel-item {
+    flex: 0 0 100%; /* Cada item ocupa 100% da largura do container*/
+}
+
+img {
+    width: 100%; /* As imagens ocupam toda a largura do item*/
+    display: block; /* Garante que não haja espaçamento abaixo das imagens*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Início da estilização do Footer/Rodapé da pagina*/
+footer {
+    padding: min(3vh, 4rem);
+    /*Tamanho/preenchimento do Footer*/
+    background-color: rgb(231, 250, 231);
+    /*Cor de fundo*/
+    display: flex;
+    /*Tornando o Footer Flex - Deixando os itens lado a lado*/
+    justify-content: space-evenly;
+    /*Justificativa do conteúdo*/
+    gap: 15px;
+    /*Espaçamento entre os elementos*/
+    box-shadow: 0 0.21rem 0.5rem;
+}
+
+/*Estilizando a logo do Footer*/
+footer .div-logo-footer img {
+    width: 125px;
+    /*Largura da imagem*/
+    height: auto;
+    /*Altura da imagem */
+
+
+}
+
+/*Estilizando o subtítulo do Footer*/
+footer div h3 {
+    color: rgb(65, 83, 65);
+    /*Cor da letra*/
+    font-size: 25px;
+    /*Tamanho da letra*/
+    font-family: Light 300;
+    /*Fonte da letra (Google fonts)*/
+    font-weight: 300;
+    /*Peso/Espressura da letra*/
+
+}
+
+/*Estilizando o parágrafo do Footer*/
+footer div p {
+    color: rgb(65, 83, 65);
+    /*Cor da letra*/
+    font-size: 18px;
+    /*Tamanho da letra*/
+    font-family: Light 300;
+    /*Fonte da letra (Google fonts)*/
+    font-weight: 200;
+    /*Peso/Espressura da letra*/
+}
+
+/*Estilizando os ícones do Footer*/
+.div-sociais i {
+    padding: 10px;
+    /*Aplicando um respiro (padding) dentro dos ícones*/
+    font-size: 20px;
+    /*Tamanhos dos ícones*/
+    background-color: white;
+    /*Cor de fundo*/
+
+}
+
+
+/*Aplicando o hover nos ícones*/
+.div-sociais i:hover {
+    background-color: #7e9991;
+    /*Cor de fundo*/
+    transition: 0.5s;
+    /*Tempo de transição*/
+}
+
+/*Chamamos nossa âncora (a) para estilização*/
+.div-list-footer a {
+    text-decoration: none;
+    /*Decoração do texto (sublinhado) desabilitado (none)*/
+    color: rgb(65, 83, 65); 
+    /*Cor da Letra*/
+}
+
+/*Fim da estilização do Footer*/
+
+
+/* https://paletadecores.com/paleta/010300/314c53/5a7f78/bbdec6/f7f8fc/
+
+.color1 { #d9881e }; cor laranja
+.color2 { #ddc18b }; cor bege
+.color3 { #113e4e }; cor azul escuro
+.color4 { #748c94 }; cinza
+.color5 { #b4cec4 }; azul claro
+*/
