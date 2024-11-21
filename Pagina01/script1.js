@@ -39,7 +39,7 @@ const typed = new Typed('#typed-text', {
 });
 
 // Seleciona o elemento que contém todas as imagens do carrossel pelo ID 'carouselTrack'
-const track = document.getElementById('carouselTrack');
+const track = document.getElementById('#carouselTrack');
 
 // Obtém o número de imagens no carrossel. Seleciona todos os elementos com a classe 'carousel-item' e os armazena em uma NodeList
 const items = document.querySelectorAll('.carousel-item');
@@ -78,7 +78,7 @@ function moveCarousel() {
         // Move o carrossel para esquerda, usando o índice atual para calcular o deslocamento
         //Exemplo: Se index =1, desloca -100$, se index =2, desloca -200%, etc.
     }
-}
+};
 
 // Define um intervalo de tempo para chamar a função moveCarousel a cada 3000 milissegundos (3 segundos)
 //Isso faz com que o carrossel se mova automaticamente a cada 1 segundos.

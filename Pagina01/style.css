@@ -255,7 +255,6 @@ header>button>a {
     width: 100%;
     background-color: transparent;
     
-
 }
 
 .section-4 h3 {
@@ -279,7 +278,7 @@ header>button>a {
 /*Estilização do container do carrossel*/
 .carousel-container {
     overflow: hidden; /*Esconde partes das imagens que saem do container */
-    width: 100%; /*O container ocupa toda a largura da página */
+    width: 40%; /*O container ocupa toda a largura da página */
     max-width: 800px; /*largura máxima para limitar em telas maiores */
     margin: auto; /*centraliza o container*/
 }
