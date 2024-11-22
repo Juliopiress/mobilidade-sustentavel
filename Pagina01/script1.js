@@ -14,7 +14,9 @@ function trocarCor() {
 
       
     };
-}
+};
+
+
 
 window.addEventListener("resize" , function(){
 
@@ -29,17 +31,9 @@ window.addEventListener("resize" , function(){
 
 }, true);
 
-const typed = new Typed('#typed-text', {
-    strings: ["CONHEÇA A T-MOBIS"],
-    typeSpeed: 50, // Velocidade que será digitado o texto
-    backSpeed: 25, // Velocidade de retorno do texto
-    loop: true, // Faz com que o texto fique em execução infinita
-    showCursor: false, // Estamos removendo o cursor padrão do HMTL
-    fadeOut: true, // Adiciana uma transição (opcional)
-});
 
 // Seleciona o elemento que contém todas as imagens do carrossel pelo ID 'carouselTrack'
-const track = document.getElementById('#carouselTrack');
+const track = document.getElementById('carouselTrack');
 
 // Obtém o número de imagens no carrossel. Seleciona todos os elementos com a classe 'carousel-item' e os armazena em uma NodeList
 const items = document.querySelectorAll('.carousel-item');
@@ -63,7 +57,7 @@ function moveCarousel() {
         // Define um atraso de 500 milissegundos antes de executar a função de retorno ao ínicio
         setTimeout(() => {
 
-            track.style.transtion = 'none;' // Remove a transição para que o retorno ao ínicio seja instantâneo e sem animação
+            track.style.transtion = 'none'; // Remove a transição para que o retorno ao ínicio seja instantâneo e sem animação
             index = 0; // Reseta o índice para 0, que representa a primeira imagem
         track.style.transform = `translateX(0)`; // Move o carrossel de volta para a primeira imagem (posição inicial)
         }, 500); // O tempo de 500 ms garante que a transição anterior (se houver) seja completada.
@@ -78,8 +72,10 @@ function moveCarousel() {
         // Move o carrossel para esquerda, usando o índice atual para calcular o deslocamento
         //Exemplo: Se index =1, desloca -100$, se index =2, desloca -200%, etc.
     }
-};
+}
 
 // Define um intervalo de tempo para chamar a função moveCarousel a cada 3000 milissegundos (3 segundos)
 //Isso faz com que o carrossel se mova automaticamente a cada 1 segundos.
-setInterval(moveCarousel, 3000);
+setInterval(moveCarousel, 2000);
+
+
