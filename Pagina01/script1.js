@@ -57,7 +57,7 @@ function moveCarousel() {
         // Define um atraso de 500 milissegundos antes de executar a função de retorno ao ínicio
         setTimeout(() => {
 
-            track.style.transtion = 'none;' // Remove a transição para que o retorno ao ínicio seja instantâneo e sem animação
+            track.style.transtion = 'none'; // Remove a transição para que o retorno ao ínicio seja instantâneo e sem animação
             index = 0; // Reseta o índice para 0, que representa a primeira imagem
         track.style.transform = `translateX(0)`; // Move o carrossel de volta para a primeira imagem (posição inicial)
         }, 500); // O tempo de 500 ms garante que a transição anterior (se houver) seja completada.
