@@ -16,7 +16,14 @@ ScrollReveal().reveal(
              distance: '155px'
 
     });
-
+    ScrollReveal().reveal(
+        '#text', {
+    
+                 duration: 5000,
+                 origin: 'right',
+                 distance: '155px'
+    
+        });
 
     function trocarCor() {
         if (document.body.style.backgroundColor === "black") {
