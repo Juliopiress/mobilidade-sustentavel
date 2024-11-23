@@ -5,41 +5,45 @@ window.revelar = ScrollReveal({reset:true});
 
 
 revelar.reveal('.section1', {
-    duration: 2000,
-    distance: '120px'
+    duration: 1000,
+    distance : '100px',
+    origin: 'rigth'
 })
 
 
 revelar.reveal('.section2', {
-    duration: 2000,
-    distance: '120px',
+    duration: 1000,
+    distance : '100px',
     origin: 'rigth'
 })
 
 revelar.reveal('.cabeçalho',{
-    duration: 2000,
-    distance : '120px'
+    duration: 1000,
+    distance : '100px',
+    origin: 'rigth'
 })
 
 revelar.reveal('.section3',{
-    duration: 2000,
-    distance : '120px'
+    duration: 1000,
+    distance : '100px',
+    origin: 'rigth'
 })
 
 revelar.reveal('.conteudo-estacionamento',{
-    duration: 1800,
-    distance : '215px',
+    duration: 1000,
+    distance : '100',
     origin: 'rigth'
 })
 
 revelar.reveal('.section4',{
-    duration: 2000,
-    distance : '120px',
+    duration: 1000,
+    distance : '100px',
+    origin: 'rigth'
 })
 
 revelar.reveal('.carousel',{
     duration: 1800,
-    distance : '215px',
+    distance : '100px',
     origin: 'rigth'
 })
 

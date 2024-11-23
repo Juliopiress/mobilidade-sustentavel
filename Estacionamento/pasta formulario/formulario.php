@@ -12,14 +12,27 @@
    </header>
    
    <main>
-        <?php
-           $nome = $_GET["nome"];
-           $sobrenome = $_GET["sobrenome"];
-           $email = $_GET["email"];
+   <?php
+// Verifica se o formulário foi enviado via método POST
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Captura os valores enviados do formulário
+    $email = $_POST['email'];
+    $numero = $_POST['numero'];
+    $pagamento = $_POST['pagamento'];
+    $regiao = $_POST['regiao'];
 
-           echo "É um prazer te conhecer, $nome $sobrenome! Este é meu site";
-        ?>
-        <p><a href="javascript:history.go(-1)">Voltar para página anterior</a></p>
+    // Exibe os valores na tela (substitua por lógica de banco de dados ou envio de e-mail)
+    echo "<h1>Dados recebidos</h1>";
+    echo "<p><strong>E-mail:</strong> $email</p>";
+    echo "<p><strong>Número:</strong> $numero</p>";
+    echo "<p><strong>Forma de Pagamento:</strong> $pagamento</p>";
+    echo "<p><strong>Região de São Paulo:</strong> $regiao</p>";
+} else {
+    // Exibe mensagem caso o acesso não seja via POST
+    echo "Formulário não foi enviado corretamente.";
+}
+?>
+
    </main>
   
 </body>

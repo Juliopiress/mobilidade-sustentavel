@@ -87,7 +87,7 @@ header div nav ul li a:hover
     height: 100vh;
     position: relative;
     display: flex;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .div-introducao {
