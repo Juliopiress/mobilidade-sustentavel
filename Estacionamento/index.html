@@ -5,47 +5,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>T-mobis|Estacionamento</title>
 
-        <link rel="stylesheet" href="style.css"> <!-- -->
+        <link rel="stylesheet" href="style.css"> <!-- Link do Css -->
 
-        <script src="https://kit.fontawesome.com/a3908b76ff.js"
-            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="modoDarck.css"> <!--link do modo escuro-->
 
-        <script src="https://unpkg.com/scrollreveal"></script>
-
-        <link rel="stylesheet" href="modoDarck.css">
-
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
-
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-            crossorigin="anonymous">
-
-
-            <link rel="shortcut icon" href="imagem/ponto-de-onibus.png" type="image/x-icon">
+        <script src="script.js" defer></script> <!--Link do javaScript-->
 
     </head>
     <body>
 
         <!-- Header criado para colocar a nossa logo e os links de outra pagina -->
-
         <header class="cabeçalho">
 
             <img src="img/logo-transparente.png" alt="Logo tipo">
+            <!--imagem dá logo-->
 
             <h1>Estacionamento T-mobis</h1> <!-- Titulo dá pagina-->
 
             <div> <!-- Div para colocarmos nossas lista-->
                 <nav>
                     <ul>
-                        <li><a href>Página principal</a></li>
-                        <li><a href>Sobre-Nós</a></li>
-                        <li><a href>Contatos</a></li>
-                        <li><a href>Inscreva-se</a></li>
+                        <li><a href="/Pagina01/index.html">Página
+                                principal</a></li>
+                        <li><a href="/Pagina03/index.html">Sobre-Nós</a></li>
+                        <li><a
+                                href="/Teleferico/Index.html">Teleféricos</a></li>
+                        <li><a
+                                href="/Estacionamento/Pagina-formulario/formulario.html">Inscreva-se</a></li>
                         <!-- Aqui vou fazer a parte do formulário de se escrever-->
                     </ul>
                 </nav>
@@ -56,6 +42,8 @@
             <!--Botão do modo escuro-->
 
         </header>
+
+        <!--------------------------------------- Section1 -------------------------------------------->
 
         <main>
 
@@ -74,39 +62,40 @@
                     </div>
 
                     <img src="img/app.jpg" alt="img estacionamento"
-                        class="image" loading="lazy">
+                        class="image" loading="lazy"> <!-- imagem dá section1-->
                 </div>
 
             </section>
 
-            <!------------------------------------sessão dois-------------------------------------->
+            <!--------------------------------------- sessão dois -------------------------------------->
             <section class="section2">
+                <!-- Div para guardar as caixas que falam sobre o estacionamento -->
 
-                <div class="container-estacionamento" data-aos="fade-up"
-                    data-aos-duration="1000">
+                <div class="container-estacionamento">
+
                     <div class="cabecalho-estacionamento">
+                        <div class="text-cabecalho-estacionamento">
+                            <!-- Aqui é o texto que fica em  cima antes dás caixas que falam sobre os benefícios do estacioanmento  -->
 
-                        <div class="text-cabecalho-estacionamento"
-                            data-aos="fade-up"
-                            data-aos-delay="200" data-aos-duration="1000">
                             <h2>Oque oferecemos no nosso estacionamento?</h2>
-                            <p> <strong>Além de ter opções de pegar um veiculo sustêntável!</strong> Você pode vir estacionar em nossos estacionamento
+                            <p> <strong>Além de ter opções de pegar um veiculo
+                                    sustêntável!</strong> Você pode vir
+                                estacionar em nossos estacionamento
                                 e ter os seguintes beneficios.</p>
                         </div>
                     </div>
-
+                    <!-- Div que vai guarda todo o conjunto dás caixa -->
                     <div class="conteudo-estacionamento">
-                        <div class="box-estacionamento" data-aos="fade-up"
-                            data-aos-delay="300" data-aos-duration="1000">
+                        <div class="box-estacionamento">
 
                             <i class="fa-solid fa-repeat"></i>
+                            <!--Icones do fontalsome-->
                             <h3>Troque seu veiculo</h3>
                             <p>Estacionando seu veiculo você cosnegue trocar por
                                 E-bikes,
                                 patinetes eletricos, </p>
                         </div>
-                        <div class="box-estacionamento" data-aos="fade-up"
-                            data-aos-delay="400" data-aos-duration="1000">
+                        <div class="box-estacionamento">
 
                             <i class="fa-solid fa-wallet"></i>
                             <h3>Tenha desconto</h3>
@@ -114,16 +103,14 @@
                                 trocar por um sustentável</p>
                         </div>
 
-                        <div class="box-estacionamento" data-aos="fade-up"
-                            data-aos-delay="500" data-aos-duration="1000">
+                        <div class="box-estacionamento">
 
                             <i class="fa-solid fa-shield-halved"></i>
                             <h3>Segurança</h3>
                             <p>Nosso estacionamento é vigiado 24h</p>
                         </div>
 
-                        <div class="box-estacionamento" data-aos="fade-up"
-                            data-aos-delay="600" data-aos-duration="1000">
+                        <div class="box-estacionamento">
 
                             <i class="fa-solid fa-lightbulb"></i>
                             <h3>Economia e Mobilidade</h3>
@@ -134,23 +121,25 @@
                     </div>
                 </div>
 
-                <!-- Aindo vou fazer a separação com uma imagem em cima e outra em baixo como se fossem margens com a propria imagem -->
             </section>
-
+            <!---------------------------------------- Inicio sessão 3 ----------------------------------->
             <section class="section3">
-                <div class="problemas">
 
+                <!-- Aqui fica div que vai guarda o os problemas do estacionamento -->
+                <div class="problemas">
                     <div class="cabeçalho-problemas">
-                        <h2>O PROBLEMA DOS ESTACIONAMENTOS CONVÊNCIONAIS- VOCÊ
+                        <h2>O PROBLEMA DOS ESTACIONAMENTOS CONVÊNCIONAIS. VOCÊ
                             SABIA?</h2>
                         <p></p>
                         <hr class="linha-separaçao">
+                        <!--Fiz uma linha para separar-->
                     </div>
                     <br>
 
                     <div class="container-problemas">
+                        <!-- Container problemas onde vai guardas as iformações  -->
                         <div class="box-problemas">
-
+                            <!-- box-problemas onde vai ficar cada tópico  -->
                             <h2 class="titulo-problemas">72 HORAS</h2>
                             <p>É a média que uma pessoa gasta por ano procurando
                                 vagas.</p>
@@ -180,8 +169,10 @@
                     </div>
                     <br><br><br>
                     <hr class="linha-separaçao">
+                    <!--Fiz outra linha de sseparação -->
                     <br>
                     <br>
+                    <!-- Na mesma div fiz uma pequena introdução -->
 
                     <h2 class="introdução-soluçao">Porém com a T-mobis você não
                         encontrara esse problema pois...</h2>
@@ -189,16 +180,19 @@
                     <br>
 
                     <div class="complemento-soluçao"> <!--div-introduçaõ-->
-                        <div class="text-soluçao"> <!--text-->
+                        <div class="text-soluçao">
+                            <!--texto que fica ao lado dá imagem-->
                             <h3>Estamos movendo o Futuro com
                                 Sustentabilidade!</h>
 
-                            <!-- Aqui vai ser o texto dando uma pequena introdução sobre o estacionamento -->
+                            <!-- Aqui vai ser o texto dando uma pequena introdução sobre o -->
                             <p>Com a T-mobis descubra uma nova forma de
                                 estacionar e contribuir com o meio ambiente.
                             </p>
 
                         </div>
+
+                        <!-- imagem que fica no lado direto dá section 3 -->
                         <img src="img/img transport.jpg.webp"
                             alt="img estacionamento"
                             class="image-soluçao" loading="lazy">
@@ -207,16 +201,20 @@
                 </div>
             </section>
 
-            <section class="section4">
+             <!---------------------------------------- Inicio sessão 4 ----------------------------------->
 
+            <section class="section4">
+                <!-- Texto que fica em cima do carrosel -->
                 <div class="txt-cards">
                     <h2>Venha conferir onde estacionar seu carro!</h2>
                     <p>Temos estacionamento espalhados por toda a cidade de São
                         Paulo </p>
                 </div>
                 <br><br><br>
+                <!--Aqui tem 3 br para separar o texto dás caixas-->
                 <div class="carousel">
 
+                    <!-- Div que guarda o carrosel -->
                     <div class="card">
                         <h3>São Paulo centro</h3>
                         <img src="img/img-centroSp.png"
@@ -250,9 +248,12 @@
                         <p></p>
                     </div>
                 </div>
+
+                <!-- Fim do carrosel  -->
             </section>
 
             <section class="section5">
+                <!-- Ultima parte -->
                 <div class="txt-section5">
                     <h3>Estamos em constante evolução!!!</h3>
                     <p>Para saber mais dos nossos serviços e projetos siga
@@ -266,21 +267,15 @@
             <!--  Criamos uma Div (caixa) para aguardar e diferenciar a logo (img) do restante do rodapé-->
 
             <div class="div-logo-footer">
-
-                <div>
-                    <img src="img/logo-transparente.png" alt="logo da pagina">
-                </div>
-
+                    <img src="img/logo-transparente.png" alt="logo da pagina"> <!--Imagem dá nossa logo-->
             </div>
 
             <!-- Criamos uma Div (caixa) para aguardar e diferenciar o Subtítulo e parágrafo -->
             <div>
-                <!-- (h3) Subtítulo -->
-                <h3>NOSSO ENDEREÇO</h3>
-                <!-- (p) Parágrafo -->
+                <h3>NOSSO ENDEREÇO</h3>   <!-- (h3) Subtítulo -->
                 <p>Rua Garcia Lorca, 176 – Paulicéia <br>
                     São Bernardo do Campo – SP <br>
-                    CEP: 09695-900</p>
+                    CEP: 09695-900</p>   <!-- (p) Parágrafo -->
             </div>
 
             <!-- Criamos uma Div (caixa) para aguardar e diferenciar as listas não ordenadas do rodapé -->
@@ -302,36 +297,63 @@
                 </nav>
             </div>
 
-            <!-- Criamos uma Div (caixa) para aguardar e diferenciar os ícones -->
+            <!-- Criei uma div para colocar os ícones do font wasome -->
             <div class="div-sociais">
 
-                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-instagram"></i> 
                 <i class="fa-brands fa-whatsapp"></i>
                 <i class="fa-brands fa-facebook-f"></i>
 
             </div>
 
         </footer>
-        <script src="script.js" defer></script>
 
-        <script
-            src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <!--------- Dá qui em diante vão ser os scripts dás bibliotecas usadas no site ------------->
+
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+        <!--------------------------Funcionalidades do carrosel-------------------------------->
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <!-- Inclui o javasScript do slick carousel, que controla a funcionalidade do carousel, que controla a duncionalidade do carrossel -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <!-- link cdn do java script do slick, essencial para incializar e consigurar o carrossel -->
 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme css">
+
+        <!------------------Script para incluir a funcionalidade de libras--------------------->
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
         <script>
             new window.VLibras.Widget('https://vlibras.gov.br/app');
           </script>
-       
 
+        <!--------------------------- Biblioteca dá responsividade ------------->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous">
+
+        <link rel="shortcut icon" href="imagem/ponto-de-onibus.png"
+            type="image/x-icon">
+
+        <!------------------------Script do fonte walsome ---------------------------------->
+        <script src="https://kit.fontawesome.com/a3908b76ff.js"
+            crossorigin="anonymous"></script>
+
+        <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
     </body>
 
 </html>
-
 <!-- IDEIAS PARA FAZER -->
 
 <!-- Use o font walsome -->
