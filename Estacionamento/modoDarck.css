@@ -16,6 +16,7 @@ body.dark-mode header {
     background-color: #07171e;
     box-shadow: 0 0.21rem 0.5rem rgba(0, 0, 0, 0.8);
     transition: 0.5s;
+    color: #e0e0e0;
 }
 
 body.dark-mode header div nav ul li a {
@@ -64,9 +65,14 @@ background-position: center; /* Centraliza a imagem */
 background-repeat: no-repeat; /* Não repete a imagem */
 }
 
-body.darck-mode .section2 .container-estacionamento .text-cabecalho-estacionamento h2
+body.dark-mode .section2 .container-estacionamento .text-cabecalho-estacionamento h2
 {
     color:#b4cec4 ;   
+}
+
+body.dark-mode .section2 .container-estacionamento .text-cabecalho-estacionamento p
+{
+    color:#ffffff;
 }
 
 
@@ -89,9 +95,14 @@ body.dark-mode .section3 {
     transition: 0.5s;
 }
 
+body.dark-mode .section3 .problemas h2
+{
+    color:#ff9800;   
+}
+
 body.dark-mode .section3 p
 {
-    color:#ff9800;
+    color:#ffffff;
 }
 
 body.darkmode .section3 h2
@@ -121,8 +132,18 @@ body.dark-mode .section3 .container-problemas p
 
 body.dark-mode .section4
 {
-    background-color: #0b2a36;
+    background-color: #14181a;
     transition: 0.5s;
+}
+
+body.dark-mode .section4 .txt-cards h2
+{
+    color:#ffffff; 
+}
+
+body.dark-mode .section4 .txt-cards p
+{
+    color:#ffffff; 
 }
 
 body.dark-mode .section4 .card 
