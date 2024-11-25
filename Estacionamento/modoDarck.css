@@ -135,37 +135,7 @@ body.dark-mode .section3 .container-problemas p
     color:#ffffff;
 }
 
-/* -------------------------Estilização dá sessão 4 (section4)--------------------------------------------*/
 
-body.dark-mode .section4
-{
-    background-color: #14181a;
-    transition: 0.5s;
-}
-
-body.dark-mode .section4 .txt-cards h2
-{
-    color:#ff9800; 
-}
-
-body.dark-mode .section4 .carousel .card h3
-{
-    color:#ffffff; 
-}
-
-body.dark-mode .section4 .txt-cards p
-{
-    color:#ffffff; 
-}
-
-body.dark-mode .section4 .card 
-{
-    transition: 0.5s;
-    background-color: var(--color-secondary);
-    border-color: #b4cec4;
-    color: var(--color-text);
-    transition: 0.5s;
-}
 
 /* -------------------------Estilização do footer--------------------------------------------*/
 

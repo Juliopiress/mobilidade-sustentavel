@@ -165,6 +165,8 @@ header button:hover {
 /* Estilização individual de cada item de produto */
 .product-item {
     background-color: #ecf0f100; /* Fundo claro */
+    gap: 30px;
+    background-color: #ecf0f1; /* Fundo claro */
     border-radius: 8px; /* Bordas arredondadas */
     margin: 10px;
     padding: 20px;
@@ -172,7 +174,6 @@ header button:hover {
     text-align: center; /* Centraliza o conteúdo de texto e a imagem dentro do div */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar o item */
     transition: transform 0.3s ease-in-out; /* Animação suave ao passar o mouse */
-
 }
 
 /* Imagens dos produtos */
