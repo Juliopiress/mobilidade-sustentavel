@@ -60,7 +60,6 @@ header div nav ul {
     /*Tornamos nossa lista não ordenada em (Flex), deixando os itens pertencentes a ela, lado a lado.*/
     gap: 20px;
     /*Espaçamento entre os elementos*/
-
 }
 
 /*Chamamos nossa âncora (a) para estilização*/
@@ -95,17 +94,12 @@ header>button>a {
 }
 
 
-
-
-
-
 .section01{
     display: flex;
     justify-items: auto;
 }
 .divpai01 { 
     width: 100%;
-
     background-position: bottom;
     display: block;
     justify-items: center;
