@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    /*Zerando o preenchimento*/
+    margin: 0;
+    /*Zerando a margin(top, bottom, right, left*/
+    list-style: none;
+    /*remover os marcadores de listas da <ul> */
+    font-family: "Noto Serif", serif;
+    /*Fonte da letra (Google fontes)*/
+    /* width: 100%; */
+}
+
+header {
+
+    padding: min(1vh, 2rem);
+    width: 100%;
+    /*Colocando um tamanho (Preenchimento) no Header*/
+    /* width: 100%; */
+    background-color: #1f232298;
+    /*Habilitando uma cor de fundo*/
+    display: flex;
+    /*Tornando nosso Header Flex - Deixando os itens lado a lado*/
+    justify-content: space-evenly;
+    /*Justificativa do conteúdo*/
+    align-items: center;
+    /*Alinhamento na vertical - Deixando habilitada ao centro*/
+    position: fixed;/*Deixa a possição dá imagem fixa*/
+    z-index: 99; /* Define a hierarquia do elemento no empilhamento (posição sobreposta a outros elementos com z-index inferior). */
+    transition: top 0.6s ease-in-out; /* Aplica uma transição suave na propriedade */
+    
+    top: 0; /* Posiciona o elemento na parte superior do contêiner ou viewport. */
+    
+    left: 0; /* Posiciona o elemento à esquerda do contêiner ou viewport. */
+    
+    z-index: 999; /* Sobrescreve o z-index anterior, tornando o elemento um dos mais prioritários na pilha de camadas. */
+    
+    box-shadow: 0 0.21rem 0.5rem; /* Adiciona uma sombra ao elemento com deslocamento mínimo para criar destaque. */
+    
+}
+
+header h1
+{
+    color: #ffffff;
+    font-weight: 800;
+}
+
+header img {
+    width: 115px;
+    /*Largura da imagem*/
+    height: 40;
+    /*Altura da imagem ( automático) */
+}
+
+
+/*Chamamos nossa lista não ordenada para estilização*/
+header div nav ul {
+    display: flex;
+    /*Tornamos nossa lista não ordenada em (Flex), deixando os itens pertencentes a ela, lado a lado.*/
+    gap: 20px;
+    /*Espaçamento entre os elementos*/
+
+}
+
+/*Chamamos nossa âncora (a) para estilização*/
+header div nav ul li a 
+{
+    font-family: Light 300;
+    /*Fonte da letra (Google fonts)*/
+    text-decoration: none;
+    /*Decoração do texto (sublinhado) desabilitado (none)*/
+    color:#ffffff;
+    /*Cor da Letra*/
+    font-family: Light 300;
+    /*Fonte da letra (Google fonts)*/
+}
+
+header div nav ul li a:hover
+{
+    color: #d9881e;
+    transition: 0.5s;
+}
+
+/*------------------------------------------ Fundo da página ---------------------------------------------*/
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /*Fonte do site*/
+    background: url('img-formulario/img-section5.jpg') no-repeat center center fixed; /*Imagem de fundo e os comandos para que ela não quebre e nem se repita*/  
+    background-size: cover;
+}
+
+/* Container do formulário */
+.form-container {
+    background-color: #1f2322c2; /* Fundo semi-transparente escuro. */
+    width: 100%; /* Largura total disponível. */
+    height: 150%; /* Altura proporcional. */
+    max-width: 400px; /* Largura máxima do formulário. */
+    margin: 40px auto; /* Centraliza o formulário vertical e horizontalmente. */
+    padding: 25px; /* Espaçamento interno. */
+    border-radius: 12px; /* Bordas arredondadas. */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra leve para destaque. */
+}
+
+/* Título */
+.form-container h2 {
+    text-align: center; /* Centraliza o texto. */
+    color: #ffffff; /* Cor do texto branco. */
+    margin-bottom: 20px; /* Espaço inferior. */
+    font-weight: 600; /* Peso do texto médio. */
+}
+
+/* Labels */
+label {
+    display: block; /* Cada rótulo ocupa uma linha inteira. */
+    font-weight: bold; /* Texto em negrito. */
+    margin-top: 15px; /* Espaço acima do rótulo. */
+    color: #ffffff; /* Cor do texto branco. */
+}
+
+/* Campos de entrada */
+input,
+select,
+button {
+    width: 100%; /* Campos ocupam toda a largura disponível. */
+    padding: 6px; /* Espaçamento interno. */
+    margin-top: 5px; /* Espaço acima do campo. */
+    margin-bottom: 15px; /* Espaço abaixo do campo. */
+    border: 2px solid #d9881e; /* Borda laranja. */
+    border-radius: 5px; /* Bordas arredondadas. */
+}
+
+/* Botão de envio */
+button {
+    background-color: #113e4e; /* Fundo azul escuro. */
+    color: white; /* Texto branco. */
+    font-weight: bold; /* Texto em negrito. */
+    cursor: pointer; /* Alteração do cursor ao passar sobre o botão. */
+    border: none; /* Remove a borda padrão. */
+}
+
+button:hover {
+    background-color: #b47019; /* Fundo laranja escuro ao passar o cursor. */
+    transition: 0.5s; /* Animação suave para a transição. */
+}

@@ -11,7 +11,7 @@ Color2 (bege):  #a07b53 (bege escuro).
 Color3  #0b2a36 (azul escuro intensificado).
 Color4  #4a5a60 (cinza mais escuro).
 Color5 (azul claro): #b4cec4  */
-
+/* -------------------------Estilização dá sessão header --------------------------------------------*/
 body.dark-mode header {
     background-color: #07171e;
     box-shadow: 0 0.21rem 0.5rem rgba(0, 0, 0, 0.8);
@@ -54,6 +54,8 @@ body.dark-mode .image
     transition: 0.5s;
 }
 
+/* -------------------------Estilização dá sessão 2 (section2)--------------------------------------------*/
+
 body.dark-mode .section2 
 {
     /* background: linear-gradient(to bottom, #0b2a36, var(--color-primary)); */
@@ -90,6 +92,9 @@ body.dark-mode .section2  .conteudo-estacionamento .box-estacionamento i
 {
 color:#ff9800;
 }
+
+/* -------------------------Estilização dá sessão 3 (section3)--------------------------------------------*/
+
 body.dark-mode .section3 {
     background-color:  #07171e ;
     transition: 0.5s;
@@ -130,6 +135,8 @@ body.dark-mode .section3 .container-problemas p
     color:#ffffff;
 }
 
+/* -------------------------Estilização dá sessão 4 (section4)--------------------------------------------*/
+
 body.dark-mode .section4
 {
     background-color: #14181a;
@@ -137,6 +144,11 @@ body.dark-mode .section4
 }
 
 body.dark-mode .section4 .txt-cards h2
+{
+    color:#ff9800; 
+}
+
+body.dark-mode .section4 .carousel .card h3
 {
     color:#ffffff; 
 }
@@ -154,6 +166,8 @@ body.dark-mode .section4 .card
     color: var(--color-text);
     transition: 0.5s;
 }
+
+/* -------------------------Estilização do footer--------------------------------------------*/
 
 body.dark-mode footer 
 {

@@ -7,6 +7,7 @@
     /*remover os marcadores de listas da <ul> */
     font-family: "Noto Serif", serif;
     /*Fonte da letra (Google fontes)*/
+    /* width: 100%; */
 }
 
 header {
@@ -66,7 +67,8 @@ header div nav ul li a {
 
 #Btn-modoEscuro
 {
-    border-radius: 15px;
+    padding: 9px;
+    border-radius: 10px;
     background-color:#7e9991;
     align-items: end;
     border:black;
@@ -79,365 +81,323 @@ header div nav ul li a:hover
 }
 /* ----------------------------------Estilização da sessão1---------------------------------------------- */
 
-.section1
-{
-    padding: 4rem;
-    /* width: 100%; */
-    background: linear-gradient(180deg,  #b4cec4 8.33%, rgba(244, 200, 175, 0) 100%);
-    height: 100vh;
-    position: relative;
-    display: flex;
-    /* overflow: hidden; */
+.section1 {
+    padding: 5rem; /* Adiciona um espaçamento interno grande ao redor do conteúdo da seção. */
+    width: 100%; /* Faz com que a seção ocupe toda a largura disponível da tela. */
+    background: linear-gradient(180deg, #b4cec4 8.33%, rgba(244, 200, 175, 0) 100%);
+    /* Aplica um gradiente de cor que vai de #b4cec4 para transparente, dando um efeito suave. */
+    height: 100vh; /* Define a altura da seção como 100% da altura da janela de visualização. */
+    position: relative; /* Define a posição como relativa, permitindo posicionamentos internos se necessário. */
+    display: flex; /* Ativa o layout flexível para organizar os elementos internos. */
+    overflow: hidden; /* Garante que conteúdos que ultrapassem os limites da seção não sejam exibidos. */
 }
 
 .div-introducao {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    display: flex; /* Usa flexbox para organizar os itens da introdução. */
+    align-items: center; /* Alinha os itens verticalmente no centro. */
+    justify-content: space-between; /* Espaça os elementos igualmente entre si. */
+    max-width: 1200px; /* Limita a largura máxima para 1200px, mesmo em telas maiores. */
+    margin: 0 auto; /* Centraliza o elemento horizontalmente na tela. */
+    padding: 20px; /* Adiciona um espaçamento interno ao redor do conteúdo. */
 }
 
 /* Estilo para o texto */
 .text {
-    flex: 1;
-    margin-right: 20px;
+    flex: 1; /* Permite que o texto ocupe o espaço disponível proporcionalmente. */
+    margin-right: 20px; /* Adiciona um espaçamento entre o texto e o próximo elemento. */
 }
 
 .text h1 {
-    font-size: 2.3em;
-    color: #113e4e; /* Use uma das suas cores da paleta */
+    font-size: 2.3em; /* Define um tamanho grande para o título principal. */
+    color: #113e4e; /* Usa uma cor da paleta de cores definida no projeto. */
 }
 
 .text p {
-    font-size: 1.7em;
-    color: #748c94;
+    font-size: 1.7em; /* Define um tamanho grande e legível para o parágrafo. */
+    color: #748c94; /* Define uma cor secundária para o texto, criando contraste suave. */
 }
 
 /* Estilo para a imagem */
 .image {
-    flex: 1;
-    max-width: 35%;
-    border-radius: 32px; /* Deixa as bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar a imagem */
+    flex: 1; /* Permite que a imagem ocupe o espaço disponível proporcionalmente. */
+    max-width: 35%; /* Limita a largura máxima da imagem a 35% do espaço do container. */
+    border-radius: 30px; /* Deixa as bordas da imagem arredondadas. */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aplica uma sombra para dar profundidade à imagem. */
 }
 
-/* --------------------------------- Estilização seção dois -------------------------------- */
-.section2
-{
-    /* width: 100%; */
-    padding: 6rem 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /*background-color: rgba(244, 200, 175, 0);*/
+/* --------------------------------- Estilização seção dois -----------------------------------*/
 
+.section2 {
+    padding: 6rem 1rem; /* Espaçamento interno na seção. */
+    display: flex; /* Layout flexível. */
+    align-items: center; /* Centraliza itens verticalmente. */
+    justify-content: center; /* Centraliza itens horizontalmente. */
     background: 
-    linear-gradient(to bottom,rgba(211, 215, 216, 0.833), rgba(35, 42, 39, 0.948)), /* Degradê */
-    url('img/img\ estacionamneto.webp'); /* Imagem de fundo */
-background-size: cover; /* Ajusta a imagem para cobrir o contêiner */
-background-position: center; /* Centraliza a imagem */
-background-repeat: no-repeat; /* Não repete a imagem */
-}
-.container-estacionamento
-{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+        linear-gradient(to bottom, rgba(211, 215, 216, 0.833), rgba(35, 42, 39, 0.948)), 
+        url('img/img\ estacionamneto.webp'); /* Combina gradiente e imagem de fundo. */
+    background-size: cover; /* Imagem ajustada para cobrir a área. */
+    background-position: center; /* Centraliza a imagem. */
+    background-repeat: no-repeat; /* Evita repetição da imagem. */
 }
 
-.cabecalho-estacionamento
-{
-    width: 100%;
-    text-align: center;
-    margin-bottom: 1.8rem;
-    color: var(--color-white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.container-estacionamento {
+    width: 100%; /* Ocupa a largura total. */
+    display: flex; /* Layout flexível. */
+    flex-direction: column; /* Itens empilhados verticalmente. */
+    align-items: center; /* Centraliza horizontalmente. */
+    justify-content: space-between; /* Espaçamento igual entre os itens. */
 }
 
-.text-cabecalho-estacionamento h2
-{
-    font-family: var(--font-grande);
-    font-size: 3rem;
-}
-.text-cabecalho-estacionamento p
-{
-    font-size: 1.5rem;
-    color: var(--color-gray2);
-    font-weight: 500;
-    line-height: 1.4;
-    max-width: 900px;
+.cabecalho-estacionamento {
+    width: 100%; /* Ocupa a largura total. */
+    text-align: center; /* Centraliza texto. */
+    margin-bottom: 1.8rem; /* Espaço abaixo. */
+    color: var(--color-white); /* Cor branca personalizada. */
+    display: flex; /* Layout flexível. */
+    align-items: center; /* Centraliza verticalmente. */
+    justify-content: center; /* Centraliza horizontalmente. */
 }
 
-.conteudo-estacionamento
-{
-    display: grid;
-    gap: 1rem;
-    width: 100%
+.text-cabecalho-estacionamento h2 {
+    font-family: var(--font-grande); /* Fonte personalizada. */
+    font-size: 3rem; /* Tamanho grande para o título. */
 }
 
-.box-estacionamento
-{
-    border: 2px solid hsl(181, 58%, 58%);
-    border-radius: 20px;
-    color: var(--color-white);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 280px;
-    padding: 1.8rem;
-    gap: 1.5rem;
+.text-cabecalho-estacionamento p {
+    font-size: 1.5rem; /* Texto legível. */
+    color: var(--color-gray2); /* Cor cinza personalizada. */
+    font-weight: 500; /* Peso médio. */
+    line-height: 1.4; /* Espaçamento entre linhas. */
+    max-width: 900px; /* Limita a largura. */
 }
 
-.box-estacionamento i 
-{
-    font-size: 2.8rem;
-    color: var(--color-white);
+.conteudo-estacionamento {
+    display: grid; /* Layout em grade. */
+    gap: 1rem; /* Espaçamento entre os itens. */
+    width: 100%; /* Ocupa a largura total. */
 }
 
-.box-estacionamento p 
-{   color: var(--color-gray2);
-    font-size: 1.2rem;
-    font-weight: 500;
-    line-height: 1.4;
+.box-estacionamento {
+    border: 2px solid hsl(181, 58%, 58%); /* Borda com tom de verde. */
+    border-radius: 20px; /* Bordas arredondadas. */
+    color: var(--color-white); /* Texto branco. */
+    display: flex; /* Layout flexível. */
+    flex-direction: column; /* Itens empilhados verticalmente. */
+    justify-content: center; /* Centraliza verticalmente. */
+    height: 280px; /* Altura fixa. */
+    padding: 1.8rem; /* Espaçamento interno. */
+    gap: 1.5rem; /* Espaço entre elementos internos. */
 }
 
-.box-estacionamento h3
-{
-    font-size: 1.8rem;
+.box-estacionamento i {
+    font-size: 2.8rem; /* Ícone grande. */
+    color: var(--color-white); /* Cor branca para o ícone. */
+}
+
+.box-estacionamento p {
+    color: var(--color-gray2); /* Cor cinza para o texto. */
+    font-size: 1.2rem; /* Tamanho pequeno e legível. */
+    font-weight: 500; /* Peso médio. */
+    line-height: 1.4; /* Espaçamento entre linhas. */
+}
+
+.box-estacionamento h3 {
+    font-size: 1.8rem; /* Tamanho do subtítulo. */
 }
 
 @media (min-width: 600px) {
     .conteudo-estacionamento {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas para telas médias. */
     }
 }
 
 @media (min-width: 900px) {
     .conteudo-estacionamento {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr); /* Quatro colunas para telas grandes. */
     }
 }
 
 /* ----------------------------Estilização Sessão três-----------------------------------------  */
 
-
-.section3
-{
-    padding: 6rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color:#b4cec4 ;    
-}
-.container-problemas
-{
-    display: flex;
-    gap: 1rem;
-    width: 100%
+.section3 {
+    padding: 6rem; /* Espaçamento interno na seção. */
+    display: flex; /* Layout flexível. */
+    align-items: center; /* Centraliza itens verticalmente. */
+    justify-content: center; /* Centraliza itens horizontalmente. */
+    background-color: #b4cec4; /* Cor de fundo suave. */
 }
 
- .cabeçalho-problemas p
-{
-    font-size: 1.5rem;
-    color: var(--color-gray2);
-    font-weight: 500;
-    line-height: 1.4;
-    max-width: 900px;
+.container-problemas {
+    display: flex; /* Layout flexível. */
+    gap: 1rem; /* Espaço entre os itens. */
+    width: 100%; /* Ocupa a largura total. */
 }
 
-.cabeçalho-problemas h2
-{
-    text-align: center;
-    font-family: var(--font-grande);
-    font-size: 2rem;
-    
+.cabeçalho-problemas p {
+    font-size: 1.5rem; /* Tamanho de texto médio. */
+    color: var(--color-gray2); /* Cor cinza personalizada. */
+    font-weight: 500; /* Peso médio. */
+    line-height: 1.4; /* Espaçamento entre linhas. */
+    max-width: 900px; /* Limita a largura do texto. */
 }
 
-.box-problemas
-{
-    border-radius: 20px;
-    color: var(--color-white);
-    display: flex;
-    flex-direction: column;
-    height: 100px;
-    padding: 1rem;
-    gap: 1.5rem;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    background-color: #113e4e05;
+.cabeçalho-problemas h2 {
+    text-align: center; /* Centraliza o título. */
+    font-family: var(--font-grande); /* Fonte personalizada. */
+    font-size: 2rem; /* Tamanho de fonte maior para o título. */
 }
 
-.box-problemas:hover
-{
-    background: linear-gradient( rgba(12, 12, 12, 0.234), rgba(255, 254, 254, 0.338));
-    transition: 3s 0.8ms;
+.box-problemas {
+    border-radius: 20px; /* Bordas arredondadas. */
+    color: var(--color-white); /* Texto branco. */
+    display: flex; /* Layout flexível. */
+    flex-direction: column; /* Itens empilhados verticalmente. */
+    height: 100px; /* Altura fixa para as caixas. */
+    padding: 1rem; /* Espaçamento interno. */
+    gap: 1.5rem; /* Espaço entre elementos internos. */
+    align-items: center; /* Centraliza os itens horizontalmente. */
+    justify-content: space-between; /* Espaça os itens igualmente. */
+    width: 100%; /* Ocupa a largura total. */
+    background-color: #113e4e05; /* Fundo leve e transparente. */
 }
 
-.box-problemas p
-{
-    font-weight: 300;
-    font-size: 1.2em;
-    color: #113e4e;
-    text-align: justify;
+.box-problemas:hover {
+    background: linear-gradient( rgba(12, 12, 12, 0.234), rgba(255, 254, 254, 0.338)); /* Efeito de transição ao passar o mouse. */
+    transition: 3s 0.8ms; /* Transição suave do efeito. */
 }
 
-
-.box-problemas h2
-{
-    color:#d9881e ;
+.box-problemas p {
+    font-weight: 300; /* Peso leve. */
+    font-size: 1.2em; /* Tamanho de texto maior. */
+    color: #113e4e; /* Cor azulada para o texto. */
+    text-align: justify; /* Justifica o texto. */
 }
 
-.linha-separaçao
-{
-    justify-content: space-around;
-    background-color: black;
-    padding: 1.8px;   
-}
-/*--------------------------------------segunda parte da sessão dois------------------------------- */
-.complemento-soluçao
-{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
+.box-problemas h2 {
+    color: #d9881e; /* Cor dourada para o título. */
 }
 
-.text-soluçao
- {
-    flex: 1;
-    margin-right: 38px;
+.linha-separaçao {
+    justify-content: space-around; /* Distribui o espaço entre os itens. */
+    background-color: black; /* Cor de fundo preta para separação. */
+    padding: 1.8px; /* Espaço interno pequeno para a linha. */
 }
 
-.text-soluçao h3
-{
-    font-size: 2.2em;
-    color: #113e4e; /* Use uma das suas cores da paleta */
+/* Segunda parte da seção */
+.complemento-soluçao {
+    display: flex; /* Layout flexível. */
+    align-items: center; /* Centraliza verticalmente. */
+    justify-content: space-between; /* Espaça os itens horizontalmente. */
+    max-width: 1000px; /* Largura máxima para centralizar. */
+    margin: 0 auto; /* Centraliza o conteúdo. */
+    padding: 20px; /* Espaçamento interno. */
 }
 
-.text-soluçao p 
-{
-    font-size: 1em;
-    color: #748c94;
+.text-soluçao {
+    flex: 1; /* Ocupa o espaço disponível. */
+    margin-right: 38px; /* Espaço à direita do texto. */
 }
 
-.introdução-soluçao
-{
-    text-align: center;
-    font-family: var(--font-grande);
-    font-size: 2rem;
-    color:#113e4e;
-    border-color: #113e4e;
+.text-soluçao h3 {
+    font-size: 2.2em; /* Tamanho do título maior. */
+    color: #113e4e; /* Cor azul para o título. */
 }
 
-.image-soluçao
-{
-    flex: 1;
-    max-width: 35%;
-    border-radius: 40px; /* Deixa as bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar a imagem */
+.text-soluçao p {
+    font-size: 1em; /* Tamanho de texto médio. */
+    color: #748c94; /* Cor cinza azulada para o texto. */
 }
 
+.introdução-soluçao {
+    text-align: center; /* Centraliza o texto. */
+    font-family: var(--font-grande); /* Fonte personalizada. */
+    font-size: 2rem; /* Tamanho do título. */
+    color: #113e4e; /* Cor azul. */
+    border-color: #113e4e; /* Cor da borda azul. */
+}
+
+.image-soluçao {
+    flex: 1; /* Ocupa o espaço disponível. */
+    max-width: 35%; /* Limita a largura da imagem. */
+    border-radius: 30px; /* Bordas arredondadas para a imagem. */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave para destacar a imagem. */
+}
 
 /* --------------------------------Estilização sessão quatro---------------------------------------- */
 
-.section4
-{
-    padding: 10rem;
-    justify-content: space-around;
-    background-size: cover;
-    background-position: center;
-    background-color: #748c94;
-   
+.section4 {
+    padding: 8rem; /* Espaçamento interno generoso. */
+    justify-content: space-around; /* Distribui itens com espaçamento igual entre eles. */
+    background-size: cover; /* Ajusta o fundo para cobrir a seção inteira. */
+    background-position: center; /* Centraliza a imagem de fundo. */
+    background-color: #748c94; /* Cor de fundo cinza azulada. */
 }
 
-.card 
-{
-    background-color: #040b0ebd;
-    border: solid rgb(7, 7, 7);
-    padding: 30px;
-    width: 200px;
-    height: 200px;
-    text-align: center;
-    border-radius: 20px;
-    margin: 20px;
-    transition: transform 0.4s ease-in-out;
-    box-shadow: 0 4px 8px rgba (0, 0, 0, 0.5);
-
-    /* background-color: #ecf0f1;
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out; */
- 
+.card {
+    background-color: #040b0ebd; /* Fundo semi-transparente escuro. */
+    border: solid rgb(7, 7, 7); /* Borda sólida preta. */
+    padding: 30px; /* Espaçamento interno. */
+    width: 200px; /* Largura fixa para o card. */
+    height: 200px; /* Altura fixa para o card. */
+    text-align: center; /* Centraliza o conteúdo do card. */
+    border-radius: 20px; /* Bordas arredondadas. */
+    margin: 20px; /* Espaço ao redor do card. */
+    transition: transform 0.4s ease-in-out; /* Animação suave ao interagir. */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para destacar o card. */
 }
 
-.card img
-{
-    width: 240px;
-    height: 200px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+.card img {
+    width: 320px; /* Largura da imagem. */
+    height: 230px; /* Altura da imagem. */
+    border-radius: 10px; /* Bordas arredondadas para a imagem. */
+    margin-bottom: 20px; /* Espaço inferior. */
 }
 
 .card p {
-    font-size: 7px;
-    color: #ffffff;
+    font-size: 7px; /* Texto pequeno para descrição. */
+    color: #ffffff; /* Texto branco. */
 }
 
 .card h3 {
-    color: rgb(20, 20, 20);
+    color: rgb(20, 20, 20); /* Cor escura para o título. */
 }
 
-.carousel
-{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px;
+.carousel {
+    display: grid; /* Layout baseado em grade. */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Colunas flexíveis com largura mínima de 300px. */
+    gap: 30px; /* Espaçamento entre os itens. */
 }
 
-/* .img-cidades
-{
-    max-width: 100%;
-    height: 200%;
-    border-radius: 10px;
-    margin-bottom: 20px;
-   
-} */
-
-
-.txt-cards
-{
-text-align: center;
-margin-top: 2.2rem;
-font-size: 2rem;
+.txt-cards {
+    text-align: center; /* Centraliza o texto. */
+    margin-top: 2.2rem; /* Espaço acima do texto. */
+    font-size: 2rem; /* Tamanho maior para o texto principal. */
 }
 
 /* -------------------------------Estilização da section5---------------------------------------------- */
 
 .section5
 {
+    /* img de fundo */
     background-image: url(img/img-ceuSutentavel.jpg);
+    /* comando para não repetir img */
     background-repeat: no-repeat;
+    /* posição dá imagem */
     background-position: center;
+    /* largura dá section */
     padding: 16rem;
+    /* tamanho fundo */
     background-size: cover;
 
 }
 
 .txt-section5
 {
+    /* justificando conteudo */
     justify-content: center;
+    /* centralizando o texto */
     text-align: center;
+    /* cor de fundo */
     background-color: rgba(0, 0, 0, 0.455);
 }
 
@@ -450,8 +410,11 @@ font-size: 1.5;
 
 .txt-section5
 {
+    /* Cor dá letra */
     color:#7e9991;
+    /* tamanho dá fonte */
     font-size: 2rem;
+    /* peso dá fonte */
     font-weight: 600;
 }
 
@@ -472,7 +435,7 @@ footer {
 }
 
 /*Estilizando a logo do Footer*/
-footer .div-logo-footer img {
+footer img {
     width: 125px;
     /*Largura da imagem*/
     height: auto;

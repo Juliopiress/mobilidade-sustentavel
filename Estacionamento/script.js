@@ -1,51 +1,51 @@
 
 // ----------------------------------------Delay no Site----------------------
 
-window.revelar = ScrollReveal({reset:true});
+// window.revelar = ScrollReveal({reset:true});
 
 
-revelar.reveal('.section1', {
-    duration: 1000,
-    distance : '100px',
-    origin: 'rigth'
-})
+// revelar.reveal('.section1', {
+//     duration: 2000,
+//     distance : '125px',
+//     origin: 'rigth'
+// })
 
 
-revelar.reveal('.section2', {
-    duration: 1000,
-    distance : '100px',
-    origin: 'rigth'
-})
+// revelar.reveal('.section2', {
+//     duration: 1000,
+//     distance : '100px',
+//     origin: 'rigth'
+// })
 
-revelar.reveal('.cabeçalho',{
-    duration: 1000,
-    distance : '100px',
-    origin: 'rigth'
-})
+// revelar.reveal('.cabeçalho',{
+//     duration: 1000,
+//     distance : '100px',
+//     origin: 'rigth'
+// })
 
-revelar.reveal('.section3',{
-    duration: 1000,
-    distance : '100px',
-    origin: 'rigth'
-})
+// revelar.reveal('.section3',{
+//     duration: 1000,
+//     distance : '100px',
+//     origin: 'rigth'
+// })
 
-revelar.reveal('.conteudo-estacionamento',{
-    duration: 1000,
-    distance : '100',
-    origin: 'rigth'
-})
+// revelar.reveal('.conteudo-estacionamento',{
+//     duration: 2000,
+//     distance : '125px',
+//     origin: 'rigth'
+// })
 
-revelar.reveal('.section4',{
-    duration: 1000,
-    distance : '100px',
-    origin: 'rigth'
-})
+// revelar.reveal('.section4',{
+//     duration: 1000,
+//     distance : '100px',
+//     origin: 'rigth'
+// })
 
-revelar.reveal('.carousel',{
-    duration: 1800,
-    distance : '100px',
-    origin: 'rigth'
-})
+// revelar.reveal('.carousel',{
+//     duration: 2000,
+//     distance : '100px',
+//     origin: 'rigth'
+// })
 
 
 //-----------------------------------------Codigo carrousel-----------------------------------------------
@@ -68,11 +68,12 @@ $(document).ready(function() {
         //arrows: exibe setas de navegação nas laterais do carrosel
         arrows: false,
         //ativa a ssetas para navegar entre os cards
-
-
     })
 })
+
+
 // -------------------------------Escrevendo sozin header-------------------------------------------------
+
 
 const typed = new Typed('#txt-header',
     {
