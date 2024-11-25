@@ -260,37 +260,34 @@ p {
     }
 }
 
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+   justify-content:flex-end
+}
+
+.product-item {
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
 
 
 
+.section2{
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ align-content: space-around;
+ align-items:center;
+ justify-items: center;
+ justify-content:space-between;
+ padding: 19px;
+ position:relative;
+ text-align: center;
+}
 
 
 
