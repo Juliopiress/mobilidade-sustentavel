@@ -1,5 +1,5 @@
-/* Responsividade para iPad (tablet) */
-@media (max-width: 1024px) {
+/* Responsividade*/
+@media (min-width:360px) and (max-width: 1024px) {
 
     .container {
         padding: 0;
@@ -12,8 +12,8 @@
     }
 
     header img {
-        width: 3rem;
-        height: 2rem;
+        width: 4.5rem;
+        height: 5rem;
         
     }
 
@@ -22,15 +22,209 @@
         display: none; /*escondendo o menu*/
     }
 
+    #button-header {
+        display: none; /*escondendo o menu*/
+    }
+
+    .section-1 {
+        padding: 9em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div-video h1 {
+        font-size: 1rem;
+        text-align: center;
+        margin: 1rem;
+    }
+
+    .section-2 {
+        padding: 9em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-2 h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 1rem;
+        margin-left: 250px;
+    }
+
+    .section-2 p {
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 1rem;
+        margin-left: 250px;
+    }
+
+    .service {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .service img {
+        width: 350px;
+        height: auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: 250px;
+    }
+
+    .section-3 {
+        padding: 9em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-3 h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+
+    .section-3 p {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+
+    .section-3 .botao1 {
+        width: 250px;
+        height: auto;
+        text-align: center;
+        margin: 0.8rem;
+    }
+
+    .estione-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .estione-img img {
+        width: 450px;
+        height: auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: 100px;
+    }
+
+    .section-4 {
+        padding: 9em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-4 h2 {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+
+    .section-4 img {
+        width: 450px;
+        height: auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: 100px;
+    }
+
+    .section-4 .headline-t-mobis {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-top: 800px;
+    }
+
+    .section-4 .headline-scroll {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .section-5 {
+        padding: 9em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-5 .carousel-container {
+        display: none;
+    }
     
 
+    .section-6 {
+        padding: 9em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-6 .line1 {
+        width: 100%;
+    }
+    
+    .section-6 .parceria img {
+        width: 300px;
+        height: auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
 
 
+.section-6 .div-qrcode img {
+        width: 150px;
+        height: auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: 100px;
+        margin-right: 100px;
+}
 
+footer img {
+    width: 4.5rem;
+    height: 5rem;
+    text-align: center;
+    
+}
 
+footer h3 {
+    display: none; /*escondendo o menu*/
+}
 
+footer p {
+    display: none; /*escondendo o menu*/
+}
 
-
-
+footer nav{
+    display: none; /*escondendo o menu*/
+}
 
 }

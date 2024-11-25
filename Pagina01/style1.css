@@ -325,6 +325,7 @@ header>button>a {
 .service img {
     width: 200%;
     height: auto;
+    flex-wrap: wrap;
 }
 
 .div-titulo h2 {
@@ -657,6 +658,7 @@ header>button>a {
 img {
     width: 100%; /* As imagens ocupam toda a largura do item*/
     display: block; /* Garante que não haja espaçamento abaixo das imagens*/
+    text-align: center;
 }
 
 /*Chamamos nosso Button que está dentro da section-5*/
