@@ -10,12 +10,25 @@
     /* width: 100%; */
 }
 
+body, html
+{
+    width: 100%;
+    overflow-x: hidden !important;
+}
+
+main {
+    width: 100%;
+    overflow: hidden; /* Garante que nada "vaze" do main */
+}
+
+
+
+
 header {
 
     padding: min(3vh, 2rem);
-     width: 100%; 
     /*Colocando um tamanho (Preenchimento) no Header*/
-    /* width: 100%; */ 
+    width: 100%; 
     background-color:#b4cec4;
     /*Habilitando uma cor de fundo*/
     display: flex;
@@ -83,7 +96,7 @@ header div nav ul li a:hover
 
 .section1 {
     padding: 5rem; /* Adiciona um espaçamento interno grande ao redor do conteúdo da seção. */
-    width: 100%; /* Faz com que a seção ocupe toda a largura disponível da tela. */
+    margin: 0%;
     background: linear-gradient(180deg, #b4cec4 8.33%, rgba(244, 200, 175, 0) 100%);
     /* Aplica um gradiente de cor que vai de #b4cec4 para transparente, dando um efeito suave. */
     height: 100vh; /* Define a altura da seção como 100% da altura da janela de visualização. */
@@ -128,20 +141,22 @@ header div nav ul li a:hover
 /* --------------------------------- Estilização seção dois -----------------------------------*/
 
 .section2 {
-    padding: 6rem 1rem; /* Espaçamento interno na seção. */
+    margin: 0%;
+    width: 100%;
+    padding: 5rem; /* Espaçamento interno na seção. */
     display: flex; /* Layout flexível. */
     align-items: center; /* Centraliza itens verticalmente. */
     justify-content: center; /* Centraliza itens horizontalmente. */
     background: 
         linear-gradient(to bottom, rgba(211, 215, 216, 0.833), rgba(35, 42, 39, 0.948)), 
-        url('img/img\ estacionamneto.webp'); /* Combina gradiente e imagem de fundo. */
+        url('img/img\ estacionamneto.webp' ); /* Combina gradiente e imagem de fundo. */
     background-size: cover; /* Imagem ajustada para cobrir a área. */
     background-position: center; /* Centraliza a imagem. */
     background-repeat: no-repeat; /* Evita repetição da imagem. */
 }
 
 .container-estacionamento {
-    width: 100%; /* Ocupa a largura total. */
+   /* width: 100%; Ocupa a largura total. */
     display: flex; /* Layout flexível. */
     flex-direction: column; /* Itens empilhados verticalmente. */
     align-items: center; /* Centraliza horizontalmente. */
@@ -149,7 +164,7 @@ header div nav ul li a:hover
 }
 
 .cabecalho-estacionamento {
-    width: 100%; /* Ocupa a largura total. */
+    /* width: 100%; Ocupa a largura total. */
     text-align: center; /* Centraliza texto. */
     margin-bottom: 1.8rem; /* Espaço abaixo. */
     color: var(--color-white); /* Cor branca personalizada. */
@@ -172,9 +187,9 @@ header div nav ul li a:hover
 }
 
 .conteudo-estacionamento {
-    display: grid; /* Layout em grade. */
+    display: grid; /*Layout em grade.+*/
     gap: 1rem; /* Espaçamento entre os itens. */
-    width: 100%; /* Ocupa a largura total. */
+    width: 100%; /*Ocupa a largura total.*/
 }
 
 .box-estacionamento {
@@ -220,7 +235,10 @@ header div nav ul li a:hover
 /* ----------------------------Estilização Sessão três-----------------------------------------  */
 
 .section3 {
-    padding: 6rem; /* Espaçamento interno na seção. */
+    box-sizing:border-box;
+    margin: 0%;
+    width: 100%;
+    padding: 5rem; /* Espaçamento interno na seção. */
     display: flex; /* Layout flexível. */
     align-items: center; /* Centraliza itens verticalmente. */
     justify-content: center; /* Centraliza itens horizontalmente. */
@@ -229,7 +247,7 @@ header div nav ul li a:hover
 
 .container-problemas {
     display: flex; /* Layout flexível. */
-    gap: 1rem; /* Espaço entre os itens. */
+    gap: 2rem; /* Espaço entre os itens. */
     width: 100%; /* Ocupa a largura total. */
 }
 
@@ -244,22 +262,25 @@ header div nav ul li a:hover
 .cabeçalho-problemas h2 {
     text-align: center; /* Centraliza o título. */
     font-family: var(--font-grande); /* Fonte personalizada. */
-    font-size: 2rem; /* Tamanho de fonte maior para o título. */
+    font-size: 1.8rem; /* Tamanho de fonte maior para o título. *
 }
 
 .box-problemas {
+    
     border-radius: 20px; /* Bordas arredondadas. */
     color: var(--color-white); /* Texto branco. */
     display: flex; /* Layout flexível. */
     flex-direction: column; /* Itens empilhados verticalmente. */
     height: 100px; /* Altura fixa para as caixas. */
-    padding: 1rem; /* Espaçamento interno. */
-    gap: 1.5rem; /* Espaço entre elementos internos. */
+    padding: rem; /* Espaçamento interno. */
+    gap: 1rem; /* Espaço entre elementos internos. */
     align-items: center; /* Centraliza os itens horizontalmente. */
     justify-content: space-between; /* Espaça os itens igualmente. */
-    width: 100%; /* Ocupa a largura total. */
+   width: 100%;/* Ocupa a largura total. */
     background-color: #113e4e05; /* Fundo leve e transparente. */
+    box-sizing:border-box;
 }
+
 
 .box-problemas:hover {
     background: linear-gradient( rgba(12, 12, 12, 0.234), rgba(255, 254, 254, 0.338)); /* Efeito de transição ao passar o mouse. */
@@ -378,6 +399,9 @@ header div nav ul li a:hover
 
 .section5
 {
+    box-sizing: border-box;
+    margin: 0%;
+    width: 100%;
     /* img de fundo */
     background-image: url(img/img-ceuSutentavel.jpg);
     /* comando para não repetir img */
@@ -420,7 +444,9 @@ font-size: 1.5;
 
 /* ------------------------------------Estilização do footer--------------------------------------- */
 
-footer {
+footer 
+{
+    width: 100%;
     padding: min(3vh, 4rem);
     /*Tamanho/preenchimento do Footer*/
     background-color: rgb(231, 250, 231);
@@ -435,7 +461,8 @@ footer {
 }
 
 /*Estilizando a logo do Footer*/
-footer img {
+footer img 
+{
     width: 125px;
     /*Largura da imagem*/
     height: auto;
@@ -443,7 +470,8 @@ footer img {
 }
 
 /*Estilizando o subtítulo do Footer*/
-footer div h3 {
+footer div h3 
+{
     color: rgb(65, 83, 65);
     /*Cor da letra*/
     font-size: 25px;
@@ -456,7 +484,8 @@ footer div h3 {
 }
 
 /*Estilizando o parágrafo do Footer*/
-footer div p {
+footer div p 
+{
     color: rgb(65, 83, 65);
     /*Cor da letra*/
     font-size: 18px;
@@ -468,7 +497,8 @@ footer div p {
 }
 
 /*Estilizando os ícones do Footer*/
-.div-sociais i {
+.div-sociais i 
+{
     padding: 10px;
     /*Aplicando um respiro (padding) dentro dos ícones*/
     font-size: 20px;
@@ -480,7 +510,8 @@ footer div p {
 
 
 /*Aplicando o hover nos ícones*/
-.div-sociais i:hover {
+.div-sociais i:hover 
+{
     background-color: #7e9991;
     /*Cor de fundo*/
     transition: 0.5s;
@@ -488,13 +519,167 @@ footer div p {
 }
 
 /*Chamamos nossa âncora (a) para estilização*/
-.div-list-footer a {
+.div-list-footer a 
+{
     text-decoration: none;
     /*Decoração do texto (sublinhado) desabilitado (none)*/
     color: rgb(65, 83, 65); 
     /*Cor da Letra*/
 }
 
+
+
+/*------------------------- Parte responsiva ---------------------------- */
+
+
+/* Estilo para telas pequenas (smartphones) */
+@media screen and (max-width: 768px) {
+    /* Ajuste do cabeçalho */
+    
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .container-estacionamento, .container-problemas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .card {
+        flex: 1 1 calc(33.333% - 20px);
+        box-sizing: border-box;
+        margin: 10px;
+    }
+    
+
+    .cabeçalho {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cabeçalho nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cabeçalho img {
+        width: 120px; /* Reduz tamanho da logo */
+    }
+
+    /* Ajuste das seções */
+    .section1 .div-introducao {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section2 .box-estacionamento {
+        flex: 1 1 100%; /* Cada caixa ocupa toda a largura */
+    }
+
+    .conteudo-estacionamento {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* .carousel {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        display: flex;
+    } */
+
+    .carousel .card {
+        flex: 0 0 80%; /* Ajusta o tamanho das cartas no carrossel */
+        margin: 5px;
+    }
+
+    /* .carousel img {
+        width: 100%;
+        border-radius: 8px;
+    } */
+
+    /* Ajuste do rodapé */
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    footer div {
+        margin: 0 auto;
+    }
+}
+
+/* Estilo para telas médias (tablets) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Mantém o layout flexível */
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .container-estacionamento, .container-problemas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    /* .card {
+        flex: 1 1 calc(33.333% - 20px);
+        box-sizing: border-box;
+        margin: 10px;
+    } */
+
+
+    .conteudo-estacionamento {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .card {
+        flex: 1 1 calc(50% - 20px); /* Ocupa 50% da largura */
+    }
+
+    .problemas .box-problemas {
+        flex: 1 1 45%; /* Reduz tamanho das caixas de problemas */
+    }
+}
+/* ----------------------------------------------------------------------------------------------------- */
+@media (min-width: 600px) {
+    .conteudo-estacionamento {
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas para telas médias. */
+    }
+}
+
+@media (min-width: 900px) {
+    .conteudo-estacionamento {
+        grid-template-columns: repeat(4, 1fr); /* Quatro colunas para telas grandes. */
+    }
+}
+
+
+/* Paleta de cores usadas */
 
 /* Laranja (color1: #d9881e):
 
