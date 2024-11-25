@@ -1,4 +1,12 @@
 /* Reset de Estilos Padrão */
+
+/* Color1 (laranja - destaque): #d9881e 
+Color2 (bege):  #a07b53 (bege escuro).
+Color3  #0b2a36 (azul escuro intensificado).
+Color4  #4a5a60 (cinza mais escuro).
+Color5 (azul claro): #b4cec4  */
+
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +18,6 @@ body {
     background-color: #f4f4f4;
     color: #333;
     font-size: 16px;
-    line-height: 1.6;
 }
 
 /*Início da estilização do Header*/
@@ -170,7 +177,7 @@ header button:hover {
 }
 
 .product-item img {
-    max-width: 100%;
+    width: 28vw;
     height: 200px;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -205,6 +212,61 @@ header button:hover {
 .product-item:hover {
     transform: translateY(-10px);
 }
+
+.section-suporte {
+    position: relative;
+    background-image: url('imagem/Estacionamento\ final.png');
+    background-size: cover;
+    background-position: center;
+    height: 70vh; /* Tamanho da seção conforme altura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+}
+
+.section-suporte::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Sombra preta com opacidade */
+    z-index: 1;
+    backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+}
+
+.div-final {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+}
+
+#title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.btn-suporte {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn-suporte:hover {
+    background-color: #0056b3;
+}
+
+
 
 /*Início da estilização do Footer/Rodapé da pagina*/
 footer {
