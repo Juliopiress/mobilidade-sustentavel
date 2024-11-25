@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="imagem/ponto-de-onibus.png" type="image/x-icon">
 
     <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="responsividade.css">
 
     <!--CSS-->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -122,27 +123,27 @@
     
 
     <video autoplay muted loop id="myVideo">
-        <source src="imagem/16995-277920510_small.mp4" type="video/mp4">
+        <source src="imagem/16995-277920510_small.mp4" type="video/mp4" loading="lazy">
       </video>
   
 
     </section>
 
-    <section class="section-2">
+    <section class="section-2" id="section2">
          
-        <div class="div-section2">
+        <div class="div-section2" id="div-sect2">
 
             <div class="div-titulo">
-                <h2 id="typed-text">CONHEÇA <br>
+                <h2 id="sect2-h2">CONHEÇA <br>
                     A T-MOBIS</h2> <br> <br>
          
     
-           <p>Nosso Objetivo é criar soluções que minimizem os impactos ambientais, promovam a justiça <br>
+           <p id="sect2-p">Nosso Objetivo é criar soluções que minimizem os impactos ambientais, que promovam a justiça <br>
              social e melhorem a qualidade de vida nas cidades.</p> <br>
  
-           <p> ° Transporte Público Eficiente e Acessível.</p>
-           <p> ° Uso de Ernegias Renováveis.</p>
-           <p> ° Planejamento Urbano Integrado.</p>
+           <p id="sect2-p"> ° Transporte Público Eficiente e Acessível.</p>
+           <p id="sect2-p"> ° Uso de Ernegias Renováveis.</p>
+           <p id="sect2-p"> ° Planejamento Urbano Integrado.</p>
  
          </div>
 
@@ -158,14 +159,14 @@
  
          </div>
 
-         <div class="service">
+         <div class="service" id="sect2-img">
             <img src="imagem/transportes_-removebg-preview.png" alt="imagem dos serviços" loading="lazy">
          </div>
 
         
     </section>
 
-    <section class="section-3">
+    <section class="section-3" id="section3">
         
 
         <div class="estacione">
@@ -192,12 +193,57 @@
 
     <section class="section-4">
 
+    
+
+        <div>
+        <h2>Conheça a plataforma digital <br>
+         da T-Mobis: O aplicativo Mobis+</h2> <br> <br>
+
+         <p>Independente do seu destino, a Mobis+ traz para a palma da sua mão toda a facilidade que precisa para ganhar tempo no seu dia a dia. <br>
+            Com o aplicativo você consegue ver as vagas disponíveis dos estacionamentos.
+         </p>
+        </div>
+
+        <div>
+            <img src="imagem/_Mobile_Application_.png" alt="Imagem do aplicativo T-mobis" loading="lazy">
+        </div>
+
+        <div class="headline-t-mobis" data-aos="fade-up" data-aos-duration="1000">
+            <div class="headline-scroll" id="headline-scroll">
+                <span class="bold">T-MOBIS</span>
+                <span class="divisor"></span>
+                <span class="light">T-MOBIS</span>
+                <span class="divisor"></span>
+                <span class="bold">T-MOBIS</span>
+                <span class="divisor"></span>
+                <span class="light">T-MOBIS</span>
+                <span class="divisor"></span>
+                <span class="bold">T-MOBIS</span>
+                <span class="divisor"></span>
+                <span class="light">T-MOBIS</span>
+                <span class="divisor"></span>
+            </div>
+        </div>
+
+    </section>
+
+        
+
+    <section class="section-5">
+
         <div class="div-content">
             <h3>REGIÕES EXTREMAS DE SÃO PAULO</h3> <br> </h3>
 
             <p> Chegou o Teleférico na CIDADE TIRADENTES! <br>
              O transporte sustentável ideal que atende bem ás necessidades da população <br>
               e ajuda no meio ambiente </p>
+
+              <div class="botao2">
+                <a href="" target="_blank">
+                    <button>SAIBA MAIS</button>
+                </a>
+                </div>
+
         </div>
       
         <div class="carousel-container">
@@ -223,30 +269,29 @@
         </div>
 
     </div>
+</div>
 
-        
-
-
-
-
-    </div>
+    
                 
-        
-       
-    </section>
 
-    <section class="section-5">
+</section>
+     
+   <section class="section-6">
 
-        
+    <h2>Nossos Parceiros</h2>
+    <hr class="line1">
 
 
-        
+    <div>
+        <img src="imagem/parcerias-removebg-preview.png" alt="imagem parcerias" loading="lazy">
+    </div>
 
-        
-       
-        
 
-    </section>
+    <div class="div-qrcode"> 
+        <img class="qr-code" src="imagem/qr_code_rmdeveloper.png" alt="qr code" loading="lazy">
+    </div>
+
+   </section>
 
    
 
@@ -274,6 +319,7 @@
             São Bernardo do Campo – SP <br>
             CEP: 09695-900</p>
      </div>
+
  
      <!-- Criamos uma Div (caixa) para aguardar e diferenciar as listas não ordenadas do rodapé -->
      <div class="div-list-footer">
@@ -298,7 +344,7 @@
      <div class="div-sociais">
  
          <i class="fa-brands fa-instagram"></i>
-         <i class="fa-brands fa-whatsapp"></i>
+         <i class="bi bi-linkedin"></i>
          <i class="fa-brands fa-facebook-f"></i>
  
      </div>
@@ -309,6 +355,7 @@
 
  <script src="https://kit.fontawesome.com/fdd516a2fb.js" crossorigin="anonymous"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+ <script src="https://unpkg.com/scrollreveal"></script>
 
  <!-- AOS -->
  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -323,6 +370,7 @@
   <script src="script1.js"></script>
   <script src="carrossel.js"></script>
   <script src="button.js"></script>
+  <script src="scroll.js"></script>
 
   
  

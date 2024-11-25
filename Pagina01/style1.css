@@ -146,9 +146,9 @@ header div nav ul li a {
 
 header>button {
     
-    padding: 8px;
+    padding: 5px;
     background-color:  #8faca1;
-    border: none;
+    border: 5px;
    
 }
 
@@ -245,7 +245,7 @@ header>button>a {
     text-decoration: none;
     color: var(--color-white);
     font-family: var(--font-pequena);
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
     opacity: 0;
     transform: translateY(-20px);
@@ -319,6 +319,7 @@ header>button>a {
 .service {
     text-align: right;
     margin: 30px;
+    flex-wrap: wrap;
 }
 
 .service img {
@@ -333,6 +334,7 @@ header>button>a {
     text-align: center;
     color: rgb(65, 83, 65);
     margin: 15px;
+    flex-wrap: wrap;
 }
 
 .div-titulo p {
@@ -340,6 +342,7 @@ header>button>a {
     font-weight: 400;
     font-style: "Thin 100";
     margin: 15px;
+    flex-wrap: wrap;
 }
 
 
@@ -437,6 +440,7 @@ header>button>a {
     flex-direction: column;
     color: rgb(65, 83, 65);
     margin: 15px;
+    flex-wrap: wrap;
 }
 
 .estacione p {
@@ -445,6 +449,7 @@ header>button>a {
     font-style: "Thin 100";
     color: rgb(44, 56, 44);
     text-align: left;
+    flex-wrap: wrap;
 
 }
 
@@ -453,6 +458,7 @@ header>button>a {
 .section-3 .botao1 {
     display: block;
     flex-direction: column;
+    flex-wrap: wrap;
     
     /*Usada para centralizar o botão*/
 }
@@ -485,6 +491,7 @@ header>button>a {
 .estione-img {
     text-align: right;
     margin-right: 250px;
+    flex-wrap: wrap;
 }
 
 .estione-img img {
@@ -495,44 +502,132 @@ header>button>a {
 .section-4 {
     padding: 8rem;
     width: 100%;
-    background-image: url(imagem/teleferico.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: transparent;
     display: block;
-    justify-content: center;
-    align-items: center;
-    
+    justify-content: space-around;
+    align-items: center; 
 }
 
-.div-content {
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, .9);
-    border-radius: 5px; 
-    z-index: 1;
-    background-color: aliceblue;
-    opacity: 0.8; 
-    position: absolute;
-    text-align: center;
-    margin-left: 100px;
-    
-}
-
-.section-4 h3 {
+.section-4 h2 {
     font-size: 3rem;
     font-weight: bolder;
     font-family: "Noto+Serif";
     text-align: center;
-    flex-direction: column;
+    color: rgb(65, 83, 65);
+    text-align: center;
+    flex-wrap: wrap;
     
 }
 
 .section-4 p {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    font-weight: 800;
+    font-style: "Thin 100";
+    text-align: center;
+    flex-wrap: wrap;
+    
+}
+
+.section-4 img {
+    width: 80%;
+    height: 100%;
+    margin-right: 200px;
+    flex-wrap: wrap;
+}
+
+.headline-t-mobis {
+    height: 30%;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+}
+
+.headline-scroll {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    animation: scroll 20s linear infinite;
+    text-align: start;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.headline-scroll span {
+    font-family: var(--font-grande);
+    font-size: 5rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.headline-scroll .divisor {
+    width: 20px;
+    height: 20px;
+    background-color: var(--color-gray2);
+    border-radius: 50%;
+    margin: 0 20px;
+}
+
+.headline-scroll .bold {
+    font-weight: bold;
+    color: var(--color-white);
+}
+
+.headline-scroll .light {
+    font-weight: lighter;
+    color: var(--color-gray2);
+}
+
+
+
+
+
+.section-5 {
+    padding: 8rem;
+    width: 100%;
+    background: linear-gradient(180deg, #e6f5ef64 8.33%, rgba(152, 173, 163, 0.745) 100%), url(imagem/teleferico.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+
+
+.section-5 h3 {
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: "Noto+Serif";
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+
+.section-5 p {
+    font-size: 1.2rem;
     font-weight: 900;
     font-style: "Thin 100";
     color: rgb(65, 83, 65);
     text-align: center;
+    flex-wrap: wrap;
     
 }
 
@@ -543,11 +638,14 @@ header>button>a {
     width: 40%; /*O container ocupa toda a largura da página */
     max-width: 800px; /*largura máxima para limitar em telas maiores */
     margin: auto; /*centraliza o container*/
+    flex-wrap: wrap;
 }
 
 /*Estilo da faixa de imagens*/
 .carousel-track {
     display: flex; /*Coloca as imagens lado a lado em linha*/
+    justify-content: center;
+    align-items: center;
     transition: transform 0.5s ease; /*Animação suave para a transição*/
 }
 
@@ -561,30 +659,88 @@ img {
     display: block; /* Garante que não haja espaçamento abaixo das imagens*/
 }
 
+/*Chamamos nosso Button que está dentro da section-5*/
+.section-5 .botao2 {
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    /*Usada para centralizar o botão*/
+}
+
+/*Estilização do botão da section-5*/
+.section-5 button {
+    padding: 10px;
+    /*Tamanho do preenchimento interno do botão*/
+    border-radius: 10px;
+    /*Borda arredondada do botão*/
+    width: 200px;
+    /*Tamanho lateral do botão (largura)*/
+    border-color: rgb(25, 99, 64);
+    /*Cor da borda*/
+    margin: 30px;
+    /*Margem em volta do Button*/
+    cursor: pointer;
+    /* Habilitado o cursor do mouse, mostrado quando o ponteiro do mouse está sobre um elemento.*/
 
 
+}
+
+/*Estilização a Âncora do botão da section-5*/
+.section-5 a button {
+    color: rgb(9, 173, 138);
+    /*Cor da letra*/
+
+}
 
 
+.section-6 {
+    padding: 6rem;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
 
+.section-6 h2 {
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: "Noto+Serif";
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 
+.section-6 .line1 {
+    width: 20%; /*Largura da linha*/
+    margin: 9px auto; 
 
+}
 
+.section-6 img {
+    width: 50%;
+    height: auto;
+    text-align: center;
+    margin-left: 180px;
+    flex-wrap: wrap;
+}
 
+.div-qrcode {
+    width: 250px;
+    height: auto;
+    text-align: right;
+    
+   
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.qr-code {
+    width: 250px;
+    text-align: right;
+    
+}
 
 
 
@@ -668,12 +824,3 @@ footer div p {
 
 /*Fim da estilização do Footer*/
 
-
-/* https://paletadecores.com/paleta/010300/314c53/5a7f78/bbdec6/f7f8fc/
-
-.color1 { #d9881e }; cor laranja
-.color2 { #ddc18b }; cor bege
-.color3 { #113e4e }; cor azul escuro
-.color4 { #748c94 }; cinza
-.color5 { #b4cec4 }; azul claro
-*/
