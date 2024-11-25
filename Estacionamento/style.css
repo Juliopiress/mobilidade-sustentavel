@@ -344,56 +344,6 @@ header div nav ul li a:hover
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave para destacar a imagem. */
 }
 
-/* --------------------------------Estilização sessão quatro---------------------------------------- */
-
-.section4 {
-    padding: 8rem; /* Espaçamento interno generoso. */
-    justify-content: space-around; /* Distribui itens com espaçamento igual entre eles. */
-    background-size: cover; /* Ajusta o fundo para cobrir a seção inteira. */
-    background-position: center; /* Centraliza a imagem de fundo. */
-    background-color: #748c94; /* Cor de fundo cinza azulada. */
-}
-
-.card {
-    background-color: #040b0ebd; /* Fundo semi-transparente escuro. */
-    border: solid rgb(7, 7, 7); /* Borda sólida preta. */
-    padding: 30px; /* Espaçamento interno. */
-    width: 200px; /* Largura fixa para o card. */
-    height: 200px; /* Altura fixa para o card. */
-    text-align: center; /* Centraliza o conteúdo do card. */
-    border-radius: 20px; /* Bordas arredondadas. */
-    margin: 20px; /* Espaço ao redor do card. */
-    transition: transform 0.4s ease-in-out; /* Animação suave ao interagir. */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para destacar o card. */
-}
-
-.card img {
-    width: 320px; /* Largura da imagem. */
-    height: 230px; /* Altura da imagem. */
-    border-radius: 10px; /* Bordas arredondadas para a imagem. */
-    margin-bottom: 20px; /* Espaço inferior. */
-}
-
-.card p {
-    font-size: 7px; /* Texto pequeno para descrição. */
-    color: #ffffff; /* Texto branco. */
-}
-
-.card h3 {
-    color: rgb(20, 20, 20); /* Cor escura para o título. */
-}
-
-.carousel {
-    display: grid; /* Layout baseado em grade. */
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Colunas flexíveis com largura mínima de 300px. */
-    gap: 30px; /* Espaçamento entre os itens. */
-}
-
-.txt-cards {
-    text-align: center; /* Centraliza o texto. */
-    margin-top: 2.2rem; /* Espaço acima do texto. */
-    font-size: 2rem; /* Tamanho maior para o texto principal. */
-}
 
 /* -------------------------------Estilização da section5---------------------------------------------- */
 
@@ -507,8 +457,6 @@ footer div p
     /*Cor de fundo*/
 
 }
-
-
 /*Aplicando o hover nos ícones*/
 .div-sociais i:hover 
 {
@@ -528,14 +476,148 @@ footer div p
 }
 
 
+/* ---------------------- Configurando o menu mobile ---------------------------------------------*/
+
+.navbar {
+    color: white; /*Cor da letra*/
+    display: flex; /*Flexíveis*/
+    justify-content: space-between; /*A distribuição dos itens sejam com Space-between*/
+    align-items: center; /*Alinhamento da vertical*/
+    padding: 1rem 1.5rem; /*Preenchimento superior/inferior e esquerda/direita*/
+    height: 2.6rem; /*Altura do NavBar*/
+}
+
+.nav-links { /*Aqui estamos estilizando a UL (lista não ordenada)*/
+    list-style: none; /*Retirando o estilo de lista*/ 
+    display: flex; /*Tornando a caixa flexível, e lado a lado*/
+    margin: 0; /*Zerando os espaços de margem que são habilitados por padrão*/
+    padding: 0; /*Zerando os preenchimentos que são habilitados por padrão*/
+}
+
+
+.nav-links li { /*Estilizando nossa LI que está dentro da UL*/
+    padding: 0 8px; /*Preenchimento da LI superior/inferior 0 e laterais em 9px*/
+}
+
+.nav-links a,
+.nav-links-mobile a { /*Estamos chamando as duas âncoras para estilização, tanto da Versão Desktop quanto da versão Mobile.*/
+    color: rgb(12, 12, 12); /*A cor da letra*/
+    text-decoration: none; /*E sem sublinhado*/
+    display: flex;
+    font-size: 1.5rem;
+}
+
+
+
+.mobile-menu { /*Estilização da caixa Mobile quando aberta*/
+    display: none; /*Display: Nenhum*/
+    position: fixed; /*Posição fixa na parte direita da página*/
+    /* top: 0; /*Superior em 0 fazendo a caixa encostar ao topo*/
+    /*right: 0; Direita em 0 fazendo a caixa encostar a direita */
+    width: 100%; /*Largura em porcentagem da caixa*/
+    height: 100%; /*Altura de 100% da tela*/
+    background-color: rgb(219, 182, 182); /*Cor de fundo*/
+    flex-direction: column; /*direção dos itens dentro da caixa */
+    align-items: center; /*Alinhamento na vertical do itens*/
+    font-size: 1.8rem; /*tamanho da letra dentro da caixa*/
+}
+
+.nav-links-mobile { /*Lista não ordenada da versão mobile*/
+    padding: 60px;
+    display: flex; /*Tornando os itens (LISTAS) flexíveis*/
+    flex-direction: column; /*Estamos direcionando o posicionamento dessas listas*/
+    text-align: end; /*Alinhando o texto ao centro*/
+    gap: 1.2rem; /*Espaço entre as listas */
+    /* width: 0%; Zeramos a largura podendo retirar essa linha para testar visualizão */
+    list-style: none; /*Estilo de lista desabilitado*/
+    /* padding: 0; Preenchimento zerado, podendo também ser retirado para testes */
+}
+
+.nav-links-mobile li { /*listas da versão Mobile*/
+    border-bottom: 1px solid #000000; /*Bordar inferior de cada lista*/
+    padding-bottom: 1.2rem; /*Tamanho da borda*/
+}
+
+.hamburger,
+.close { /*Estilizando os botões de abertura e fechamento*/
+    font-size: 24px; /*Tamanho do elemento*/
+    background: none; /*Removido o Background*/
+    border: none; /*BORDA NENHUMAAAAAAA*/
+    color: white; /*cor do elemento*/
+    cursor: pointer; /*Cursor Habilitado*/
+    display: none; /*Escondendo os botões*/
+}
+
+
+.close {
+    margin-top: 20px;/*Espaçamento superior do X */
+    margin-right: 20px; /*Espaçamento a direita do X*/
+    display: block; /*Formatação da Imagem em bloco*/
+    align-self: end; /*Alinhamento do botão*/
+}
+
+
+.flex { /*ELEMENTO USADO NO JS*/
+    display: flex; /*Tornando item flexível e visível.*/
+}
+
 
 /*------------------------- Parte responsiva ---------------------------- */
 
-
 /* Estilo para telas pequenas (smartphones) */
+
 @media screen and (max-width: 768px) {
     /* Ajuste do cabeçalho */
+
+
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .mobile-menu {
+        z-index: 999;
+    }
+
+    #btn-header {
+       display: none;
+    }
+
+
+    nav ul {
+        display: none; /* Ocultar menu */
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        padding: 20px 0;
+    }
     
+    nav ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+    
+    .menu-toggle {
+        display: block; /* Mostrar o botão hamburguer */
+    }
+    
+    .nav-menu.active ul {
+        display: flex; /* Mostrar o menu ao clicar */
+    }
+    
+
+    header nav{
+        display: none; /*escondendo o menu*/
+    }
+    
+     #Btn-modoEscuro
+     {
+        display: none;
+     }
+
     body {
         margin: 0;
         font-family: Arial, sans-serif;
@@ -562,6 +644,7 @@ footer div p
     
 
     .cabeçalho {
+        padding: 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -571,11 +654,11 @@ footer div p
     .cabeçalho nav ul {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 5px;
     }
 
     .cabeçalho img {
-        width: 120px; /* Reduz tamanho da logo */
+        width: 100px; /* Reduz tamanho da logo */
     }
 
     /* Ajuste das seções */
@@ -627,6 +710,51 @@ footer div p
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     /* Mantém o layout flexível */
 
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .mobile-menu {
+        z-index: 999;
+    }
+
+    #btn-header {
+       display: none;
+    }
+
+
+    #Btn-modoEscuro
+    {
+       display: none;
+    }
+
+    nav ul {
+        display: none; /* Ocultar menu */
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        padding: 20px 0;
+    }
+    
+    nav ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+    
+    .menu-toggle {
+        display: block; /* Mostrar o botão hamburguer */
+    }
+    
+   
+
+    header nav{
+        display: none; /*escondendo o menu*/
+    }
+
     body {
         margin: 0;
         font-family: Arial, sans-serif;
@@ -677,6 +805,52 @@ footer div p
         grid-template-columns: repeat(4, 1fr); /* Quatro colunas para telas grandes. */
     }
 }
+
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+
+    #Btn-modoEscuro
+    {
+        display: none;
+    }
+    
+    nav ul {
+        display: none; /* Ocultar menu */
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        padding: 20px 0;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block; /* Mostrar o botão hamburguer */
+    }
+
+    .nav-menu.active ul {
+        display: flex; /* Mostrar o menu ao clicar */
+    }
+}
+
+/* Estilos para o tema escuro */
+body.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-theme header.cabeçalho {
+    background-color: #444;
+}
+
+body.dark-theme nav ul li a {
+    color: #fff;
+}
+
 
 
 /* Paleta de cores usadas */
