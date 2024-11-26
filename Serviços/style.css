@@ -18,7 +18,9 @@
 
 body {
     background-color: #f4f4f4; /* Define a cor de fundo clara para o corpo */
-    color: #333; /* Define a cor do texto como cinza escuro */
+    color: #000000; /* Define a cor do texto como preto */
+    height:100vh;
+    width: 100%;
     font-size: 16px; /* Define o tamanho base da fonte */
     line-height: 1.6; /* Melhora a legibilidade com espaçamento entre linhas */
     list-style: none; /* Remove marcadores padrão de listas */
@@ -78,7 +80,7 @@ header button:hover {
 
 /* Estilização da introdução do produto */
 .product-intro {
-    background-color: #f4f4f4; /* Fundo claro */
+    background-color: #f4f4f400; /* Fundo claro */
     padding: 150px 0; /* Espaçamento vertical */
     text-align: center; /* Centraliza o texto */
 }
@@ -122,15 +124,14 @@ header button:hover {
 }
 
 /* Seções de Produtos */
-.section {
-    padding: 60px 20px; /* Define espaçamento interno */
-}
+
 
 /* Estilização geral de seções de produtos */
 .product-section {
-    background-color: #fff; /* Fundo branco */
+    background-color: #ffffff00; /* Fundo branco */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
     border-radius: 8px; /* Bordas arredondadas */
+    padding: 100px;
     margin-bottom: 40px; /* Espaçamento inferior */
 }
 
@@ -152,28 +153,36 @@ header button:hover {
 
 /* Lista de produtos com layout em grid */
 .product-list {
-    display: grid; /* Define o layout em grade */
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Cria colunas responsivas */
     gap: 30px; /* Espaçamento entre os itens */
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    height:80vh;    
 }
 
 /* Estilização individual de cada item de produto */
 .product-item {
+    background-color: #ecf0f100; /* Fundo claro */
     gap: 30px;
     background-color: #ecf0f1; /* Fundo claro */
     border-radius: 8px; /* Bordas arredondadas */
-    padding: 20px; /* Espaçamento interno */
-    text-align: center; /* Centraliza o conteúdo */
+    margin: 10px;
+    padding: 20px;
+    border: solid 1px #b4cec4;
+    text-align: center; /* Centraliza o conteúdo de texto e a imagem dentro do div */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar o item */
     transition: transform 0.3s ease-in-out; /* Animação suave ao passar o mouse */
 }
 
 /* Imagens dos produtos */
 .product-item img {
-    width: 28vw; /* Largura proporcional à viewport */
-    height: 200px; /* Altura fixa */
+    width: 24vw; /* Largura proporcional à viewport */
+    height: 170px; /* Altura fixa */
     border-radius: 8px; /* Bordas arredondadas */
     margin-bottom: 20px; /* Espaçamento inferior */
+    text-align: center;
 }
 
 /* Títulos dos produtos */
@@ -192,18 +201,19 @@ header button:hover {
 
 /* Botão de interação nos itens de produto */
 .product-item button {
-    background-color: #3498db; /* Fundo azul claro */
+    background-color: #f1be7a; /* Fundo azul claro */
     color: #fff; /* Texto branco */
     padding: 10px 20px; /* Espaçamento interno */
     border: none; /* Remove borda padrão */
     border-radius: 5px; /* Bordas arredondadas */
     cursor: pointer; /* Mostra o cursor de ponteiro */
+    margin-bottom: 30px;
     transition: background-color 0.3s; /* Animação na mudança de cor */
 }
 
 /* Efeito hover no botão */
 .product-item button:hover {
-    background-color: #2980b9; /* Cor mais escura no hover */
+    background-color: #d9881e; /* Cor mais escura no hover */
 }
 
 /* Efeito hover no item do produto */
@@ -216,6 +226,7 @@ header button:hover {
     position: relative; /* Define posicionamento relativo */
     background-image: url('imagem/Estacionamento\ final.png'); /* Define imagem de fundo */
     background-size: cover; /* Cobre toda a área */
+    border: solid 5px white;
     background-position: center; /* Centraliza a imagem */
     height: 70vh; /* Define altura proporcional à viewport */
     display: flex; /* Layout flexível */
@@ -223,11 +234,11 @@ header button:hover {
     align-items: center; /* Centraliza verticalmente */
     color: white; /* Texto branco */
     overflow: hidden; /* Oculta conteúdo que excede a área */
+    backdrop-filter: blur(10px); /* Aplica o desfoque ao fundo */
 }
 
 /* Sobreposição escura na seção de suporte */
 .section-suporte::before {
-    content: ''; /* Adiciona conteúdo vazio */
     position: absolute; /* Posicionamento absoluto */
     top: 0; /* Alinha ao topo */
     left: 0; /* Alinha à esquerda */
@@ -235,8 +246,8 @@ header button:hover {
     height: 100%; /* Cobre toda a altura */
     background-color: rgba(0, 0, 0, 0.5); /* Fundo preto semitransparente */
     z-index: 1; /* Coloca atrás do texto */
-    backdrop-filter: blur(10px); /* Adiciona efeito de desfoque */
 }
+
 
 /* Contêiner de conteúdo final na seção de suporte */
 .div-final {
@@ -278,55 +289,83 @@ header button:hover {
     background-color: #d9881e; /* Cor laranja mais escura */
 }
 
-/* Estilização do Footer */
+/*Início da estilização do Footer/Rodapé da pagina*/
 footer {
-    padding: min(3vh, 4rem); /* Espaçamento interno */
-    background-color: rgb(231, 250, 231); /* Cor de fundo */
-    display: flex; /* Layout flexível */
-    justify-content: space-evenly; /* Distribui conteúdo uniformemente */
-    gap: 15px; /* Espaçamento entre os itens */
-    box-shadow: 0 0.21rem 0.5rem; /* Sombra para destaque */
+    padding: min(3vh, 4rem);
+    /*Tamanho/preenchimento do Footer*/
+    background-color: rgb(231, 250, 231);
+    /*Cor de fundo*/
+    width: 100%;
+    display: flex;
+    /*Tornando o Footer Flex - Deixando os itens lado a lado*/
+    justify-content: space-evenly;
+    /*Justificativa do conteúdo*/
+    gap: 15px;
+    /*Espaçamento entre os elementos*/
+    box-shadow: 0 0.21rem 0.5rem;
 }
 
-/* Estilização da logo no Footer */
+/*Estilizando a logo do Footer*/
 footer .div-logo-footer img {
-    width: 125px; /* Largura fixa */
-    height: auto; /* Altura proporcional */
+    width: 125px;
+    /*Largura da imagem*/
+    height: auto;
+    /*Altura da imagem */
+
+
 }
 
-/* Estilização dos subtítulos do Footer */
+/*Estilizando o subtítulo do Footer*/
 footer div h3 {
-    color: rgb(65, 83, 65); /* Cor do texto */
-    font-size: 25px; /* Tamanho da fonte */
-    font-family: Light 300; /* Fonte personalizada */
-    font-weight: 300; /* Peso da fonte */
+    color: rgb(65, 83, 65);
+    /*Cor da letra*/
+    font-size: 25px;
+    /*Tamanho da letra*/
+    font-family: Light 300;
+    /*Fonte da letra (Google fonts)*/
+    font-weight: 300;
+    /*Peso/Espressura da letra*/
+
 }
 
-/* Estilização dos parágrafos do Footer */
+/*Estilizando o parágrafo do Footer*/
 footer div p {
-    color: rgb(65, 83, 65); /* Cor do texto */
-    font-size: 18px; /* Tamanho da fonte */
-    font-family: Light 300; /* Fonte personalizada */
-    font-weight: 200; /* Peso leve da fonte */
+    color: rgb(65, 83, 65);
+    /*Cor da letra*/
+    font-size: 18px;
+    /*Tamanho da letra*/
+    font-family: Light 300;
+    /*Fonte da letra (Google fonts)*/
+    font-weight: 200;
+    /*Peso/Espressura da letra*/
 }
 
-/* Ícones das redes sociais no Footer */
+/*Estilizando os ícones do Footer*/
 .div-sociais i {
-    padding: 10px; /* Espaçamento interno */
-    font-size: 20px; /* Tamanho dos ícones */
-    background-color: white; /* Fundo branco */
+    padding: 10px;
+    /*Aplicando um respiro (padding) dentro dos ícones*/
+    font-size: 20px;
+    /*Tamanhos dos ícones*/
+    background-color: white;
+    /*Cor de fundo*/
+
 }
 
-/* Efeito hover nos ícones */
+
+/*Aplicando o hover nos ícones*/
 .div-sociais i:hover {
-    background-color: #7e9991; /* Cor de fundo no hover */
-    transition: 0.5s; /* Transição suave */
+    background-color: #7e9991;
+    /*Cor de fundo*/
+    transition: 0.5s;
+    /*Tempo de transição*/
 }
 
-/* Links do Footer */
+/*Chamamos nossa âncora (a) para estilização*/
 .div-list-footer a {
-    text-decoration: none; /* Remove sublinhado padrão */
-    color: rgb(65, 83, 65); /* Define a cor dos links */
+    text-decoration: none;
+    /*Decoração do texto (sublinhado) desabilitado (none)*/
+    color: rgb(65, 83, 65); 
+    /*Cor da Letra*/
 }
 
-/* Fim do Footer */
+/*Fim da estilização do Footer*/
