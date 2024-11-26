@@ -504,6 +504,7 @@ footer div p
     color: rgb(12, 12, 12); /*A cor da letra*/
     text-decoration: none; /*E sem sublinhado*/
     display: flex;
+    background-color: #44444493;
     font-size: 1.5rem;
 }
 
@@ -516,10 +517,10 @@ footer div p
     /*right: 0; Direita em 0 fazendo a caixa encostar a direita */
     width: 100%; /*Largura em porcentagem da caixa*/
     height: 100%; /*Altura de 100% da tela*/
-    background-color: rgb(219, 182, 182); /*Cor de fundo*/
+    background-color:#b4cec4; /*Cor de fundo*/
     flex-direction: column; /*direção dos itens dentro da caixa */
-    align-items: center; /*Alinhamento na vertical do itens*/
-    font-size: 1.8rem; /*tamanho da letra dentro da caixa*/
+    align-items: end; /*Alinhamento na vertical do itens*/
+    font-size: 1.5rem; /*tamanho da letra dentro da caixa*/
 }
 
 .nav-links-mobile { /*Lista não ordenada da versão mobile*/
@@ -562,7 +563,7 @@ footer div p
 }
 
 
-/*------------------------- Parte responsiva ---------------------------- */
+/*-------------------------------------- Parte responsiva ---------------------------- */
 
 /* Estilo para telas pequenas (smartphones) */
 
@@ -615,7 +616,8 @@ footer div p
     
      #Btn-modoEscuro
      {
-        display: none;
+        display: flex;
+        padding: 10;
      }
 
     body {
@@ -728,9 +730,10 @@ footer div p
 
 
     #Btn-modoEscuro
-    {
-       display: none;
-    }
+     {
+        display: flex;
+        
+     }
 
     nav ul {
         display: none; /* Ocultar menu */
@@ -812,7 +815,7 @@ footer div p
 
     #Btn-modoEscuro
     {
-        display: none;
+        
     }
     
     nav ul {
