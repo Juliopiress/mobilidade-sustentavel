@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
 </head>
 <body>
-    <!-- Cabeçalho -->
+    <!--  Header - Usado para definir nosso cabeçalho -->
     <header>
 
         <!-- Criamos uma Div para diferenciar a imagem do restante. -->
@@ -33,29 +33,53 @@
 
                    <li>
                        <!-- Âncora -->
-                       <a href="/Pagina03/index02.html">QUEM SOMOS</a>
+                       <a href="/Pagina03/index02.html" target="_blank">QUEM SOMOS</a>
                    </li>
 
                    <li>
-                       <a href="/Serviços/index.html">SERVIÇOS</a>
+                       <a href="/Serviços/index.html" target="_blank">SERVIÇOS</a>
                    </li>
 
                    <li>
-                       <a href="/Estacionamento/index.html">ESTACIONAMENTOS</a>
+                       <a href="/Estacionamento/index.html" target="_blank">ESTACIONAMENTOS</a>
                    </li>
 
                    <li>
-                       <a href="/Teleferico/">TELEFÉRICO</a>
+                       <a href="/Teleferico/Index.html" target="_blank">TELEFÉRICO</a>
                    </li>
 
-                   <li>
-                    <a href="">FALE CONOSCO</a>
-                </li>
 
                
                </ul>
            
        </div>
+
+       
+
+       <button id="button-header" onclick="trocarCor()">Modo Escuro</button>
+
+       <div class="menu">
+        <label class="hamburger">
+            <input type="checkbox" id="menuToggle">
+            <svg viewBox="0 0 32 32">
+                <path class="line line-top-bottom"
+                    d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                </path>
+                <path class="line" d="M7 16 27 16"></path>
+            </svg>
+        </label>
+    </div>
+    <div class="menu-aberto">
+        <nav class="nav-menu">
+            <a href="#inicio" target="_blank">INÍCIO</a>
+            <a href="/Pagina03/index.html" target="_blank">QUEM SOMOS</a>
+            <a href="/Serviços/index.html" target="_blank">SERVIÇOS</a>
+            <a href="/Estacionamento/index.html" target="_blank">ESTACIONAMENTOS</a>
+            <a href="/Teleferico/Index.html" target="_blank">TELEFÉRICO</a>
+            <a href="/Estacionamento/index.html" target="_blank">CARTÕES</a>
+        </nav>
+    </div>
+
     </header>
 <main>
     

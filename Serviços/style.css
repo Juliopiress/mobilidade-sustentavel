@@ -25,56 +25,191 @@ body {
     font-family: "Noto Serif", serif; /* Define a fonte padrão do corpo */
 }
 
-/* Estilização do Header */
+/*Início da estilização do Header*/
 header {
-    padding: min(3vh, 2rem); /* Define o espaçamento interno superior/inferior */
-    width: 100%; /* O Header ocupa toda a largura da página */
-    background-color: rgb(231, 250, 231); /* Define uma cor de fundo suave */
-    display: flex; /* Usa flexbox para layout */
-    justify-content: space-evenly; /* Distribui os itens igualmente no espaço disponível */
-    align-items: center; /* Alinha os itens no centro verticalmente */
-    position: sticky; /* Mantém o Header fixo no topo ao rolar a página */
-    top: 0; /* Define o topo como referência para o sticky */
-    left: 0; /* Alinha o Header ao início horizontal */
-    z-index: 999; /* Garante que o Header esteja sempre no topo */
-    box-shadow: 0 0.21rem 0.5rem; /* Adiciona uma sombra para destacar o Header */
+    padding: min(3vh, 2rem);
+    /*Colocando um tamanho (Preenchimento) no Header*/
+    width: 100%;
+    background-color: rgb(231, 250, 231);
+    /*Habilitando uma cor de fundo*/
+    display: flex;
+    /*Tornando nosso Header Flex - Deixando os itens lado a lado*/
+    justify-content: space-evenly;
+    /*Justificativa do conteúdo*/
+    align-items: center;
+    /*Alinhamento na vertical - Deixando habilitada ao centro*/
+    position: sticky; /**/
+    top: 0; /**/
+    left: 0; /**/
+    z-index: 999; /**/
+    box-shadow: 0 0.21rem 0.5rem; /**/
+
+
 }
 
-/* Estilização da Logo */
+
+
+/*Chamamos nossa logo(img) para estilização*/
 header img {
-    width: 125px; /* Define a largura da imagem */
-    height: auto; /* Ajusta a altura proporcionalmente */
+    width: 125px;
+    /*Largura da imagem*/
+    height: auto;
+    /*Altura da imagem ( automático) */
 }
 
-/* Estilização da lista de navegação */
+
+/*Chamamos nossa lista não ordenada para estilização*/
 header div nav ul {
-    display: flex; /* Usa flexbox para exibir os itens da lista lado a lado */
-    gap: 20px; /* Define um espaçamento entre os itens */
+    display: flex;
+    /*Tornamos nossa lista não ordenada em (Flex), deixando os itens pertencentes a ela, lado a lado.*/
+    gap: 20px;
+    /*Espaçamento entre os elementos*/
+
 }
 
-/* Estilização dos links de navegação */
+/*Chamamos nossa âncora (a) para estilização*/
 header div nav ul li a {
-    font-family: Light 300; /* Define a fonte dos links */
-    text-decoration: none; /* Remove sublinhado padrão */
-    color: rgb(65, 83, 65); /* Define a cor dos links */
+    font-family: Light 300;
+    /*Fonte da letra (Google fonts)*/
+    text-decoration: none;
+    /*Decoração do texto (sublinhado) desabilitado (none)*/
+    color: rgb(65, 83, 65); 
+    /*Cor da Letra*/
+    font-family: Light 300;
+    /*Fonte da letra (Google fonts)*/
 }
 
-/* Estilização do botão no Header */
-header button {
-    background-color: #3498db; /* Azul claro */
-    color: #fff; /* Cor branca para o texto */
-    border: none; /* Remove borda padrão */
-    padding: 10px 20px; /* Define o espaçamento interno */
-    cursor: pointer; /* Mostra o cursor de ponteiro ao passar sobre o botão */
-    font-size: 16px; /* Define o tamanho da fonte */
-    border-radius: 5px; /* Define bordas arredondadas */
-    transition: background-color 0.3s; /* Anima a transição da cor de fundo */
+/**/
+header>button {
+    
+    padding: 5px; /**/
+    background-color:  #8faca1; /**/
+    border: 5px; /**/
+   
 }
 
-/* Efeito hover no botão do Header */
-header button:hover {
-    background-color: #2980b9; /* Muda a cor de fundo no hover */
+/**/
+header>button>a {
+   
+    display: flex; /**/
+    align-items: center; /**/
+    gap: 5px; /**/
+    color: white; /**/
+    text-decoration: none; /**/
+    font-weight: 400; /**/
 }
+
+/* Menu */
+.menu {
+    display: flex; /**/
+    align-items: center; /**/
+    justify-content: flex-end; /**/ 
+    position: relative; /**/
+    z-index: 100; /**/
+}
+
+/**/
+.hamburger {
+    cursor: pointer; /**/
+}
+
+/**/
+.hamburger input {
+    display: none; /**/
+}
+
+/**/
+.hamburger svg {
+    height: 3em; /**/
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1); /**/
+}
+
+/**/
+.line {
+    fill: none; /**/
+    stroke: #032e1e; /**/
+    stroke-linecap: round; /**/
+    stroke-linejoin: round; /**/
+    stroke-width: 3; /**/
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1); /**/
+}
+
+/**/
+.line-top-bottom {
+    stroke-dasharray: 12 63; /**/
+}
+
+/**/
+.hamburger input:checked+svg {
+    transform: rotate(-45deg); /**/
+}
+
+/**/
+.hamburger input:checked+svg .line-top-bottom {
+    stroke-dasharray: 20 300; /**/
+    stroke-dashoffset: -32.42; /**/
+}
+
+/* Menu Navegação */
+.menu-aberto {
+    background-color: #8faca1; /**/
+    position: fixed; /**/
+    left: 0; /**/
+    top: 0; /**/
+    height: 0; /**/
+    width: 100%; /**/
+    z-index: 98; /**/
+    display: flex; /**/
+    align-items: center; /**/
+    justify-content: center; /**/
+    overflow: hidden; /**/
+    transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out; /**/
+    opacity: 0; /**/
+}
+
+/**/
+.menu-aberto.active {
+    height: 100vh; /**/
+    opacity: 1; /**/
+}
+
+/**/
+.nav-menu {
+    width: 100%; /**/
+    height: 100%; /**/
+    display: flex; /**/
+    flex-direction: column; /**/
+    align-items: center; /**/
+    justify-content: center; /**/
+    gap: 4rem; /**/
+    transition: opacity 0.5s ease-in-out; /**/
+}
+
+/**/
+.nav-menu a {
+    user-select: none; /**/
+    text-decoration: none; /**/
+    color: var(--color-white); /**/
+    font-family: var(--font-pequena); /**/
+    font-size: 2rem; /**/
+    font-weight: bold; /**/
+    opacity: 0; /**/
+    transform: translateY(-20px); /**/
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /**/
+}
+
+/**/
+.menu-aberto.active .nav-menu a {
+    opacity: 1; /**/
+    transform: translateY(0); /**/
+}
+
+/**/
+.nav-menu a:hover {
+    color: var(--color-destaque1); /**/
+    transition: all 0.3s ease; /**/
+}
+
 
 /* Estilização da introdução do produto */
 .product-intro {
@@ -294,40 +429,85 @@ footer .div-logo-footer img {
     height: auto; /* Altura proporcional */
 }
 
-/* Estilização dos subtítulos do Footer */
+/*Início da estilização do Footer/Rodapé da pagina*/
+footer {
+    padding: min(3vh, 4rem);
+    /*Tamanho/preenchimento do Footer*/
+    background-color: rgb(231, 250, 231);
+    /*Cor de fundo*/
+    display: flex;
+    /*Tornando o Footer Flex - Deixando os itens lado a lado*/
+    justify-content: space-evenly;
+    /*Justificativa do conteúdo*/
+    gap: 15px;
+    /*Espaçamento entre os elementos*/
+    box-shadow: 0 0.21rem 0.5rem;
+}
+
+/*Estilizando a logo do Footer*/
+footer .div-logo-footer img {
+    width: 125px;
+    /*Largura da imagem*/
+    height: auto;
+    /*Altura da imagem */
+
+
+}
+
+/*Estilizando o subtítulo do Footer*/
 footer div h3 {
-    color: rgb(65, 83, 65); /* Cor do texto */
-    font-size: 25px; /* Tamanho da fonte */
-    font-family: Light 300; /* Fonte personalizada */
-    font-weight: 300; /* Peso da fonte */
+    color: rgb(65, 83, 65);
+    /*Cor da letra*/
+    font-size: 25px;
+    /*Tamanho da letra*/
+    font-family: Light 300;
+    /*Fonte da letra (Google fonts)*/
+    font-weight: 300;
+    /*Peso/Espressura da letra*/
+
 }
 
-/* Estilização dos parágrafos do Footer */
+/*Estilizando o parágrafo do Footer*/
 footer div p {
-    color: rgb(65, 83, 65); /* Cor do texto */
-    font-size: 18px; /* Tamanho da fonte */
-    font-family: Light 300; /* Fonte personalizada */
-    font-weight: 200; /* Peso leve da fonte */
+    color: rgb(65, 83, 65);
+    /*Cor da letra*/
+    font-size: 18px;
+    /*Tamanho da letra*/
+    font-family: Light 300;
+    /*Fonte da letra (Google fonts)*/
+    font-weight: 200;
+    /*Peso/Espressura da letra*/
 }
 
-/* Ícones das redes sociais no Footer */
+/*Estilizando os ícones do Footer*/
 .div-sociais i {
-    padding: 10px; /* Espaçamento interno */
-    font-size: 20px; /* Tamanho dos ícones */
-    background-color: white; /* Fundo branco */
+    padding: 10px;
+    /*Aplicando um respiro (padding) dentro dos ícones*/
+    font-size: 20px;
+    /*Tamanhos dos ícones*/
+    background-color: white;
+    /*Cor de fundo*/
+
 }
 
-/* Efeito hover nos ícones */
+
+/*Aplicando o hover nos ícones*/
 .div-sociais i:hover {
-    background-color: #7e9991; /* Cor de fundo no hover */
-    transition: 0.5s; /* Transição suave */
+    background-color: #7e9991;
+    /*Cor de fundo*/
+    transition: 0.5s;
+    /*Tempo de transição*/
 }
 
-/* Links do Footer */
+/*Chamamos nossa âncora (a) para estilização*/
 .div-list-footer a {
-    text-decoration: none; /* Remove sublinhado padrão */
-    color: rgb(65, 83, 65); /* Define a cor dos links */
+    text-decoration: none;
+    /*Decoração do texto (sublinhado) desabilitado (none)*/
+    color: rgb(65, 83, 65); 
+    /*Cor da Letra*/
 }
+
+/*Fim da estilização do Footer*/
 
 /* Fim do Footer */
 
