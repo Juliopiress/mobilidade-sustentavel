@@ -605,9 +605,11 @@ footer div p {
     .section-suporte p {
         font-size: 1.2rem; /* Diminui o tamanho do texto de descrição */
     }
-    .section-suporte img {
-        height:300px;
+    
+    .section-suporte{
+        height:140vh;
     }
+    
 
     .btn-suporte {
         padding: 8px 16px; /* Ajusta o tamanho do botão */
