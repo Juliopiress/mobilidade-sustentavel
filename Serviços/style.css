@@ -121,11 +121,6 @@ header button:hover {
     }
 }
 
-/* Seções de Produtos */
-.section {
-    padding: 60px 20px; /* Define espaçamento interno */
-}
-
 /* Estilização geral de seções de produtos */
 .product-section {
     background-color: #fff; /* Fundo branco */
@@ -215,6 +210,10 @@ header button:hover {
 .section-suporte {
     position: relative; /* Define posicionamento relativo */
     background-image: url('imagem/Estacionamento\ final.png'); /* Define imagem de fundo */
+    margin-left: 30px;
+    margin-right: 30px;
+    border:  solid 3px #d9881e;
+    border-radius: 10px;
     background-size: cover; /* Cobre toda a área */
     background-position: center; /* Centraliza a imagem */
     height: 70vh; /* Define altura proporcional à viewport */
@@ -245,6 +244,7 @@ header button:hover {
     text-align: center; /* Centraliza o texto */
     padding: 20px; /* Espaçamento interno */
 }
+
 
 /* Título principal da seção de suporte */
 #title {
