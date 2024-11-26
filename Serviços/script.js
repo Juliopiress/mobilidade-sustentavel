@@ -15,7 +15,7 @@ $(document).ready(function(){
     $('.product-list').slick({
         
         //slidestoshow: número de cards exibidos ao mesmo tempo no carousel
-        slidesToShow:3, // Exibe 3 cards ao mesmo tempo
+        slidesToShow:2, // Exibe 3 cards ao mesmo tempo
 
         //slideToscroll:define quantos cards serão deslizados ao mover o carousel
         slidesToScrool:3, // mover 1 card por vez ao deslizar
