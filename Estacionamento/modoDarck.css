@@ -136,6 +136,21 @@ body.dark-mode .section3 .container-problemas p
 }
 
 
+body.dark-mode .mobile-menu 
+{ /*Estilização da caixa Mobile quando aberta*/
+
+    background-color:#07171e; /*Cor de fundo*/
+}
+
+body.dark-mode .nav-links a,
+.nav-links-mobile a { /*Estamos chamando as duas âncoras para estilização, tanto da Versão Desktop quanto da versão Mobile.*/
+    color: rgb(247, 247, 247); /*A cor da letra*/
+    text-decoration: none; /*E sem sublinhado*/
+    display: flex;
+    background-color: #444444a8;
+    font-size: 1.5rem;
+}
+
 
 /* -------------------------Estilização do footer--------------------------------------------*/
 
