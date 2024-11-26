@@ -159,6 +159,7 @@ header button:hover {
 
 /* Estilização individual de cada item de produto */
 .product-item {
+    gap: 30px;
     background-color: #ecf0f1; /* Fundo claro */
     border-radius: 8px; /* Bordas arredondadas */
     padding: 20px; /* Espaçamento interno */
@@ -329,3 +330,56 @@ footer div p {
 }
 
 /* Fim do Footer */
+
+
+/* Responsividade*/
+@media (min-width:360px) and (max-width: 1024px) {
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header img {
+        width: 4.5rem;
+        height: 5rem;
+        
+    }
+
+    
+    header nav{
+        display: none; /*escondendo o menu*/
+    }
+
+    #button-header {
+        display: none; /*escondendo o menu*/
+    }
+
+    
+
+    .product-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .product-item {
+
+        flex-wrap: wrap;
+    }
+
+    .product-item h3 {
+        
+    }
+
+    
+
+
+
+
+
+}
+
+

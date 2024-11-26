@@ -10,6 +10,7 @@
     /*remover os marcadores de listas da <ul> */
     font-family: "Noto Serif", serif;
     /*Fonte da letra (Google fontes)*/
+    box-sizing: border-box;
 }
 
 /*HTML*/
@@ -17,6 +18,7 @@ body {
     background-color: white; /**/
     width: 100%; /**/
     height: 100vh; /**/
+    overflow-x: hidden;
     transition: background-color 0.5s, color 0.5s;  /**/
     color: rgb(3, 70, 3); /**/
     
@@ -531,7 +533,7 @@ header>button>a {
 
 /**/
 .estione-img img {
-    width: 180%; /**/
+    width: 170%; /**/
     height: auto; /**/
 }
 
@@ -593,7 +595,9 @@ header>button>a {
     align-items: center; /**/
     white-space: nowrap; /**/
     animation: scroll 20s linear infinite; /**/
-    text-align: start; /**/
+    text-align: left; /**/
+    margin-right: 200px;
+    margin-left: -200px;
 }
 
 @keyframes scroll {
@@ -609,7 +613,7 @@ header>button>a {
 /**/
 .headline-scroll span {
     font-family: var(--font-grande); /**/
-    font-size: 5rem; /**/
+    font-size: 4rem; /**/
     text-transform: uppercase; /**/
     display: flex; /**/
     align-items: center; /**/
@@ -746,7 +750,7 @@ img {
 .section-6 {
     padding: 6rem; /**/
     width: 100%; /**/
-    background-color: transparent; /**/
+    background-color: white; /**/
     display: flex; /**/
     justify-content: center; /**/
     align-items: center; /**/
