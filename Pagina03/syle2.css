@@ -24,7 +24,7 @@ body {
 header {
     padding: min(3vh, 2rem);
     /*Colocando um tamanho (Preenchimento) no Header*/
-    width: 100%;
+    width: auto;
     background-color: rgb(231, 250, 231);
     /*Habilitando uma cor de fundo*/
     display:flex;
@@ -44,7 +44,7 @@ header {
 
 /*Chamamos nossa logo(img) para estilização*/
 header img {
-    width: 125px;
+    width: 7.813rem;
     /*Largura da imagem*/
     height: auto;
     /*Altura da imagem ( automático) */
@@ -54,7 +54,7 @@ header img {
 header div nav ul {
     display: flex;
     /*Tornamos nossa lista não ordenada em (Flex), deixando os itens pertencentes a ela, lado a lado.*/
-    gap: 20px;
+    gap: 1.2rem;
     /*Espaçamento entre os elementos*/
 
 }
@@ -70,7 +70,7 @@ header div nav ul li a {
 }
 /* estilizacao  do button*/
 header>button { 
-    padding: 8px;
+    padding: 0.5rem;
     background-color:  #8faca1;
     border: none;
    border-radius: 0.5rem;
@@ -107,7 +107,7 @@ header>button {
     display: block;
     justify-items: center;
     align-items: safe;
-    padding: 50px;
+    padding: 3.125rem;
 }
 
 
@@ -138,7 +138,7 @@ header>button {
     background-repeat: no-repeat;
     overflow: hidden; /*Esconde partes das imagens que saem do container */
     width: 40%; /*O container ocupa toda a largura da página */
-    max-width: 800px; /*largura máxima para limitar em telas maiores */
+    max-width: 50rem; /*largura máxima para limitar em telas maiores */
     margin: auto; /*centraliza o container*/
 }
 
@@ -155,7 +155,7 @@ header>button {
 /*chat*/
 .carousel-container {
     width: 100%; /* Usa 100% da largura disponível */
-    max-width: 800px; /* Limita a largura máxima */
+    max-width: 50rem; /* Limita a largura máxima */
     margin: auto; /* Centraliza o container */
 }
 
@@ -180,7 +180,7 @@ header>button {
     flex: 0 0 100%;
 }
 .carousel-item img{
-  width: 600px;
+  width: 37.5rem;
   display: block;
 }
 
@@ -250,18 +250,10 @@ p {
     color: #555;
 }
 
-/* Estilos responsivos */
-@media (max-width: 600px) {
-    .timeline-item::before {
-        left: 0;
-    }
-    .timeline-content {
-        margin-left: 10px;
-    }
-}
+
 
 .product-list {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
    justify-content:flex-end
@@ -279,14 +271,10 @@ p {
 
 
 .section2{
-
- align-content: space-around;
- align-items:center;
  justify-items: center;
  justify-content:space-between;
  padding: 19px;
- position:relative;
- text-align: center;
+ text-align:end;
 }
 
 
@@ -371,3 +359,99 @@ footer div p {
 }
 
 /*Fim da estilização do Footer*/
+
+/* Media Queries para Responsividade */
+@media (max-width: 900px) {
+    header {
+        flex-direction: column; /* Muda a direção do header para coluna */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    header div nav ul {
+        flex-direction: column; /* Muda a direção da lista para coluna */
+        align-items: center; /* Centraliza os itens da lista */
+    }
+
+    .section1 {
+        flex-direction: column; /* Muda a direção da seção para coluna */
+    }
+
+    .div1s1 {
+        flex-direction: column; /* Muda a direção da div1s1 para coluna */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .div2s1 {
+        padding: 1.5rem; /* Reduz o preenchimento em telas menores */
+    }
+
+    .sectionCarousel {
+        padding: 3rem; /* Reduz o preenchimento em telas menores */
+    }
+
+    .carousel-container {
+        width: 95%; /* Aumenta a largura do carrossel em telas menores */
+    }
+}
+
+@media (max-width: 600px) {
+
+    .product-item
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    body {
+        margin: 0;
+        font-family: "Noto Serif", serif;
+        line-height: 1.6;
+    }
+
+    header img {
+        width: 5rem; /* Reduz a largura da imagem do header */
+    }
+
+    .carousel-container {
+        width: 100%; /* O carrossel ocupa 100% da largura da tela */
+    }
+
+    .carousel-button {
+        padding: 0.5rem; /* Ajusta o tamanho do botão do carrossel */
+    }
+
+    footer {
+        padding: 1rem; /* Reduz o preenchimento do footer */
+    }
+}
+
+.headline-t-mobis {
+    height: 30%; /**/
+    width: 100vw; /**/
+    overflow: hidden; /**/
+    display: flex; /**/
+    align-items: center; /**/
+    justify-content: center; /**/
+    flex-direction: column; /**/
+    position: absolute; /**/
+}
+
+/**/
+.headline-scroll {
+    display: flex; /**/
+    align-items: center; /**/
+    white-space: nowrap; /**/
+    animation: scroll 20s linear infinite; /**/
+    text-align: start; /**/
+}
+
+.section00 {
+   
+    background-image: url(/Pagina03/img/img01.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 500px;
+    
+}
