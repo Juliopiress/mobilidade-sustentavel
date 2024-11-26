@@ -210,6 +210,12 @@ header>button>a {
     transition: all 0.3s ease; /**/
 }
 
+hr {
+    background-color: #d9881e;
+    width:120%;
+    margin-left: -10px;
+    height:1vh;
+}
 
 /* Estilização da introdução do produto */
 .product-intro {
