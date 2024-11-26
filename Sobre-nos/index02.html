@@ -24,7 +24,7 @@
     crossorigin="anonymous"></script>
 
 
-    <script src="script2.js" defer></script>
+  
 
 </head>
 
@@ -62,9 +62,7 @@
             </nav>
         </div>
 
-        <div>
-            <button id="button-header" onclick="trocarCor()">Modo Escuro</button>
-        </div>
+      
 
 
 
@@ -119,6 +117,8 @@
                 <h1>QUER SABER MAIS SOBRE A T-MOBIS ?</h1>
             </div>
          </section>
+
+         <hr><hr>
       
         <section class="section1"id="backround" >
 
@@ -180,38 +180,67 @@
             </div>
         </section>
 
-        <hr>
-        <hr>
+        
+        <br>
         <!-- Segunda seção: Missão, Visão e Valores -->
         <section class="section2">
-        <div class="product-list">
-            <div class="product-item">    
-                <h3>MISSAO</h3>
-                <p>Promover a mobilidade sustentável nas cidades,<br>  oferecendo soluções de transporte elétrico que reduzam a pegada de carbono, melhorem a qualidade de vida e tornem as áreas urbanas mais acessíveis e ecológicas.</p>
+            <!-- Div para guardar as caixas que falam sobre o estacionamento -->
+
+            <div class="container-estacionamento">
+
+                <div class="cabecalho-estacionamento">
+                    <div class="text-cabecalho-estacionamento">
+                       
+                        <h2>T-MOBIS</h2>
+                       
+                    </div>
+                </div>
+                <!-- Div que vai guarda todo o conjunto dás caixa -->
+                 
+                <div class="conteudo-estacionamento">
+                    <div class="box-estacionamento">
+
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <!--Icones do fontalsome-->
+                        <h3>Missão</h3>
+                        <p>Revolucionar o transporte fornecendo soluções de mobilidade elétrica inovadoras e sustentáveis ​​que melhorem a qualidade de vida e minimizem o impacto ambiental. </p>
+                    </div>
+                    <div class="box-estacionamento">
+
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <h3>Visao</h3>
+                        <p> Ser líder global em transporte sustentável, capacitando comunidades com opções de mobilidade limpas, eficientes e acessíveis que promovam um planeta mais saudável e promovam a equidade social.</p>
+                    </div>
+
+                    <div class="box-estacionamento">
+
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <h3>Valor</h3>
+                        <p>Sustentabilidade: Estamos comprometidos em reduzir nossa pegada de carbono e promover práticas ecologicamente.<br>
+
+                            Inovação: Adotamos tecnologia de ponta e soluções criativas para impulsionar o futuro do transporte elétrico.
+                            <br>
+                       
+                    </div>
+ 
+                    
+                    <div class="box-estacionamento">
+
+                       <img src="/Sobre-nos/img/logo-transparente.png" alt="">
+                    </div>
+  
+                </div>  
+                
             </div>
 
-            <div class="product-item">     
-                <h3>VISAO</h3>
-                <p>Ser um líder em soluções de transporte elétrico urbano, <br> transformando cidades em ambientes mais limpos e sustentáveis, onde a mobilidade é eficiente, inclusiva e respeitosa com o meio ambiente.</p>
-            </div>
-
-            <div class="product-item">  
-                <h3>VALOR</h3>
-                <p>Sustentabilidade 
-                    <br>Inovação 
-                    <br>Responsabilidade Social 
-                    <br>Transparência 
-                    <br>Colaboração 
-                    <br>Segurança.</p>           
-            </div>
-        </div>
         </section>
+        <!--Fim Skills-->
         <!-- Terceira seção: Historia da tp-mobis -->
        
 
 
     </main>
-<hr><hr> <br><br>
+ <br><br>
     <section class="historia-t-mobis">
         <h1>História da T Mobis (2020-2024)</h1>
         <div class="timeline">
@@ -311,6 +340,8 @@
    
 
     <!--Introducao ecmascript externo-->
+    <script src="script2.js" defer></script>
+
     <script src="https://unpkg.com/scrollreveal"> </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
