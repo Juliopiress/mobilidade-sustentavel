@@ -600,7 +600,8 @@ footer div p {
     }
 
     .product-item img{
-        width:20vw;
+        width:30vw;
+        margin: 0px auto;
     }
 
     .product-intro h1 {
