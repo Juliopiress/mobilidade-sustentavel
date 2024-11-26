@@ -86,7 +86,7 @@ const typed = new Typed('#txt-header',
     fadeOut:true,
     });
 
-    //---------------------------------------Tema Escuro---------------------------------------------
+    //--------------------------------------- Tema Escuro ---------------------------------------------
 
     const btnModoEscuro = document.querySelector('#Btn-modoEscuro');
     const body = document.body;

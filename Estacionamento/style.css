@@ -758,10 +758,10 @@ footer div p
         display: none; /*escondendo o menu*/
     }
 
-    body {
+   body {
         margin: 0;
         font-family: Arial, sans-serif;
-        line-height: 1.6;
+        line-height : 1.6;
     }
     
     img {
@@ -813,10 +813,6 @@ footer div p
 /* Responsividade para telas pequenas */
 @media (max-width: 768px) {
 
-    #Btn-modoEscuro
-    {
-        
-    }
     
     nav ul {
         display: none; /* Ocultar menu */

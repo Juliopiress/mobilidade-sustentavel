@@ -19,6 +19,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
 
+
+    <script src="https://kit.fontawesome.com/a3908b76ff.js"
+    crossorigin="anonymous"></script>
+
+
     <script src="script2.js" defer></script>
 
 </head>
@@ -53,22 +58,60 @@
                     <li>
                         <a href="/Teleferico/Index.html">TELEFÉRICO</a>
                     </li>
-
-                
-
-
                 </ul>
             </nav>
         </div>
+
         <div>
             <button id="button-header" onclick="trocarCor()">Modo Escuro</button>
         </div>
+
+
+
+             <!-- Div para mostrar o menu que ficara a mostra no mobile -->
+
+        <div class="mobile-menu" id="mobileMenu">
+
+            <!-- Botão para ser utilizado para fechamento da lista -->
+            <button id="closeButton" class="close">
+                <i class="fas fa-times"></i>
+            </button>
+  
+
+            <!-- Essa lista é do Menu Hamburguer quando estiver aberto. -->
+            <ul class="nav-links-mobile">
+                <li>
+                    <a href="/Pagina01/index.html">PÁGINA INICIAL</a>
+                </li>
+                <li>
+                    <a href="/Serviços/index.html">SERVIÇOS</a>
+                </li>
+                <li>
+                    <a href="/Estacionamento/index.html">ESTACIONAMENTO</a>
+                </li>
+
+                <li>
+                    <a href="/Teleferico/Index.html">TELEFÉRICOS</a>
+                </li>
+            </ul>
+  
+  
+            <!-- Fim da caixa do Menu Hamburguer (Quando estiver aberto) -->
+        </div>
+  
+        <!-- Botão de Hamburguer, ele está fora da Div justamente por ser um elemento singular -->
+      <button class="hamburger" id="hamburgerButton"> 
+          <i class="fas fa-bars"></i>
+      </button>
+
     </header>
     <!--FIM do cabeçalho-->
     
+
+
+
+
     <!--sections -->
-
-
     <main>
          <section class="section00"id="section1div1"  > 
 
