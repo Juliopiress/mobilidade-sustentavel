@@ -4,9 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>T-MOBIS | Teleférico </title>
-    <link rel="stylesheet" href="Style.css">
+    <title>T-Mobis | Teleférico </title>
+
+
+    
     <script src="https://kit.fontawesome.com/fdd516a2fb.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="Style.css">
+   <!-- CSS -->
+   <link rel="stylesheet" href="style1.css">
+   <link rel="stylesheet" href="responsividade.css">
+
+   <!--CSS-->
+   <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="assets/css/responsividade.css">
+
+   <!--Bootstrap Icons-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+       integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
     
 </head>
 
@@ -18,36 +33,65 @@
         </div>
 
 
-        <div>
+         <!-- Criamos uma Div para diferenciar nossas listas do restante. -->
+       <div>
 
-            <nav>
+        <nav>
+        <!-- Nav= Usada para informar o navegador que os itens dentro dela são navegáveis. -->
+        
+            <!-- Ul= Listas não ordenadas -->
+            <ul class="nav-links">
 
-                <ul class="nav-links">
+                <li>
+                    <!-- Âncora -->
+                    <a href="/Pagina03/index02.html" target="_blank">QUEM SOMOS</a>
+                </li>
 
-                    <li>
-                        <a href="/Pagina03/index02.html">QUEM SOMOS</a>
-                    </li>
+                <li>
+                    <a href="/Serviços/index.html" target="_blank">SERVIÇOS</a>
+                </li>
 
-                    <li>
-                        <a href="/Serviços/index.html">SERVIÇOS</a>
-                    </li>
+                <li>
+                    <a href="/Estacionamento/index.html" target="_blank">ESTACIONAMENTOS</a>
+                </li>
 
-                    <li>
-                        <a href="/Estacionamento/index.html">ESTACIONAMENTOS</a>
-                    </li>
-
-                    <li>
-                        <a href="/Teleferico/">TELEFÉRICO</a>
-                    </li>
-
-                    <li>
-                        <a href="">FALE CONOSCO</a>
-                    </li>
+                <li>
+                    <a href="/Teleferico/Index.html" target="_blank">TELEFÉRICO</a>
+                </li>
 
 
-                </ul>
+            
+            </ul>
+        
+    </div>
 
-        </div>
+    
+  <!-- Botão modo escuro -->
+    <button id="button-header" onclick="trocarCor()">Modo Escuro</button>
+      
+    <!-- Criamos uma div para o Botão hamburger -->
+    <div class="menu">
+     <label class="hamburger">
+         <input type="checkbox" id="menuToggle">
+         <svg viewBox="0 0 32 32">
+             <path class="line line-top-bottom"
+                 d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+             </path>
+             <path class="line" d="M7 16 27 16"></path>
+         </svg>
+     </label>
+ </div>
+ <!--!-- Criamos uma div para o Botão hamburger quando ele estiver aberto -->
+ <div class="menu-aberto">
+     <nav class="nav-menu">
+         <a href="#inicio" target="_blank">INÍCIO</a>
+         <a href="/Pagina03/index.html" target="_blank">QUEM SOMOS</a>
+         <a href="/Serviços/index.html" target="_blank">SERVIÇOS</a>
+         <a href="/Estacionamento/index.html" target="_blank">ESTACIONAMENTOS</a>
+         <a href="/Teleferico/Index.html" target="_blank">TELEFÉRICO</a>
+         <a href="/Estacionamento/index.html" target="_blank">CARTÕES</a>
+     </nav>
+ </div>
 
 
 
@@ -66,82 +110,74 @@
 
             <h2 id="Typed-container"></h2>
 
-            <h2>O que é um teleferico</h2>
-            <p>Um teleférico é um sistema de transporte suspenso, composto por cabos de aço e cabines ou cadeiras
-                que se movem ao longo desses cabos. Ele é usado para transportar pessoas ou cargas, geralmente em
-                terrenos montanhosos, áreas urbanas ou lugares turísticos. Os teleféricos podem ser classificados de
-                várias formas, mas dois dos tipos mais comuns são:
+            <h2>Vantagens do Teleférico <br>
+              nas regiões Extremas de São Paulo</h2> <br>
+            <p>Além de Sustentável, o teleférico ajuda na diminuição do trânsito na cidade e também
+                nos acidentes nas vias. 
 
-                1. Teleférico de cadeiras: composto por cadeiras abertas que transportam passageiros, muito comum em
-                estações de esqui. 
-                2. Teleférico de cabine (ou bondinho): utiliza cabines fechadas que oferecem maior conforto e
-                capacidade para várias pessoas.
-
-                Como funciona:
-                - Cabos de aço: Um cabo principal (fixo ou móvel) sustenta ou puxa as cabines/cadeiras.
-                - Motores: Localizados nas estações, são responsáveis por mover o cabo de tração.
-                - Torres de suporte: Mantêm o cabo suspenso no trajeto.
-                - Estações: Pontos de embarque e desembarque, onde as cabines podem parar.
-
-                Os teleféricos são populares em áreas turísticas por oferecerem vistas panorâmicas e também em locais de
-                difícil acesso, como montanhas e travessias sobre rios. Exemplos conhecidos incluem o Bondinho do Pão de
-                Açúcar, no Rio de Janeiro, e o Teleférico de Medellín, na Colômbia, que é usado como transporte público.
+                Facilita no deslocamento até a estação mais próxima em apenas 10 minutos.
+                Evitando engarrafamentos e tornando o trajeto mais rápido.
+                
             </p>
+        </div>
+
+        <div>
+            <img src="img/teleferico.jpg" alt="Imagem do teleferico" loading="lazy">
         </div>
     </section>
 
     <section id="bicicletas" class="section product-section">
         <div class="container">
-            <h2>Telefericos</h2>
+            <h2>NOSSOS TELEFÉRICOS</h2>
             <p></p>
     
             <div class="product-list">
                 <div class="product-item">
                     <img src="img/img1.jpg" alt="Teleferico">
-                    <h3>Teleferico - Itaquera</h3>
-                    <p>Conforto e mobilidade com um toque de tecnologia. Ideal para explorar longas distâncias sem esforço.</p>
-                    <p><strong>Preço:</strong> R$ 25,00 Passagem ida e volta</p>
-                    <button>Comprar</button>
+                    <h3>Teleferico - Cid. Tiradentes</h3>
+                    <p>Trajeto em até 15 minutos</p>
+                    <p><strong>Preço:</strong> R$ 5,30 Passagem</p>
+                    <button>Ver Mais</button>
                 </div>
     
                 <div class="product-item">
                     <img src="img/img2.jpg" alt="Teleferico">
-                    <h3>Teleferico - Chile</h3>
-                    <p>Faça um tour pela cidade usando nossos telefericos.</p>
-                    <p><strong>Preço:</strong> R$ 40,00 ida e volta</p>
-                    <button>Comprar</button>
+                    <h3>Teleférico - Guaianazes </h3>
+                    <p>Trajeto em até 10 minutos</p>
+                    <p><strong>Preço:</strong> R$ 5,30</p>
+                    <button>Ver Mais</button>
                 </div>
     
                 <div class="product-item">
                     <img src="img/img3.jpg" alt="Teleferico">
-                    <h3>Teleferico - São Paulo</h3>
-                    <p>Faça um tour pela cidade usando nossos telefericos.</p>
-                    <p><strong>Preço:</strong> R$ 35,00 ida e volta</p>
-                    <button>Comprar</button>
+                    <h3>Varginha - Zona Sul</h3>
+                    <p>Trajeto em até 15 minutos.</p>
+                    <p><strong>Preço:</strong> R$ 5,30</p>
+                    <button>Ver mais</button>
                 </div>
     
                 <div class="product-item">
                     <img src="img/img4.jpg" alt="Teleferico">
-                    <h3>Campos do Jordão - São Paulo</h3>
-                    <p>Compacta e prática, ideal para pequenas distâncias e fácil de transportar.</p>
-                    <p><strong>Preço:</strong> R$ 20,00 ida e volta</p>
-                    <button>Comprar</button>
+                    <h3>Parelheiros - Zona Sul</h3>
+                    <p>Trajeto em até 15 minutos.</p>
+                    <p><strong>Preço:</strong> R$ 5,30</p>
+                    <button>Ver Mais</button>
                 </div>
     
                 <div class="product-item">
                     <img src="img/img5.jpeg" alt="Teleferico">
-                    <h3>Teleferico - Cid.Tiradentes</h3>
-                    <p>Nossa ultima inovação trazendo para o pessoal da Z/L, Muito conforte e praticidade no dia a dia.</p>
-                    <p><strong>Preço:</strong> R$ 45,00 ida e volta</p>
-                    <button>Comprar</button>
+                    <h3>Litoral - SP</h3>
+                    <p>Trajeto em até 8 minutos.</p>
+                    <p><strong>Preço:</strong> R$ 5,30</p>
+                    <button>Ver Mais</button>
                 </div>
     
                 <div class="product-item">
                     <img src="img/img6.jpg" alt="Bicicleta Elétrica">
-                    <h3>Teleferico - Rio de Janeiro</h3>
-                    <p>Ideal para passeios em família, com conforto e segurança para todos.</p>
-                    <p><strong>Preço:</strong> R$ 50,00 ida e volta</p>
-                    <button>Comprar</button>
+                    <h3>Complexo do Alemão - RJ</h3>
+                    <p>Trajeto em até 10 minutos.</p>
+                    <p><strong>Preço:</strong> R$ 5,00</p>
+                    <button>Ver Mais</button>
                 </div>
     
             </div>
@@ -207,8 +243,19 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+ <script src="https://unpkg.com/scrollreveal"></script>
+
+ <!-- AOS -->
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+ <!-- Inicialização do AOS -->
+ <script>
+     AOS.init();
+ </script>
 
     <script src="js.js"></script>
+    <script src="button.js"></script>
 
 
 

@@ -20,41 +20,54 @@ body {
     color: rgb(4, 54, 4);
 }
 
+/* Listas*/
+li {
+    list-style: none; /*remover os marcadores de listas da <ul>*/
+}
+
+/*Ancora*/
+a {
+    text-decoration: none; /* Remover o sublinhado da âncora*/
+}
+
 /*Início da estilização do Header*/
 header {
     padding: min(3vh, 2rem);
     /*Colocando um tamanho (Preenchimento) no Header*/
-    width: auto;
-    background-color: rgb(231, 250, 231);
+    width: 100%;
+    background-color: #b4cec4;
     /*Habilitando uma cor de fundo*/
-    display:flex;
+    display: flex;
     /*Tornando nosso Header Flex - Deixando os itens lado a lado*/
     justify-content: space-evenly;
     /*Justificativa do conteúdo*/
     align-items: center;
     /*Alinhamento na vertical - Deixando habilitada ao centro*/
-    position:sticky;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    box-shadow: 0 0.21rem 0.5rem;
+    position: sticky; /*Deixar o header fixo na página*/
+    top: 0; /**/
+    left: 0; /**/
+    z-index: 999; /**/
+    box-shadow: 0 0.21rem 0.5rem; /**/
 
 
 }
 
+
+
 /*Chamamos nossa logo(img) para estilização*/
 header img {
-    width: 7.813rem;
+    width: 125px;
     /*Largura da imagem*/
     height: auto;
     /*Altura da imagem ( automático) */
 }
 
+
 /*Chamamos nossa lista não ordenada para estilização*/
 header div nav ul {
     display: flex;
     /*Tornamos nossa lista não ordenada em (Flex), deixando os itens pertencentes a ela, lado a lado.*/
-    gap: 1.2rem;
+    gap: 20px;
     /*Espaçamento entre os elementos*/
 
 }
@@ -67,131 +80,145 @@ header div nav ul li a {
     /*Decoração do texto (sublinhado) desabilitado (none)*/
     color: rgb(65, 83, 65); 
     /*Cor da Letra*/
-}
-/* estilizacao  do button*/
-header>button { 
-    padding: 0.5rem;
-    background-color:  #8faca1;
-    border: none;
-   border-radius: 0.5rem;
+    font-family: Light 300;
+    /*Fonte da letra (Google fonts)*/
 }
 
-/* Estilizacao do menu que ficara exposto na responsividade do */
-
-.navbar {
-    color: white; /*Cor da letra*/
-    display: flex; /*Flexíveis*/
-    justify-content: space-between; /*A distribuição dos itens sejam com Space-between*/
-    align-items: center; /*Alinhamento da vertical*/
-    padding: 1rem 1.5rem; /*Preenchimento superior/inferior e esquerda/direita*/
-    height: 2.6rem; /*Altura do NavBar*/
+header div nav ul li a:hover
+{
+    color: #d9881e;
+    transition: 0.5s;
 }
 
-.nav-links { /*Aqui estamos estilizando a UL (lista não ordenada)*/
-    list-style: none; /*Retirando o estilo de lista*/ 
-    display: flex; /*Tornando a caixa flexível, e lado a lado*/
-    margin: 0; /*Zerando os espaços de margem que são habilitados por padrão*/
-    padding: 0; /*Zerando os preenchimentos que são habilitados por padrão*/
+/*Chamamos o botão modo escuro para estilização*/
+header>button {
+    
+    padding: 9px; /*preenchimento*/
+    background-color:  #7e9991; /*cor de fundo*/
+    border: 5px; /*arredondamento*/
+   
 }
 
-
-.nav-links li { /*Estilizando nossa LI que está dentro da UL*/
-    padding: 0 8px; /*Preenchimento da LI superior/inferior 0 e laterais em 9px*/
+/*Chamamos a âncora o botão*/
+header>button>a {
+   
+    display: flex; /*Tornando o elemento Flex*/
+    align-items: center; /*Alinhando ao centro*/
+    gap: 5px; /*Espaçamento*/
+    color: white; /*Cor*/
+    text-decoration: none; /*Removendo o sublinhado*/
+    font-weight: 400; /*Peso da fonte */
 }
 
-.nav-links a,
-.nav-links-mobile a { /*Estamos chamando as duas âncoras para estilização, tanto da Versão Desktop quanto da versão Mobile.*/
-    color: rgb(12, 12, 12); /*A cor da letra*/
-    text-decoration: none; /*E sem sublinhado*/
-    display: flex;
-    /* background-color: #44444493; */
-    font-size: 1.5rem;
+/* Menu do Hamburger */
+.menu {
+    display: flex; /*Tornando o elemento flexivel*/
+    align-items: center; /*Alinhando ao centro*/
+    justify-content: flex-end; /*Alinhado o item á direita*/ 
+    position: relative; /*posição normal*/
+    z-index: 100; /*eixo z*/
 }
 
-
-
-/* ---------------------- Configurando o menu mobile ---------------------------------------------*/
-
-.navbar {
-    color: white; /*Cor da letra*/
-    display: flex; /*Flexíveis*/
-    justify-content: space-between; /*A distribuição dos itens sejam com Space-between*/
-    align-items: end; /*Alinhamento da vertical*/
-    padding: 1rem 1.5rem; /*Preenchimento superior/inferior e esquerda/direita*/
-    height: 2rem; /*Altura do NavBar*/
+/*Botão Hamburger*/
+.hamburger {
+    cursor: pointer; /**/
 }
 
-.nav-links { /*Aqui estamos estilizando a UL (lista não ordenada)*/
-    list-style: none; /*Retirando o estilo de lista*/ 
-    display: flex; /*Tornando a caixa flexível, e lado a lado*/
-    margin: 0; /*Zerando os espaços de margem que são habilitados por padrão*/
-    padding: 0; /*Zerando os preenchimentos que são habilitados por padrão*/
-    align-items: center;
+/**/
+.hamburger input {
+    display: none; /*ocultar*/
 }
 
-
-.nav-links li { /*Estilizando nossa LI que está dentro da UL*/
-    padding: 0 8px; /*Preenchimento da LI superior/inferior 0 e laterais em 9px*/
+/**/
+.hamburger svg {
+    height: 3em; /*altura*/
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1); /*transição*/
 }
 
-.nav-links a,
-.nav-links-mobile a { /*Estamos chamando as duas âncoras para estilização, tanto da Versão Desktop quanto da versão Mobile.*/
-    color: rgb(12, 12, 12); /*A cor da letra*/
-    text-decoration: none; /*E sem sublinhado*/
-    display: flex;
-    font-size: 1.5rem;
-    background-color: #55555581;
+/**/
+.line {
+    fill: none; /**/
+    stroke: #032e1e; /*Cor de fundo*/
+    stroke-linecap: round; /**/
+    stroke-linejoin: round; /**/
+    stroke-width: 3; /**/
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1); /**/
 }
 
-.mobile-menu { /*Estilização da caixa Mobile quando aberta*/
-    display: none; /*Display: Nenhum*/
-    position: fixed; /*Posição fixa na parte direita da página*/
-    /* top: 0; /*Superior em 0 fazendo a caixa encostar ao topo*/
-    /*right: 0; Direita em 0 fazendo a caixa encostar a direita */
-    width: 100%; /*Largura em porcentagem da caixa*/
-    height: 28%; /*Altura de 100% da tela*/
-    background-color: rgba(231, 250, 231, 0); /*Cor de fundo*/
-    flex-direction: column; /*direção dos itens dentro da caixa */
-    align-items: end; /*Alinhamento na vertical do itens*/
-    font-size: 1.8rem; /*tamanho da letra dentro da caixa*/
+/**/
+.line-top-bottom {
+    stroke-dasharray: 12 63; /**/
 }
 
-.nav-links-mobile { /*Lista não ordenada da versão mobile*/
-    padding: 60px;
-    display: flex; /*Tornando os itens (LISTAS) flexíveis*/
-    flex-direction: column; /*Estamos direcionando o posicionamento dessas listas*/
-    text-align: end; /*Alinhando o texto ao centro*/
-    gap: 1rem; /*Espaço entre as listas */
-    /* width: 0%; Zeramos a largura podendo retirar essa linha para testar visualizão */
-    list-style: none; /*Estilo de lista desabilitado*/
-    /* padding: 0; Preenchimento zerado, podendo também ser retirado para testes */
+/**/
+.hamburger input:checked+svg {
+    transform: rotate(-45deg); /**/
 }
 
-.nav-links-mobile li { /*listas da versão Mobile*/
-    border-bottom: 1px solid #000000; /*Bordar inferior de cada lista*/
-    padding-bottom: 1.2rem; /*Tamanho da borda*/
+/**/
+.hamburger input:checked+svg .line-top-bottom {
+    stroke-dasharray: 20 300; /**/
+    stroke-dashoffset: -32.42; /**/
 }
 
-.hamburger,
-.close { /*Estilizando os botões de abertura e fechamento*/
-    font-size: 30px; /*Tamanho do elemento*/
-    background: none; /*Removido o Background*/
-    border: none; /*BORDA NENHUMAAAAAAA*/
-    color: rgb(28, 27, 27); /*cor do elemento*/
-    cursor: pointer; /*Cursor Habilitado*/
-    display: none; /*Escondendo os botões*/
+/* Menu Navegação */
+.menu-aberto {
+    background-color: #8faca1; /*cor de fundo*/
+    position: fixed; /*posição fixa*/
+    left: 0; /*Esquerda em 0*/
+    top: 0; /*Superior em 0*/
+    height: 0; /*Altura*/
+    width: 100%; /*Largura*/
+    z-index: 98; /**/
+    display: flex; /*Tornando o elemento Flex*/
+    align-items: center; /*Alinhando o elemento ao centro*/
+    justify-content: center; /*Justificando o elemento ao centro*/
+    overflow: hidden; /**/
+    transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out; /*Transição*/
+    opacity: 0; /*opacidade*/
 }
 
-.close {
-    margin-top: 5px;/*Espaçamento superior do X */
-    margin-right: 20px; /*Espaçamento a direita do X*/
-    display: block; /*Formatação da Imagem em bloco*/
-    align-self: end; /*Alinhamento do botão*/
+/*Menu aberto*/
+.menu-aberto.active {
+    height: 100vh; /*Altura*/
+    opacity: 1; /*opacidade*/
 }
 
+/*Navegação do Menu Hamburger*/
+.nav-menu {
+    width: 100%; /*Largura*/
+    height: 100%; /*Altura*/
+    display: flex; /*Tornando o elemento flex*/
+    flex-direction: column; /*posição de coluna*/
+    align-items: center; /*Alinhado o elemento ao centro*/
+    justify-content: center; /*Jusficando o elemento ao centro*/
+    gap: 4rem; /*Espaçamento*/
+    transition: opacity 0.5s ease-in-out; /*transição*/
+}
 
-.flex { /*ELEMENTO USADO NO JS*/
-    display: flex; /*Tornando item flexível e visível.*/
+/*Chamamod a Âncora do menu Hamburger para estilização*/
+.nav-menu a {
+    user-select: none; /**/
+    text-decoration: none; /**/
+    color: var(--color-white); /**/
+    font-family: var(--font-pequena); /**/
+    font-size: 2rem; /**/
+    font-weight: bold; /**/
+    opacity: 0; /**/
+    transform: translateY(-20px); /**/
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /**/
+}
+
+/*Menu aberto*/
+.menu-aberto.active .nav-menu a {
+    opacity: 1; /*opacidade*/
+    transform: translateY(0); /*Transição*/
+}
+
+/**/
+.nav-menu a:hover {
+    color: var(--color-destaque1); /*cor da letra*/
+    transition: all 0.3s ease; /*Transição*/
 }
 
 
@@ -379,7 +406,7 @@ p {
 footer {
     padding: min(3vh, 4rem);
     /*Tamanho/preenchimento do Footer*/
-    background-color: rgb(231, 250, 231);
+    background-color: #b4cec4;
     /*Cor de fundo*/
     display: flex;
     /*Tornando o Footer Flex - Deixando os itens lado a lado*/
@@ -490,6 +517,10 @@ footer div p {
        display:flex;
     }
 
+    #button-header {
+        display: none; 
+    }
+
 
 
     header {
@@ -579,6 +610,27 @@ footer div p {
        display: none;
     }
 
+    footer img {
+        width: 4.5rem;
+        height: 5rem;
+        text-align: center;
+        
+    }
+    
+    footer h3 {
+        display: none; /*escondendo o menu*/
+    }
+    
+    footer p {
+        display: none; /*escondendo o menu*/
+    }
+    
+    footer nav{
+        display: none; /*escondendo o menu*/
+    }
+    
+    }
+
 .menu-toggle {
     display: block; /* Mostrar o botão hamburguer */
 }
@@ -626,7 +678,8 @@ footer div p {
     footer {
         padding: 1rem; /* Reduz o preenchimento do footer */
     }
-}
+
+    
 
 .headline-t-mobis {
     height: 30%; /**/

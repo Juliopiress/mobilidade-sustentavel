@@ -30,7 +30,7 @@ header {
     padding: min(3vh, 2rem);
     /*Colocando um tamanho (Preenchimento) no Header*/
     width: 100%;
-    background-color: rgb(231, 250, 231);
+    background-color: #b4cec4;
     /*Habilitando uma cor de fundo*/
     display: flex;
     /*Tornando nosso Header Flex - Deixando os itens lado a lado*/
@@ -431,7 +431,7 @@ footer .div-logo-footer img {
 footer {
     padding: min(3vh, 4rem);
     /*Tamanho/preenchimento do Footer*/
-    background-color: rgb(231, 250, 231);
+    background-color: #b4cec4;
     /*Cor de fundo*/
     display: flex;
     /*Tornando o Footer Flex - Deixando os itens lado a lado*/

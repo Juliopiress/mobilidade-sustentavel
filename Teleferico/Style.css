@@ -1,49 +1,228 @@
-/* Resetando margens, espaçamentos e bordas padrão */
+@import url('https://fonts.google.com/noto/specimen/Noto+Serif');
+/*Fonte da letra (Google fontes)*/
+
 * {
-    margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Inclui bordas e espaçamentos no tamanho total */
+    /*Zerando o preenchimento*/
+    margin: 0;
+    /*Zerando a margin(top, bottom, right, left*/
+    list-style: none;
+    /*remover os marcadores de listas da <ul> */
+    font-family: "Noto Serif", serif;
+    /*Fonte da letra (Google fontes)*/
+    box-sizing: border-box;
 }
 
-/* Estilização do cabeçalho */
+/*HTML*/
+body {
+    background-color: white; /* Cor de fundo*/
+    width: 100%; /* largura do body*/
+    height: 100vh; /* Tamanho*/
+    overflow-x: hidden;
+    transition: background-color 0.5s, color 0.5s;  /**/
+    color: rgb(3, 70, 3); /**/
+    
+}
+
+/* Listas*/
+li {
+    list-style: none; /*remover os marcadores de listas da <ul>*/
+}
+
+/*Ancora*/
+a {
+    text-decoration: none; /* Remover o sublinhado da âncora*/
+}
+
+/*Início da estilização do Header*/
 header {
-    padding: min(3vh, 2rem); /* Espaçamento interno flexível */
-    width: 100%; /* Ocupar a largura total da página */
-    background-color: rgb(231, 250, 231); /* Cor de fundo */
-    display: flex; /* Itens dispostos em linha */
-    justify-content: space-evenly; /* Espaçamento igual entre os itens */
-    align-items: center; /* Alinhar itens verticalmente ao centro */
-    position: sticky; /* Fixa o cabeçalho no topo ao rolar a página */
-    top: 0;
-    left: 0;
-    z-index: 999; /* Garantir que fique acima de outros elementos */
-    box-shadow: 0 0.21rem 0.5rem; /* Sombra do cabeçalho */
+    padding: min(3vh, 2rem);
+    /*Colocando um tamanho (Preenchimento) no Header*/
+    width: 100%;
+    background-color: #b4cec4;
+    /*Habilitando uma cor de fundo*/
+    display: flex;
+    /*Tornando nosso Header Flex - Deixando os itens lado a lado*/
+    justify-content: space-evenly;
+    /*Justificativa do conteúdo*/
+    align-items: center;
+    /*Alinhamento na vertical - Deixando habilitada ao centro*/
+    position: sticky; /*Deixar o header fixo na página*/
+    top: 0; /**/
+    left: 0; /**/
+    z-index: 999; /**/
+    box-shadow: 0 0.21rem 0.5rem; /**/
+
+
 }
 
-/* Estilização do logotipo no cabeçalho */
+
+
+/*Chamamos nossa logo(img) para estilização*/
 header img {
-    width: 125px; /* Largura fixa da imagem */
-    height: auto; /* Altura proporcional */
+    width: 125px;
+    /*Largura da imagem*/
+    height: auto;
+    /*Altura da imagem ( automático) */
 }
 
-/* Estilização da lista de navegação */
-nav ul {
-    list-style: none; /* Remove marcadores da lista */
-    display: flex; /* Itens em linha */
-    margin-left: auto; /* Empurra a lista para a direita */
-    gap: 20px; /* Espaçamento entre os itens */
+
+/*Chamamos nossa lista não ordenada para estilização*/
+header div nav ul {
+    display: flex;
+    /*Tornamos nossa lista não ordenada em (Flex), deixando os itens pertencentes a ela, lado a lado.*/
+    gap: 20px;
+    /*Espaçamento entre os elementos*/
+
 }
 
-/* Estilização dos links de navegação */
-nav a {
-    color: black;/* Cor dos links */
-    text-decoration: none; /* Remove sublinhado */
-    font-weight: bold; /* Negrito */
+/*Chamamos nossa âncora (a) para estilização*/
+header div nav ul li a {
+    font-family: Light 300;
+    /*Fonte da letra (Google fonts)*/
+    text-decoration: none;
+    /*Decoração do texto (sublinhado) desabilitado (none)*/
+    color: rgb(65, 83, 65); 
+    /*Cor da Letra*/
+    font-family: Light 300;
+    /*Fonte da letra (Google fonts)*/
 }
 
-/* Efeito de hover nos links */
-nav a:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+header div nav ul li a:hover
+{
+    color: #d9881e;
+    transition: 0.5s;
+}
+
+/*Chamamos o botão modo escuro para estilização*/
+header>button {
+    
+    padding: 9px; /*preenchimento*/
+    background-color:  #7e9991; /*cor de fundo*/
+    border: 5px; /*arredondamento*/
+   
+}
+
+/*Chamamos a âncora o botão*/
+header>button>a {
+   
+    display: flex; /*Tornando o elemento Flex*/
+    align-items: center; /*Alinhando ao centro*/
+    gap: 5px; /*Espaçamento*/
+    color: white; /*Cor*/
+    text-decoration: none; /*Removendo o sublinhado*/
+    font-weight: 400; /*Peso da fonte */
+}
+
+/* Menu do Hamburger */
+.menu {
+    display: flex; /*Tornando o elemento flexivel*/
+    align-items: center; /*Alinhando ao centro*/
+    justify-content: flex-end; /*Alinhado o item á direita*/ 
+    position: relative; /*posição normal*/
+    z-index: 100; /*eixo z*/
+}
+
+/*Botão Hamburger*/
+.hamburger {
+    cursor: pointer; /**/
+}
+
+/**/
+.hamburger input {
+    display: none; /*ocultar*/
+}
+
+/**/
+.hamburger svg {
+    height: 3em; /*altura*/
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1); /*transição*/
+}
+
+/**/
+.line {
+    fill: none; /**/
+    stroke: #032e1e; /*Cor de fundo*/
+    stroke-linecap: round; /**/
+    stroke-linejoin: round; /**/
+    stroke-width: 3; /**/
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1); /**/
+}
+
+/**/
+.line-top-bottom {
+    stroke-dasharray: 12 63; /**/
+}
+
+/**/
+.hamburger input:checked+svg {
+    transform: rotate(-45deg); /**/
+}
+
+/**/
+.hamburger input:checked+svg .line-top-bottom {
+    stroke-dasharray: 20 300; /**/
+    stroke-dashoffset: -32.42; /**/
+}
+
+/* Menu Navegação */
+.menu-aberto {
+    background-color: #8faca1; /*cor de fundo*/
+    position: fixed; /*posição fixa*/
+    left: 0; /*Esquerda em 0*/
+    top: 0; /*Superior em 0*/
+    height: 0; /*Altura*/
+    width: 100%; /*Largura*/
+    z-index: 98; /**/
+    display: flex; /*Tornando o elemento Flex*/
+    align-items: center; /*Alinhando o elemento ao centro*/
+    justify-content: center; /*Justificando o elemento ao centro*/
+    overflow: hidden; /**/
+    transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out; /*Transição*/
+    opacity: 0; /*opacidade*/
+}
+
+/*Menu aberto*/
+.menu-aberto.active {
+    height: 100vh; /*Altura*/
+    opacity: 1; /*opacidade*/
+}
+
+/*Navegação do Menu Hamburger*/
+.nav-menu {
+    width: 100%; /*Largura*/
+    height: 100%; /*Altura*/
+    display: flex; /*Tornando o elemento flex*/
+    flex-direction: column; /*posição de coluna*/
+    align-items: center; /*Alinhado o elemento ao centro*/
+    justify-content: center; /*Jusficando o elemento ao centro*/
+    gap: 4rem; /*Espaçamento*/
+    transition: opacity 0.5s ease-in-out; /*transição*/
+}
+
+/*Chamamod a Âncora do menu Hamburger para estilização*/
+.nav-menu a {
+    user-select: none; /**/
+    text-decoration: none; /**/
+    color: var(--color-white); /**/
+    font-family: var(--font-pequena); /**/
+    font-size: 2rem; /**/
+    font-weight: bold; /**/
+    opacity: 0; /**/
+    transform: translateY(-20px); /**/
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /**/
+}
+
+/*Menu aberto*/
+.menu-aberto.active .nav-menu a {
+    opacity: 1; /*opacidade*/
+    transform: translateY(0); /*Transição*/
+}
+
+/**/
+.nav-menu a:hover {
+    color: var(--color-destaque1); /*cor da letra*/
+    transition: all 0.3s ease; /*Transição*/
 }
 
 /* Seção de destaque (Hero Section) */
@@ -85,14 +264,37 @@ nav a:hover {
 section {
     padding: 40px 0; /* Espaçamento interno vertical */
     text-align: center; /* Centraliza texto */
-    background-color: #314c53;
+    background: linear-gradient( 180deg, #b4cec4 9.33%, #cfdfd9 90%); /* cor de fundo com degradê*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Títulos das seções */
 h2 {
-    margin-bottom: 20px; /* Espaçamento inferior */
-    font-size: 28px;
-    color: #003366; /* Cor azul */
+    font-size: 2rem; /**/
+    font-weight: bolder; /**/
+    font-family: "Noto+Serif"; /**/
+    text-align: center; /**/
+    color: rgb(65, 83, 65); /**/
+    margin: 15px; /**/
+    flex-wrap: wrap; /**/
+}
+
+section p {
+    font-size: 1.2rem; /**/
+    color: rgb(44, 59, 44);
+    font-weight: 900; /**/
+    font-style: "Thin 100"; /**/
+    margin: 15px; /**/
+    flex-wrap: wrap; /**/
+}
+
+section img {
+    width: 90%; /**/
+    height: auto; /**/
+    flex-wrap: wrap; /**/
+    margin-right: 70px;
 }
 
 /* Grade de serviços */
@@ -255,7 +457,7 @@ h2 {
 /* Footer */
 footer {
     padding: min(3vh, 4rem);
-    background-color: rgb(231, 250, 231);
+    background-color: #b4cec4;
     display: flex;
     justify-content: space-evenly;
     gap: 15px;
@@ -363,13 +565,29 @@ footer div p {
 
 /* Responsividade */
 @media (max-width: 1024px) {
-    header {
-        flex-direction: column; /* Alinha os itens do cabeçalho verticalmente em telas menores */
-        padding: 2rem 1rem;
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    nav ul {
-        gap: 15px; /* Menor espaçamento entre os links */
+    header img {
+        width: 4.5rem;
+        height: 5rem;
+        
+    }
+
+    
+    header nav{
+        display: none; /*escondendo o menu*/
+    }
+
+    #sobre {
+        flex-direction: column;
+    }
+
+    #button-header {
+        display: none; /*escondendo o menu*/
     }
 
     .servicos-grid {
@@ -438,10 +656,27 @@ footer div p {
         height: 220px; /* Ajusta mais a altura */
     }
 
-    footer {
-        padding: 2rem 1rem; /* Ajusta o padding do footer */
+    footer img {
+        width: 4.5rem;
+        height: 5rem;
+        text-align: center;
+        
     }
-}
+    
+    footer h3 {
+        display: none; /*escondendo o menu*/
+    }
+    
+    footer p {
+        display: none; /*escondendo o menu*/
+    }
+    
+    footer nav{
+        display: none; /*escondendo o menu*/
+    }
+    
+    }
+
 
 @media screen and (max-width: 768px) {
     nav ul {
