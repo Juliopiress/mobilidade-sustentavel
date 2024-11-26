@@ -392,14 +392,6 @@ p {
 
 
 
-.section2{
- justify-items: center;
- justify-content:space-between;
- padding: 19px;
- text-align:end;
-}
-
-
 
 
 /*Início da estilização do Footer/Rodapé da pagina*/
@@ -731,6 +723,123 @@ footer div p {
  
 }
 
+.section2 {
+    margin: 0;
+    width: 100%;
+    padding: 0; /* Espaçamento interno na seção. */
+    display: flex; /* Layout flexível. */
+    align-items: center; /* Centraliza itens verticalmente. */
+    justify-content: center; /* Centraliza itens horizontalmente. */
+}
+
+.container-estacionamento {
+    display: flex; /* Layout flexível. */
+    flex-direction: column; /* Itens empilhados verticalmente. */
+    align-items: center; /* Centraliza horizontalmente. */
+    justify-content: space-between; /* Espaçamento igual entre os itens. */
+    width: 100%; /* Ocupa a largura total. */
+}
+
+.cabecalho-estacionamento {
+    text-align: center; /* Centraliza texto. */
+    margin-bottom: 1.8rem; /* Espaço abaixo. */
+    color: var(--color-white); /* Cor branca personalizada. */
+    display: flex; /* Layout flexível. */
+    align-items: center; /* Centraliza verticalmente. */
+    justify-content: center; /* Centraliza horizontalmente. */
+}
+
+.text-cabecalho-estacionamento h2 {
+    font-family: var(--font-grande); /* Fonte personalizada. */
+    font-size: 3rem; /* Tamanho grande para o título. */
+}
+
+.text-cabecalho-estacionamento p {
+    font-size: 1.5rem; /* Texto legível. */
+    color: var(--color-gray2); /* Cor cinza personalizada. */
+    font-weight: 500; /* Peso médio. */
+    line-height: 1.4; /* Espaçamento entre linhas. */
+    max-width: 900px; /* Limita a largura. */
+}
+
+.conteudo-estacionamento {
+    display: grid; /* Layout em grade. */
+    gap: 1rem; /* Espaçamento entre os itens. */
+    width: 100%; /* Ocupa a largura total. */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsividade com colunas automáticas */
+}
+
+.box-estacionamento {
+    border: 2px solid hsl(181, 58%, 58%); /* Borda com tom de verde. */
+    border-radius: 20px; /* Bordas arredondadas. */
+    color: var(--color-white); /* Texto branco. */
+    display: flex; /* Layout flexível. */
+    flex-direction: column; /* Itens empilhados verticalmente. */
+    justify-content: center; /* Centraliza verticalmente. */
+    height: 280px; /* Altura fixa. */
+    padding: 1.8rem; /* Espaçamento interno. */
+    gap: 1.5rem; /* Espaço entre elementos internos. */
+}
+
+.box-estacionamento i {
+    font-size: 2.8rem; /* Ícone grande. */
+    color: var(--color-white); /* Cor branca para o ícone. */
+}
+
+.box-estacionamento p {
+    color: var(--color-gray2); /* Cor cinza para o texto. */
+    font-size: 1.2rem; /* Tamanho pequeno e legível. */
+    font-weight: 500; /* Peso médio. */
+    line-height: 1.4; /* Espaçamento entre linhas. */
+}
+
+.box-estacionamento h3 {
+    font-size: 1.8rem; /* Tamanho do subtítulo. */
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .text-cabecalho-estacionamento h2 {
+        font-size: 2.5rem; /* Tamanho menor para telas menores */
+    }
+
+    .text-cabecalho-estacionamento p {
+        font-size: 1.2rem; /* Tamanho menor para telas menores */
+    }
+
+    .box-estacionamento {
+        height: auto; /* Permite que a altura se ajuste ao conteúdo */
+    }
+
+    .box-estacionamento h3 {
+        font-size: 1.5rem} 
+    }
+
+    .box-estacionamento p {
+        font-size: 1rem; /* Tamanho menor para o texto em telas menores */
+    }
 
 
+@media (max-width: 480px) {
+    .text-cabecalho-estacionamento h2 {
+        font-size: 2rem; /* Tamanho ainda menor para telas muito pequenas */
+    }
+
+    .text-cabecalho-estacionamento p {
+        font-size: 1rem; /* Tamanho do texto reduzido para telas muito pequenas */
+    }
+
+    .box-estacionamento {
+        padding: 1rem; /* Reduz o espaçamento interno para telas menores */
+        gap: 1rem; /* Reduz o espaço entre os elementos internos */
+    }
+
+    .box-estacionamento h3 {
+        font-size: 1.3rem; /* Tamanho do subtítulo reduzido */
+    }
+
+    .box-estacionamento p {
+        font-size: 0.9rem; /* Tamanho do texto reduzido */
+    }
+}
 /*  */

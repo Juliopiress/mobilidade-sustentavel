@@ -210,11 +210,18 @@ header>button>a {
     transition: all 0.3s ease; /**/
 }
 
+hr {
+    background-color: #d9881e;
+    width:120%;
+    margin-left: -10px;
+    height:1vh;
+}
 
 /* Estilização da introdução do produto */
 .product-intro {
     padding: 150px 0; /* Espaçamento vertical */
     text-align: center; /* Centraliza o texto */
+    background-color: #0b2a36;
 }
 
 /* Contêiner para centralizar conteúdo da introdução */
@@ -228,7 +235,7 @@ header>button>a {
 .product-intro p {
     font-size: 18px; /* Define o tamanho da fonte */
     font-family: 'Open Sans', sans-serif; /* Define a fonte */
-    color: #666; /* Define a cor do texto */
+    color: #ffffff; /* Define a cor do texto */
     line-height: 1.6; /* Melhora legibilidade */
     margin-bottom: 30px; /* Adiciona espaçamento inferior */
 }
@@ -287,18 +294,19 @@ header>button>a {
 
 /* Estilização individual de cada item de produto */
 .product-item {
-    gap: 30px;
+    border: solid 3px #b4cec4;
     background-color: #ecf0f1; /* Fundo claro */
     border-radius: 8px; /* Bordas arredondadas */
     padding: 20px; /* Espaçamento interno */
     text-align: center; /* Centraliza o conteúdo */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar o item */
+    margin: 30px;
     transition: transform 0.3s ease-in-out; /* Animação suave ao passar o mouse */
 }
 
 /* Imagens dos produtos */
 .product-item img {
-    width: 28vw; /* Largura proporcional à viewport */
+    width: 100%; /* Largura proporcional à viewport */
     height: 200px; /* Altura fixa */
     border-radius: 8px; /* Bordas arredondadas */
     margin-bottom: 20px; /* Espaçamento inferior */
@@ -508,7 +516,7 @@ footer div p {
 /*Fim da estilização do Footer*/
 
 /* Responsividade */
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
     .product-list {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ajusta o número de colunas para telas menores */
     }
@@ -516,6 +524,14 @@ footer div p {
     .product-intro h1 {
         font-size: 2rem; /* Diminui o tamanho da fonte no título */
     }
+    .product-item {
+        width: 0%; /* Exibe 2 itens por linha */
+        margin: 30px;
+      }
+
+      .product-item img{
+        width:100%;
+      }
 
     header img {
         width: 100px; /* Diminui a largura da imagem no cabeçalho */
@@ -530,7 +546,6 @@ footer div p {
     /* Ajustes no cabeçalho */
     header {
         padding: 2rem 1rem;
-        flex-direction: column; /* Coloca os itens do cabeçalho em coluna em telas pequenas */
         align-items: flex-start; /* Alinha os itens à esquerda */
     }
 
@@ -553,13 +568,16 @@ footer div p {
     }
 
     .product-item img {
-        width: 70%; /* Ajusta a largura das imagens dos produtos */
-        height: auto; /* Mantém a proporção da imagem */
+        
+        width:100%; /* Ajusta a largura das imagens dos produtos */
+        height: 23vh; /* Mantém a proporção da imagem */
     }
 
     .product-item {
         padding: 15px; /* Diminui o preenchimento dos itens de produto */
+        width: 100%; /* Exibe 1 item por linha */
     }
+    
 
     .section-suporte {
         height: 50vh; /* Ajusta a altura da seção de suporte */
@@ -581,6 +599,10 @@ footer div p {
         font-size: 14px; /* Diminui o tamanho da fonte */
     }
 
+    .product-item img{
+        width:20vw;
+    }
+
     .product-intro h1 {
         font-size: 1.8rem; /* Diminui o título */
     }
@@ -596,6 +618,11 @@ footer div p {
     .section-suporte p {
         font-size: 1.2rem; /* Diminui o tamanho do texto de descrição */
     }
+
+    .section-suporte{
+        height:140vh;
+    }
+    
 
     .btn-suporte {
         padding: 8px 16px; /* Ajusta o tamanho do botão */
@@ -630,3 +657,33 @@ footer div p {
         padding: 2rem 1rem;
     }
 }
+
+/* Estilo padrão para telas maiores (desktop) */
+
+  
+  /* Para tablet: 2 itens por linha */
+  @media (max-width: 1024px) {
+    .product-item {
+      width: 48%; /* Exibe 2 itens por linha */
+      
+    }
+  }
+  
+  /* Para celular: 1 item por linha */
+  @media (max-width: 600px) {
+    .product-item {
+      width: 100%; /* Exibe 1 item por linha */
+      margin: 10px;
+      
+    }
+
+    .product-list {
+        padding: 10px;
+    }
+
+    .product-item img{
+        width:21vw;
+        height:20vh;
+    }
+  }
+  

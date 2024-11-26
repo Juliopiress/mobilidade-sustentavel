@@ -15,7 +15,7 @@ $(document).ready(function(){
     $('.product-list').slick({
         
         //slidestoshow: número de cards exibidos ao mesmo tempo no carousel
-        slidesToShow:3, // Exibe 3 cards ao mesmo tempo
+        slidesToShow:2, // Exibe 3 cards ao mesmo tempo
 
         //slideToscroll:define quantos cards serão deslizados ao mover o carousel
         slidesToScrool:3, // mover 1 card por vez ao deslizar
@@ -49,3 +49,33 @@ function trocarCor() {
     };
 }
 
+
+
+
+
+
+
+
+
+$(document).ready(function(){
+    $('.product-list').slick({
+      infinite: true,
+      slidesToShow: 4, // 4 itens por vez (desktop)
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1024, // Tablet
+          settings: {
+            slidesToShow: 2, // 2 itens por vez
+          }
+        },
+        {
+          breakpoint: 600, // Celular
+          settings: {
+            slidesToShow: 1, // 1 item por vez
+          }
+        }
+      ]
+    });
+  });
+  
