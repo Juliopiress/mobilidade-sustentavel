@@ -15,23 +15,23 @@
 
 /*HTML*/
 body {
-    background-color: white; /**/
-    width: 100%; /**/
-    height: 100vh; /**/
+    background-color: white; /* Cor de fundo*/
+    width: 100%; /* largura do body*/
+    height: 100vh; /* Tamanho*/
     overflow-x: hidden;
     transition: background-color 0.5s, color 0.5s;  /**/
     color: rgb(3, 70, 3); /**/
     
 }
 
-/**/
+/* Listas*/
 li {
-    list-style: none; /**/
+    list-style: none; /*remover os marcadores de listas da <ul>*/
 }
 
-/**/
+/*Ancora*/
 a {
-    text-decoration: none; /**/
+    text-decoration: none; /* Remover o sublinhado da âncora*/
 }
 
 /*Botões fixos*/
@@ -51,32 +51,32 @@ a {
     transition: opacity 0.5s ease, box-shadow 0.5s ease; /**/
 }
 
-/**/
+/*Chamamos o Botão voltar ao topo para estilização*/
 #backToTop {
-    bottom: 20px; /**/
-    left: 20px; /**/
+    bottom: 20px; /*Define a distância do botão em relação á parte inferior da tela*/
+    left: 20px; /*Define a distância do botão em relação á esquerda da tela*/
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /**/
 }
 
 
-/**/
+/*Chamamos o Botão do whatsapp para estilização*/
 #whatsappButton {
-    bottom: 20px; /**/
-    right: 20px; /**/
-    background-color: #25D366; /**/
-    box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.5);  /**/
-    animation: pulse 2s infinite; /**/
+    bottom: 20px; /*Define a distância do botão em relação á parte inferior da tela*/
+    right: 20px; /*Define a distância do botão em relação á direita da tela*/
+    background-color: #25D366; /*Cor de fundo*/
+    box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.5);  /*Sombra verde*/
+    animation: pulse 2s infinite; /*usada para aplicar animações a elementos.*/
 }
 
-/**/
+/*Botão do whatsapp*/
 #whatsappButton i {
-    font-size: 24px; /**/
-    color: #fff; /**/
+    font-size: 24px; /*Tamanho*/
+    color: #fff; /*cor*/
 }
 
-/**/
+/*icones dos botões*/
 .fixed-button i {
-    font-size: 24px; /**/
+    font-size: 24px; /*tamanho do icone*/
 }
 
 @keyframes pulse {
@@ -103,7 +103,7 @@ header {
     padding: min(3vh, 2rem);
     /*Colocando um tamanho (Preenchimento) no Header*/
     width: 100%;
-    background-color: rgb(231, 250, 231);
+    background-color: #b4cec4;
     /*Habilitando uma cor de fundo*/
     display: flex;
     /*Tornando nosso Header Flex - Deixando os itens lado a lado*/
@@ -111,7 +111,7 @@ header {
     /*Justificativa do conteúdo*/
     align-items: center;
     /*Alinhamento na vertical - Deixando habilitada ao centro*/
-    position: sticky; /**/
+    position: sticky; /*Deixar o header fixo na página*/
     top: 0; /**/
     left: 0; /**/
     z-index: 999; /**/
@@ -152,55 +152,61 @@ header div nav ul li a {
     /*Fonte da letra (Google fonts)*/
 }
 
-/**/
+header div nav ul li a:hover
+{
+    color: #d9881e;
+    transition: 0.5s;
+}
+
+/*Chamamos o botão modo escuro para estilização*/
 header>button {
     
-    padding: 5px; /**/
-    background-color:  #8faca1; /**/
-    border: 5px; /**/
+    padding: 9px; /*preenchimento*/
+    background-color:  #7e9991; /*cor de fundo*/
+    border: 5px; /*arredondamento*/
    
 }
 
-/**/
+/*Chamamos a âncora o botão*/
 header>button>a {
    
-    display: flex; /**/
-    align-items: center; /**/
-    gap: 5px; /**/
-    color: white; /**/
-    text-decoration: none; /**/
-    font-weight: 400; /**/
+    display: flex; /*Tornando o elemento Flex*/
+    align-items: center; /*Alinhando ao centro*/
+    gap: 5px; /*Espaçamento*/
+    color: white; /*Cor*/
+    text-decoration: none; /*Removendo o sublinhado*/
+    font-weight: 400; /*Peso da fonte */
 }
 
-/* Menu */
+/* Menu do Hamburger */
 .menu {
-    display: flex; /**/
-    align-items: center; /**/
-    justify-content: flex-end; /**/ 
-    position: relative; /**/
-    z-index: 100; /**/
+    display: flex; /*Tornando o elemento flexivel*/
+    align-items: center; /*Alinhando ao centro*/
+    justify-content: flex-end; /*Alinhado o item á direita*/ 
+    position: relative; /*posição normal*/
+    z-index: 100; /*eixo z*/
 }
 
-/**/
+/*Botão Hamburger*/
 .hamburger {
     cursor: pointer; /**/
 }
 
 /**/
 .hamburger input {
-    display: none; /**/
+    display: none; /*ocultar*/
 }
 
 /**/
 .hamburger svg {
-    height: 3em; /**/
-    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1); /**/
+    height: 3em; /*altura*/
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1); /*transição*/
 }
 
 /**/
 .line {
     fill: none; /**/
-    stroke: #032e1e; /**/
+    stroke: #032e1e; /*Cor de fundo*/
     stroke-linecap: round; /**/
     stroke-linejoin: round; /**/
     stroke-width: 3; /**/
@@ -225,40 +231,40 @@ header>button>a {
 
 /* Menu Navegação */
 .menu-aberto {
-    background-color: #8faca1; /**/
-    position: fixed; /**/
-    left: 0; /**/
-    top: 0; /**/
-    height: 0; /**/
-    width: 100%; /**/
+    background-color: #8faca1; /*cor de fundo*/
+    position: fixed; /*posição fixa*/
+    left: 0; /*Esquerda em 0*/
+    top: 0; /*Superior em 0*/
+    height: 0; /*Altura*/
+    width: 100%; /*Largura*/
     z-index: 98; /**/
-    display: flex; /**/
-    align-items: center; /**/
-    justify-content: center; /**/
+    display: flex; /*Tornando o elemento Flex*/
+    align-items: center; /*Alinhando o elemento ao centro*/
+    justify-content: center; /*Justificando o elemento ao centro*/
     overflow: hidden; /**/
-    transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out; /**/
-    opacity: 0; /**/
+    transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out; /*Transição*/
+    opacity: 0; /*opacidade*/
 }
 
-/**/
+/*Menu aberto*/
 .menu-aberto.active {
-    height: 100vh; /**/
-    opacity: 1; /**/
+    height: 100vh; /*Altura*/
+    opacity: 1; /*opacidade*/
 }
 
-/**/
+/*Navegação do Menu Hamburger*/
 .nav-menu {
-    width: 100%; /**/
-    height: 100%; /**/
-    display: flex; /**/
-    flex-direction: column; /**/
-    align-items: center; /**/
-    justify-content: center; /**/
-    gap: 4rem; /**/
-    transition: opacity 0.5s ease-in-out; /**/
+    width: 100%; /*Largura*/
+    height: 100%; /*Altura*/
+    display: flex; /*Tornando o elemento flex*/
+    flex-direction: column; /*posição de coluna*/
+    align-items: center; /*Alinhado o elemento ao centro*/
+    justify-content: center; /*Jusficando o elemento ao centro*/
+    gap: 4rem; /*Espaçamento*/
+    transition: opacity 0.5s ease-in-out; /*transição*/
 }
 
-/**/
+/*Chamamod a Âncora do menu Hamburger para estilização*/
 .nav-menu a {
     user-select: none; /**/
     text-decoration: none; /**/
@@ -271,53 +277,53 @@ header>button>a {
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /**/
 }
 
-/**/
+/*Menu aberto*/
 .menu-aberto.active .nav-menu a {
-    opacity: 1; /**/
-    transform: translateY(0); /**/
+    opacity: 1; /*opacidade*/
+    transform: translateY(0); /*Transição*/
 }
 
 /**/
 .nav-menu a:hover {
-    color: var(--color-destaque1); /**/
-    transition: all 0.3s ease; /**/
+    color: var(--color-destaque1); /*cor da letra*/
+    transition: all 0.3s ease; /*Transição*/
 }
 
 
-/**/
+/*Chamamos a primeira sessão para a estilização*/
 .section-1 {
-    padding: 7rem; /**/
-    width: 100%; /**/
-    height: 100vh; /**/
-    position: relative; /**/
-    background-color: transparent; /**/
-    display: flex; /**/
+    padding: 7rem; /*preenchimento*/
+    width: 100%; /*largura */
+    height: 100vh; /*altura*/
+    position: relative; /*posição relativo*/
+    background-color: transparent; /*Cor de fundo: Transparente*/
+    display: flex; /*Tornando a sessão flex*/
     overflow: hidden; /**/
     
 }
 
-/**/
+/*Chamamos o título da section 1 para a estilização*/
 .section-1 h1 {
-    text-align: center; /**/
-    font-size: 3rem; /**/
-    font-weight: 600; /**/ 
-    color: #186350; /**/
-    margin: 20px; /**/
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, .9); /**/
-    border-radius: 5px;  /**/
-    z-index: 1; /**/
-    background-color: aliceblue; /**/
-    opacity: 0.8;  /**/
-    position: absolute; /**/
+    text-align: center; /*Centralizar o texto*/
+    font-size: 3rem; /*Tamanho da letra*/
+    font-weight: 600; /*Peso da letra*/ 
+    color: #186350; /*Cor da letra*/
+    margin: 20px; /*espaçamento da direita, esquerda, superior e inferior*/
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, .9); /*Sombra*/
+    border-radius: 5px;  /*Arredondamento*/
+    z-index: 1; /*Eixo Z*/
+    background-color: aliceblue; /*Cor de fundo*/
+    opacity: 0.8;  /*opacidade*/
+    position: absolute; /*posição absoluta*/
     top: 20%; /**/
     left: 20%; /**/
     
   
 }
 
-/* Style the video: 100% width and height to cover the entire window */
+/* Chamamos o vídeo da primeira sessão para a estilização */
 #myVideo {
-    position:absolute; /**/
+    position:absolute; /*Posição absoluta*/
     right: 0; /**/
     bottom: 0; /**/
     min-width: 100%; /**/
@@ -705,7 +711,7 @@ header>button>a {
     flex: 0 0 100%; /* Cada item ocupa 100% da largura do container*/
 }
 
-/**/
+/*Imagem do carrossel*/
 img {
     width: 100%; /* As imagens ocupam toda a largura do item*/
     display: block; /* Garante que não haja espaçamento abaixo das imagens*/
@@ -806,7 +812,8 @@ img {
 footer {
     padding: min(3vh, 4rem);
     /*Tamanho/preenchimento do Footer*/
-    background-color: rgb(231, 250, 231);
+    width: 100%;
+    background-color: #b4cec4;
     /*Cor de fundo*/
     display: flex;
     /*Tornando o Footer Flex - Deixando os itens lado a lado*/

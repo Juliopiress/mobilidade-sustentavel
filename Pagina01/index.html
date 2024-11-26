@@ -3,10 +3,12 @@
 <head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>T-MOBIS | Site Oficial</title>
-
+    <title>T-MOBIS | Site Oficial</title> 
+    
+    <!-- logo -->
     <link rel="shortcut icon" href="imagem/ponto-de-onibus.png" type="image/x-icon">
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style1.css">
     <link rel="stylesheet" href="responsividade.css">
 
@@ -86,9 +88,10 @@
        </div>
 
        
-
+     <!-- Botão modo escuro -->
        <button id="button-header" onclick="trocarCor()">Modo Escuro</button>
-
+         
+       <!-- Criamos uma div para o Botão hamburger -->
        <div class="menu">
         <label class="hamburger">
             <input type="checkbox" id="menuToggle">
@@ -100,6 +103,7 @@
             </svg>
         </label>
     </div>
+    <!--!-- Criamos uma div para o Botão hamburger quando ele estiver aberto -->
     <div class="menu-aberto">
         <nav class="nav-menu">
             <a href="#inicio" target="_blank">INÍCIO</a>
@@ -112,15 +116,25 @@
     </div>
 
     </header>
+    
+    <!-- Main indica ao navegador onde está o conteúdo principal da página. -->
 <main>
-    <section class="section-1" id="inicio">
+
+
+    <!-- Tag Section = Utilizadas para criar sessões de conteúdo dentro do página. -->
+     <section class="section-1" id="inicio">
+        <!-- Primeira sessão com o nome (section1) -->
+
        
+        <!-- Criamos uma div para separa o título do vídeo-->
         <div class="div-video">
+            <!-- (H1)Título -->
         <h1>SE DEPENDER DA GENTE <br>
             O CÉU CONTINUARÁ AZUL </h1>
     </div>
 
     
+               <!-- Colocamos um vídeo para ficar de fundo na seção-->
 
     <video autoplay muted loop id="myVideo">
         <source src="imagem/16995-277920510_small.mp4" type="video/mp4" loading="lazy">
@@ -128,16 +142,19 @@
   
 
     </section>
-
+    
+    <!-- Sessão 2 -->
     <section class="section-2" id="section2">
-         
-        <div class="div-section2" id="div-sect2">
-
+ 
+        
+         <div class="div-section2" id="div-sect2">
+           <!-- Criamos uma Div para diferenciar o Subtítulo e o parágrafo do restante. -->
             <div class="div-titulo">
+                <!-- (H2) Subtitulo -->
                 <h2 id="sect2-h2">CONHEÇA <br>
                     A T-MOBIS</h2> <br> <br>
          
-    
+         <!-- (P) Paragráfo -->
            <p id="sect2-p">Nosso Objetivo é criar soluções que minimizem os impactos ambientais, que promovam a justiça <br>
              social e melhorem a qualidade de vida nas cidades.</p> <br>
  
@@ -147,7 +164,10 @@
  
          </div>
 
+
+         <!-- Âncora -->
          <a href="/Serviços/index.html" target="_blank">
+            <!-- Botão nossos serviços -->
          <button class="cta" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
             <span>Nossos Serviços</span>
             <svg width="15px" height="10px" viewBox="0 0 13 10">
@@ -158,56 +178,67 @@
        </a>
  
          </div>
-
+              <!-- Criamos uma div para separa nossa imagem -->
          <div class="service" id="sect2-img">
             <img src="imagem/transportes_-removebg-preview.png" alt="imagem dos serviços" loading="lazy">
          </div>
 
         
     </section>
-
+       
+    <!-- Sessão 3 -->
     <section class="section-3" id="section3">
         
-
+       <!-- Criamos uma div para guardar o subtitulo e paragráfo e separar do restante -->
         <div class="estacione">
+            <!-- (H2) Subtitulo -->
             <h2>ESTACIONE E ANDE</h2> <br> <br>
+            <!-- (P) Paragráfo -->
             <p>Aonde quer que você vá tem <br>
               Sempre uma T-Mobis por perto. </p>
             
         
-
+         <!-- Criamos uma div para guardar o botão da sessão 3 -->
         <div class="botao1">
+            <!-- Âncora -->
             <a href="/Estacionamento/index.html" target="_blank">
+                <!-- Botão -->
                 <button>SAIBA MAIS</button>
             </a>
          </div>
 
         </div>
-
+       <!-- Criamos div para separar a imagem do restante -->
         <div class="estione-img">
+            <!-- Imagem -->
             <img src="imagem/estacione-removebg-preview.png" alt="imagem do estacionamento" loading="lazy">
         </div>
 
         
     </section>
 
+    <!-- Sessão 4 -->
     <section class="section-4">
 
     
-
+       <!-- Criamos uma div para separar o subtitulo e paragráfo do restante -->
         <div>
+            <!-- (H2) Subtitulo -->
         <h2>Conheça a plataforma digital <br>
          da T-Mobis: O aplicativo Mobis+</h2> <br> <br>
-
+           <!-- (P) Paragráfo -->
          <p>Independente do seu destino, a Mobis+ traz para a palma da sua mão toda a facilidade que precisa para ganhar tempo no seu dia a dia. <br>
             Com o aplicativo você consegue ver as vagas disponíveis dos estacionamentos.
          </p>
         </div>
-
+         
+        <!-- Criamos uma div para guardar a imagem -->
         <div>
+            <!-- Imagem -->
             <img src="imagem/_Mobile_Application_.png" alt="Imagem do aplicativo T-mobis" loading="lazy">
         </div>
-
+        
+        <!-- Criamos uma div para guardar o texto que vais ficar passando na sessão 4 com a animação scroll -->
         <div class="headline-t-mobis" data-aos="fade-up" data-aos-duration="1000">
             <div class="headline-scroll" id="headline-scroll">
                 <span class="bold">T-MOBIS</span>
@@ -228,26 +259,32 @@
     </section>
 
         
-
+    <!-- Sessão 5 -->
     <section class="section-5">
-
+      
+        <!-- Criamos uma div para separar o subtitulo e paragráfo do restante -->
         <div class="div-content">
+            <!-- (H3) Subtitulo -->
             <h3>REGIÕES EXTREMAS DE SÃO PAULO</h3> <br> </h3>
-
+            
+            <!-- (P) Paragráfo -->
             <p> Chegou o Teleférico na CIDADE TIRADENTES! <br>
              O transporte sustentável ideal que atende bem ás necessidades da população <br>
               e ajuda no meio ambiente </p>
-
+          <!-- Div para separar o botão da sessão 5 -->
               <div class="botao2">
+                <!-- Âncora -->
                 <a href="/Teleferico/Index.html" target="_blank">
+                    <!-- Botão -->
                     <button>SAIBA MAIS</button>
                 </a>
                 </div>
 
         </div>
-      
+      <!-- Criamos uma div para separar o carrossel do restante -->
         <div class="carousel-container">
           <div class="carousel-track" id="carouselTrack">
+            <!-- Carrossel com imagens de feedback -->
         <div class="carousel">
             <img src="imagem/depo_homem-removebg-preview.png" alt="imagem homem" loading="lazy">
         </div>
@@ -276,18 +313,21 @@
 
 </section>
      
+<!-- Sessão6 -->
    <section class="section-6">
-
+   <!-- (H2) Subtitulo -->
     <h2>Nossos Parceiros</h2>
+    <!-- (Hr) linha -->
     <hr class="line1">
 
-
+     <!-- Criamos uma div para colocar as logos da parceria da empresa -->
     <div class="parceria">
         <img src="imagem/parcerias-removebg-preview.png" alt="imagem parcerias" loading="lazy">
     </div>
 
-
+    <!-- Criamos uma div para separar o QrCode do restante -->
     <div class="div-qrcode"> 
+        <!-- Imagem do QrCode para olhar o site pelo celular -->
         <img class="qr-code" src="imagem/qr-code-1.png" alt="qr code" loading="lazy">
     </div>
 
@@ -352,7 +392,7 @@
  </footer>
 
 
-
+   <!-- Biblioteca do Javascript -->
  <script src="https://kit.fontawesome.com/fdd516a2fb.js" crossorigin="anonymous"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
  <script src="https://unpkg.com/scrollreveal"></script>

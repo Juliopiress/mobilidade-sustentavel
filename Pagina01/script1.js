@@ -1,4 +1,5 @@
-function trocarCor() {
+function trocarCor() { // Função do Botão modo escuro para trocar de cor ao clicar
+
     if (document.body.style.backgroundColor === "black") {
        
         document.body.style.backgroundColor = "white";
@@ -17,6 +18,7 @@ function trocarCor() {
 };
 
 
+// Função para deixar o vídeo da sessão 1 de fundo
 
 window.addEventListener("resize" , function(){
 
