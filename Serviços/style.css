@@ -213,7 +213,6 @@ header>button>a {
 
 /* Estilização da introdução do produto */
 .product-intro {
-    background-color: #f4f4f4; /* Fundo claro */
     padding: 150px 0; /* Espaçamento vertical */
     text-align: center; /* Centraliza o texto */
 }
@@ -258,7 +257,6 @@ header>button>a {
 
 /* Estilização geral de seções de produtos */
 .product-section {
-    background-color: #fff; /* Fundo branco */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
     border-radius: 8px; /* Bordas arredondadas */
     margin-bottom: 40px; /* Espaçamento inferior */
@@ -509,57 +507,126 @@ footer div p {
 
 /*Fim da estilização do Footer*/
 
-/* Fim do Footer */
+/* Responsividade */
+@media (max-width: 1200px) {
+    .product-list {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ajusta o número de colunas para telas menores */
+    }
 
-
-/* Responsividade*/
-@media (min-width:360px) and (max-width: 1024px) {
-
-    header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .product-intro h1 {
+        font-size: 2rem; /* Diminui o tamanho da fonte no título */
     }
 
     header img {
-        width: 4.5rem;
-        height: 5rem;
-        
+        width: 100px; /* Diminui a largura da imagem no cabeçalho */
     }
 
-    
-    header nav{
-        display: none; /*escondendo o menu*/
+    footer .div-logo-footer img {
+        width: 100px; /* Diminui a largura da imagem no footer */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Ajustes no cabeçalho */
+    header {
+        padding: 2rem 1rem;
+        flex-direction: column; /* Coloca os itens do cabeçalho em coluna em telas pequenas */
+        align-items: flex-start; /* Alinha os itens à esquerda */
     }
 
-    #button-header {
-        display: none; /*escondendo o menu*/
+    header div nav ul {
+        flex-direction: column; /* Alinha os itens de navegação verticalmente */
+        gap: 10px; /* Reduz o espaçamento */
     }
 
-    
+    header img {
+        width: 80px; /* Ajusta o tamanho da logo */
+    }
 
-    .product-list {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 30px;
+    /* Menu hamburger */
+    .hamburger svg {
+        height: 2em; /* Reduz o tamanho do ícone */
+    }
+
+    .menu-aberto .nav-menu {
+        gap: 2rem; /* Reduz o espaçamento entre os itens do menu */
+    }
+
+    .product-item img {
+        width: 70%; /* Ajusta a largura das imagens dos produtos */
+        height: auto; /* Mantém a proporção da imagem */
     }
 
     .product-item {
+        padding: 15px; /* Diminui o preenchimento dos itens de produto */
+    }
 
-        flex-wrap: wrap;
+    .section-suporte {
+        height: 50vh; /* Ajusta a altura da seção de suporte */
+    }
+
+    footer {
+        flex-direction: column; /* Organiza o footer em coluna */
+        align-items: center; /* Alinha os itens ao centro */
+    }
+
+    footer .div-logo-footer img {
+        width: 100px; /* Ajusta a largura da logo no footer */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes para dispositivos muito pequenos */
+    body {
+        font-size: 14px; /* Diminui o tamanho da fonte */
+    }
+
+    .product-intro h1 {
+        font-size: 1.8rem; /* Diminui o título */
+    }
+
+    .product-section h2 {
+        font-size: 1.8rem; /* Ajusta o tamanho do título das seções de produto */
     }
 
     .product-item h3 {
-        
+        font-size: 18px; /* Ajusta o tamanho do título do produto */
     }
 
-    
+    .section-suporte p {
+        font-size: 1.2rem; /* Diminui o tamanho do texto de descrição */
+    }
 
+    .btn-suporte {
+        padding: 8px 16px; /* Ajusta o tamanho do botão */
+        font-size: 0.9rem; /* Diminui o tamanho da fonte no botão */
+    }
 
+    footer div h3 {
+        font-size: 20px; /* Ajusta o título do footer */
+    }
 
-
-
+    footer div p {
+        font-size: 16px; /* Ajusta o texto do footer */
+    }
 }
 
+@media (max-width: 320px) {
+    /* Ajustes para telas muito pequenas */
+    .product-list {
+        grid-template-columns: 1fr; /* Coloca os produtos em uma coluna */
+    }
 
+    .product-item {
+        padding: 10px; /* Ajusta o padding para telas muito pequenas */
+    }
+
+    .section-suporte {
+        height: 40vh; /* Ajusta a altura da seção */
+    }
+
+    footer {
+        flex-direction: column; /* Organiza o footer em coluna */
+        padding: 2rem 1rem;
+    }
+}
